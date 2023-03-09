@@ -1,22 +1,26 @@
 //
-//  ContentView.swift
-//  Gone Fishin'
+//  CoverPageView.swift
+//  C3
 //
-//  Created by Cameron Warner on 3/8/23.
+//  Created by Cameron Warner on 12/20/22.
 //
 
 import SwiftUI
 
 struct ContentView: View {
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView{
+            VStack{
+                NavigationLink(destination: TestTableOfContentsView()){
+                    Image("coverPageToo")
+                        .resizable()
+                        .ignoresSafeArea(.all)
+                }
+            }
         }
-        .padding()
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
