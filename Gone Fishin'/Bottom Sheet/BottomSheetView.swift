@@ -13,11 +13,12 @@ struct BottomSheetView: View { // Creat a view for each Bottom Sheet
     var body: some View {
        
         Button(action: { presentSheet = true }) {
-         BottomSheetIconView() 
+         BottomSheetIconView()
         }
                 .sheet(isPresented: $presentSheet) {
                            PoemListView()
-                                .presentationDetents([.medium, .large])
+//                    TestTableOfContentsView()
+                        .presentationDetents([.medium, .large])
         }
     }
 }

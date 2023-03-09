@@ -16,6 +16,7 @@ struct PoemListView: View {
                 Text(poems.name)
             }
             .navigationTitle("Table of Contents")
+            .navigationBarTitleDisplayMode(.automatic)
         }//End of Nav. Stack
     }
 }
