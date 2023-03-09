@@ -21,7 +21,8 @@ struct TestTableOfContentsView: View {
                 }//End of List
                 .listStyle(.sidebar)
             }//End of VStack
-            .navigationTitle("Table of Contents")
+            .navigationBarTitle("Table of Contents")
+            .navigationBarTitleDisplayMode(.large)
             .navigationBarItems(trailing:
                     NavigationLink(destination: BackCoverView()){
                     Image(systemName: "chevron.right")
