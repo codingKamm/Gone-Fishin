@@ -1,6 +1,6 @@
 //
 //  GoneFishin'View.swift
-//  C3
+//  C3 renamed Gone Fishin' 
 //
 //  Created by Cameron Warner on 12/10/22.
 //
@@ -12,7 +12,8 @@ struct GoneFishin_View: View {
     @State private var stringArray = [String]()
     
     var body: some View {
-    VStack{
+        NavigationStack{
+        VStack{
         HStack{
             VStack {
                 ForEach(stringArray, id: \.self) { i in
@@ -47,8 +48,7 @@ struct GoneFishin_View: View {
             TextFieldBottomSheetView()
         }//End of HStack
     }//End of VStack
-    .navigationBarBackButtonHidden(true)
-//                }//End of Nav. Link
+                }//End of Nav. Stack
             }
         }
     

@@ -1,6 +1,6 @@
 //
 //  BackCoverView.swift
-//  C3
+//  C3 renamed Gone Fishin' 
 //
 //  Created by Cameron Warner on 12/9/22.
 //
@@ -10,11 +10,12 @@ import SwiftUI
 struct BackCoverView: View {
     
     var body: some View {
-        
-        Image("backCover")
-            .resizable()
-            .ignoresSafeArea()
-            .navigationBarBackButtonHidden(true)
+        NavigationStack{
+            Image("backCover")
+                .resizable()
+                .ignoresSafeArea()
+            //            .navigationBarBackButtonHidden(true)
+        }//End of Nav. Stack
     }
 }
 

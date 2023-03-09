@@ -124,16 +124,16 @@
 				A15E63AF29B964BA00391A88 /* Gone_Fishin_App.swift */,
 				A15E63B129B964BA00391A88 /* ContentView.swift */,
 				A15E63BD29B9652300391A88 /* Table of Content Views */,
-				A15E63C929B9654500391A88 /* Bottom Sheet */,
-				A15E63DF29B9654500391A88 /* Experimental Views */,
-				A15E63EA29B9654500391A88 /* List Views */,
-				A15E63CE29B9654500391A88 /* Page Transition Views */,
 				A15E63D429B9654500391A88 /* Poem Views */,
+				A15E63C929B9654500391A88 /* Bottom Sheet */,
+				A15E63EA29B9654500391A88 /* List Views */,
+				A15E63DB29B9654500391A88 /* Text Field Views */,
+				A15E63CE29B9654500391A88 /* Page Transition Views */,
 				A15E63DA29B9654500391A88 /* PoemPhotoView.swift */,
 				A15E63D329B9654500391A88 /* BackCoverView.swift */,
-				A15E63DB29B9654500391A88 /* Text Field Views */,
-				A1F0384329B966E00091FD30 /* Assests.xcassets */,
+				A15E63DF29B9654500391A88 /* Experimental Views */,
 				A15E63B529B964BB00391A88 /* Preview Content */,
+				A1F0384329B966E00091FD30 /* Assests.xcassets */,
 			);
 			path = "Gone Fishin'";
 			sourceTree = "<group>";
@@ -183,11 +183,11 @@
 		A15E63D429B9654500391A88 /* Poem Views */ = {
 			isa = PBXGroup;
 			children = (
-				A15E63D529B9654500391A88 /* FirstCatchView.swift */,
 				A15E63D629B9654500391A88 /* HowToFishView.swift */,
-				A15E63D729B9654500391A88 /* TrophiesView.swift */,
 				A15E63D829B9654500391A88 /* GoneFishin'View.swift */,
+				A15E63D529B9654500391A88 /* FirstCatchView.swift */,
 				A15E63D929B9654500391A88 /* CatchNReleaseView.swift */,
+				A15E63D729B9654500391A88 /* TrophiesView.swift */,
 			);
 			path = "Poem Views";
 			sourceTree = "<group>";
@@ -475,7 +475,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.4.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "me.Warner.Cameron.Gone-Fishin-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -504,7 +504,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.4.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "me.Warner.Cameron.Gone-Fishin-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
