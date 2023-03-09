@@ -21,6 +21,7 @@ struct TrophiesView: View {
                             .font(.title)
                     }
                 }//End of VStack
+                .padding()
                 .onAppear
                 {
                     for i in string {

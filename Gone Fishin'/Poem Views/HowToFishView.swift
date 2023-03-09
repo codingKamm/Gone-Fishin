@@ -44,7 +44,10 @@ struct HowToFishView: View {
                 TextFieldBottomSheetView()
             }//End of HStack
         }//End of VStack
-//        .navigationBarBackButtonHidden(true)
+        .navigationBarItems(trailing:
+                NavigationLink(destination: BackCoverView()){
+                Image(systemName: "chevron.right")
+                })
         }//End of Nav. Stack
     }
 }

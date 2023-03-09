@@ -37,3 +37,6 @@ struct TestTableOfContentsView_Previews: PreviewProvider {
         TestTableOfContentsView()
     }
 }
+
+
+//Nav. Bar Title Courtesy of https://www.hackingwithswift.com/books/ios-swiftui/adding-a-navigation-bar
