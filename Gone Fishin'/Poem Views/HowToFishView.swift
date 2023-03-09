@@ -1,6 +1,6 @@
 //
 //  HowToFishView.swift
-//  C3
+//  C3 renamed Gone Fishin' 
 //
 //  Created by Cameron Warner on 12/9/22.
 //
@@ -13,6 +13,7 @@ struct HowToFishView: View {
     @State private var stringArray = [String]()
     
     var body: some View {
+        NavigationStack{
         VStack{
             HStack{
                 VStack {
@@ -43,8 +44,8 @@ struct HowToFishView: View {
                 TextFieldBottomSheetView()
             }//End of HStack
         }//End of VStack
-        .navigationBarBackButtonHidden(true)
-//        }//End of Nav. Link
+//        .navigationBarBackButtonHidden(true)
+        }//End of Nav. Stack
     }
 }
 

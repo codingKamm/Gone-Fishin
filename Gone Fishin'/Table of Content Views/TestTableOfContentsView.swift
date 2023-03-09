@@ -1,6 +1,6 @@
 //
 //  TestTableOfContentsView.swift
-//  C3
+//  C3 renamed Gone Fishin' 
 //
 //  Created by Cameron Warner on 3/6/23.
 //
@@ -10,7 +10,7 @@ import SwiftUI
 struct TestTableOfContentsView: View {
     
     var body: some View {
-        NavigationView{
+        NavigationStack{
             VStack{
                 List{
                     NavigationLink(destination: HowToFishView()){ Text("How To Fish")}
@@ -19,7 +19,7 @@ struct TestTableOfContentsView: View {
                     NavigationLink(destination: CatchNReleaseView()){ Text("Catch & Release")}
                     NavigationLink(destination: TrophiesView()){ Text("Trophies")}
                 }//End of List
-                .listStyle(.inset)
+                .listStyle(.sidebar)
             }//End of VStack
             .navigationTitle("Table of Contents")
             .navigationBarItems(trailing:
@@ -27,8 +27,7 @@ struct TestTableOfContentsView: View {
                     Image(systemName: "chevron.right")
                     }
             )
-            .navigationBarBackButtonHidden(true)
-        }//End of Nav. View
+        }//End of Nav. Stack
     }
 }
 

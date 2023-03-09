@@ -1,6 +1,6 @@
 //
 //  CatchNReleaseView.swift
-//  C3
+//  C3 renamed Gone Fishin' 
 //
 //  Created by Cameron Warner on 12/10/22.
 //
@@ -12,6 +12,7 @@ struct CatchNReleaseView: View {
     @State private var stringArray = [String]()
     
     var body: some View {
+        NavigationStack{
         VStack{
             HStack{
                 VStack {
@@ -42,8 +43,7 @@ struct CatchNReleaseView: View {
                 TextFieldBottomSheetView()
             }//End of HStack
         }//End of VStack
-        .navigationBarBackButtonHidden(true)
-//        }//End of Nav. Link
+        }//End of Nav. Link
     }
 }
 
