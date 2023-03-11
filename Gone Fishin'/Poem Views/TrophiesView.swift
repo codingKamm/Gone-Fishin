@@ -18,7 +18,7 @@ struct TrophiesView: View {
                 VStack {
                     ForEach(stringArray, id: \.self) { i in
                         Text("\(i)\n")
-                            .font(.title)
+                            .font(.headline)
                     }
                 }//End of VStack
                 .padding()

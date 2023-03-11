@@ -10,7 +10,7 @@ import SwiftUI
 struct TextFieldIcon: View {
     var body: some View {
         Image(systemName: "pencil")
-             .font(.largeTitle)
+            .font(.title2)
     }
 }
 

@@ -19,7 +19,7 @@ struct HowToFishView: View {
                 VStack {
                     ForEach(stringArray, id: \.self) { i in
                         Text("\(i)\n")
-                            .font(.title2)
+                            .font(.headline)
                     }
                 }// End of VStack
                 .onAppear
@@ -44,10 +44,10 @@ struct HowToFishView: View {
                 TextFieldBottomSheetView()
             }//End of HStack
         }//End of VStack
-        .navigationBarItems(trailing:
-                NavigationLink(destination: BackCoverView()){
-                Image(systemName: "chevron.right")
-                })
+//        .navigationBarItems(trailing:
+//                NavigationLink(destination: BackCoverView()){
+//                Image(systemName: "chevron.right")
+//                })//Ask Academy Mentor About Text Bug
         }//End of Nav. Stack
     }
 }

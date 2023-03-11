@@ -20,7 +20,7 @@ var string = "FIRST CATCH"
             VStack {
                 ForEach(stringArray, id: \.self) { i in
                     Text("\(i)\n")
-                        .font(.title2)
+                        .font(.headline)
                 }
             }//End of VStack
             .onAppear
