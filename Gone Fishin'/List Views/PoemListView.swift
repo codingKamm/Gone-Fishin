@@ -13,7 +13,10 @@ struct PoemListView: View {
     var body: some View {
         NavigationStack{
             List(poems, id: \.chapter) { poems in
-                Text(poems.name)
+                NavigationLink(destination: HowToFishView()){
+                    Text(poems.name)
+                    
+                }
             }
             .navigationTitle("Table of Contents")
             .navigationBarTitleDisplayMode(.automatic)
