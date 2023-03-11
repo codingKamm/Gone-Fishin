@@ -18,6 +18,7 @@ struct CatchNReleaseView: View {
                 VStack {
                     ForEach(stringArray, id: \.self) { i in
                         Text("\(i)\n")
+                            .font(.headline)
                     }
                 }// End of VStack
                 .onAppear

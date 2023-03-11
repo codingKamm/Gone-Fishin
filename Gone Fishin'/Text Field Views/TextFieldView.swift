@@ -6,14 +6,10 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct TextFieldView: View {
     @State private var poemNotes = ""
-//    let defaults = UserDefaults.standard
-//    defaults.set(poemNotes, forKey: "textInput")
-//   
-//    let defaults = UserDefaults.standard
-//    let savedTextInput = defaults.string(forKey: "textInput")
     
     var body: some View {
         NavigationStack{
