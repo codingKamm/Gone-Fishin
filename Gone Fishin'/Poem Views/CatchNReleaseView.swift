@@ -19,6 +19,9 @@ struct CatchNReleaseView: View {
                     ForEach(stringArray, id: \.self) { i in
                         Text("\(i)\n")
                             .font(.headline)
+//                            .lineLimit(1)
+                            .truncationMode(.tail)
+                            .fixedSize(horizontal: false, vertical: true)
                     }
                 }// End of VStack
                 .onAppear

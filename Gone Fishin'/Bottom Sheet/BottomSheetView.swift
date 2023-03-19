@@ -18,7 +18,7 @@ struct BottomSheetView: View { // Creat a view for each Bottom Sheet
                 .sheet(isPresented: $presentSheet) {
                            PoemListView()
 //                    TestTableOfContentsView()
-                        .presentationDetents([.medium, .large])
+                        .presentationDetents([.large])
         }
     }
 }
