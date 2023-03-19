@@ -13,7 +13,7 @@ struct HowToFishView: View {
     @State private var stringArray = [String]()
     
     var body: some View {
-        NavigationStack{
+//        NavigationStack{
         VStack{
             HStack{
                 VStack {
@@ -48,7 +48,7 @@ struct HowToFishView: View {
 //                NavigationLink(destination: BackCoverView()){
 //                Image(systemName: "chevron.right")
 //                })//Ask Academy Mentor About Text Bug
-        }//End of Nav. Stack
+//        }//End of Nav. Stack
     }
 }
 

@@ -14,7 +14,7 @@ var string = "FIRST CATCH"
 @State private var stringArray = [String]()
     
     var body: some View {
-        NavigationStack{
+//        NavigationStack{
         VStack{
         HStack{
             VStack {
@@ -51,7 +51,7 @@ var string = "FIRST CATCH"
             TextFieldBottomSheetView()
         }//End of HStack
     }//End of VStack
-        }//End of Nav. Stack
+//        }//End of Nav. Stack
     }
 }
 
