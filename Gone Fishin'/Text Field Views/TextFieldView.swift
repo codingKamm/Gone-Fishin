@@ -14,9 +14,6 @@ struct TextFieldView: View {
     var body: some View {
         NavigationStack{
             VStack{
-//                Text("Poetic Thoughts")
-//                    .font(.headline)
-//                    .padding()
                 VStack(alignment: .leading) {
                     TextField("Have a thought? Reflect && write it here...", text: $poemNotes)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
@@ -27,8 +24,18 @@ struct TextFieldView: View {
             }//End of VStack
             .navigationTitle("Poetic Thoughts")
             .navigationBarTitleDisplayMode(.inline)
+            
+            // Use the onDisappear modifier to save the state of the view when the user navigates away from it.
+            .onDisappear {
+                            UserDefaults.standard.set(poemNotes, forKey: "poemNotes")
+                        }//End of onDisappear
         }//End of Nav. Stack
-        
+        .onAppear {
+                    // Retrieve the saved reflection text when the view appears.
+                    if let savedPoemNotes = UserDefaults.standard.string(forKey: "poemNotes") {
+                        poemNotes = savedPoemNotes
+                    }
+                }//End of onAppear
     }
 }
 
