@@ -12,7 +12,7 @@ struct CatchNReleaseView: View {
     @State private var stringArray = [String]()
     
     var body: some View {
-        NavigationStack{
+//        NavigationStack{
         VStack{
             HStack{
                 VStack {
@@ -44,7 +44,7 @@ struct CatchNReleaseView: View {
                 TextFieldBottomSheetView()
             }//End of HStack
         }//End of VStack
-        }//End of Nav. Link
+//        }//End of Nav. Stack
     }
 }
 

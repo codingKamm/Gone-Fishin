@@ -12,7 +12,7 @@ struct GoneFishin_View: View {
     @State private var stringArray = [String]()
     
     var body: some View {
-        NavigationStack{
+//        NavigationStack{
         VStack{
         HStack{
             VStack {
@@ -48,7 +48,7 @@ struct GoneFishin_View: View {
             TextFieldBottomSheetView()
         }//End of HStack
     }//End of VStack
-                }//End of Nav. Stack
+//                }//End of Nav. Stack
             }
         }
     

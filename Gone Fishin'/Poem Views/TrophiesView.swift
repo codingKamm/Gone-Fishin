@@ -12,7 +12,7 @@ struct TrophiesView: View {
     @State private var stringArray = [String]()
     
     var body: some View {
-        NavigationStack{
+//        NavigationStack{
         VStack{
             HStack{
                 VStack {
@@ -47,7 +47,7 @@ struct TrophiesView: View {
                 TextFieldBottomSheetView()
             }//End of HStack
         }//End of VStack
-        }//End of Nav. Link
+//        }//End of Nav. Stack
     }
 }
 
