@@ -48,6 +48,8 @@ struct CatchNReleaseView: View {
             }//End of HStack
         }//End of VStack
 //        }//End of Nav. Stack
+        .navigationTitle("Catch & Release")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

@@ -48,6 +48,8 @@ struct TrophiesView: View {
             }//End of HStack
         }//End of VStack
 //        }//End of Nav. Stack
+        .navigationTitle("Trophies")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

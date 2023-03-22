@@ -9,7 +9,16 @@ import SwiftUI
 
 struct NewTableOfContentsView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack{
+            VStack{
+                PoemListView()
+                    .navigationBarItems(trailing:
+                                            NavigationLink(destination: TitlePageView()){
+                        Image(systemName: "chevron.right")
+                    }
+                    )
+            }// End of VStack
+        }// End of Nav. Stack
     }
 }
 

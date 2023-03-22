@@ -7,27 +7,53 @@
 
 import SwiftUI
 
-struct PoemLists: Identifiable, Hashable {
-    var id = UUID()
-    var title: String
-    var chapter: Int
-    var tableOfContents: TableOfContents
-}
-
-var poemLists = [
-    PoemLists(title: "How To Fish", chapter: 1, tableOfContents: .howToFish),
-    PoemLists(title: "Gone Fishin'", chapter: 2, tableOfContents: .goneFishin),
-    PoemLists(title: "First Catch", chapter: 3, tableOfContents: .firstCatch),
-    PoemLists(title: "Catch & Release", chapter: 4, tableOfContents: .catchNRelease),
-    PoemLists(title: "Trophies", chapter: 5, tableOfContents: .trophies)
-]
-
-enum TableOfContents {
-    case howToFish
+enum Chapter: Int, CaseIterable {
+    case howToFish = 1
     case goneFishin
     case firstCatch
     case catchNRelease
     case trophies
+    
+    var title: String {
+        switch self {
+        case .howToFish:
+            return "How to Fish"
+        case .goneFishin:
+            return "Gone Fishin'"
+        case .firstCatch:
+            return "First Catch"
+        case .catchNRelease:
+            return "Catch & Release"
+        case .trophies:
+            return "Trophies"
+        }
+    }// End of var title
+    var icon: String{
+        switch self {
+        case .howToFish:
+             return "chevron.right"
+        case .goneFishin:
+            return "chevron.right"
+        case .firstCatch:
+            return "chevron.right"
+        case .catchNRelease:
+            return "chevron.right"
+        case .trophies:
+            return "chevron.right"
+        }
+    }// End of var icon
+    
+}// End of Chapter enum
+
+
+
+// Extending NavigationPath to add a helper function to quickly empty the entire path
+extension NavigationPath {
+    mutating func removeAll() {
+        while !self.isEmpty {
+            self.removeLast()
+        }
+    }
 }
 
 

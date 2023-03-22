@@ -12,23 +12,23 @@ struct GoneFishin_View: View {
     @State private var stringArray = [String]()
     
     var body: some View {
-//        NavigationStack{
+        //        NavigationStack{
         VStack{
-        HStack{
-            VStack {
-                ForEach(stringArray, id: \.self) { i in
-                    Text("\(i)\n")
-                        .font(.headline)
-                }
-            }// End of VStack
-            .onAppear
-            {
-                for i in string {
-                    stringArray.append(String(i))
-                }
-            }//End of for in
-            //                NavigationLink(destination: FirstCatchView()){
-            Text("""
+            HStack{
+                VStack {
+                    ForEach(stringArray, id: \.self) { i in
+                        Text("\(i)\n")
+                            .font(.headline)
+                    }
+                }// End of VStack
+                .onAppear
+                {
+                    for i in string {
+                        stringArray.append(String(i))
+                    }
+                }//End of for in
+                //                NavigationLink(destination: FirstCatchView()){
+                Text("""
                          routinely naïve
                          it’s the definition of insanity
                          too careless to conceive
@@ -39,17 +39,19 @@ struct GoneFishin_View: View {
                          stir crazy; an idiomatic glass house
                          you can’t hide from yourself
                          """)
-            .multilineTextAlignment(.center)
-            .padding()
-        }//End of HStack
-        HStack{
-            BottomSheetView()
+                .multilineTextAlignment(.center)
                 .padding()
-            TextFieldBottomSheetView()
-        }//End of HStack
-    }//End of VStack
-//                }//End of Nav. Stack
-            }
+            }//End of HStack
+            HStack{
+                BottomSheetView()
+                    .padding()
+                TextFieldBottomSheetView()
+            }//End of HStack
+        }//End of VStack
+        //                }//End of Nav. Stack
+        .navigationTitle("Gone Fishin")
+        .navigationBarTitleDisplayMode(.inline)
+    }
         }
     
 

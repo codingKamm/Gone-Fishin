@@ -129,6 +129,7 @@
 				A15E63EA29B9654500391A88 /* List Views */,
 				A15E63DB29B9654500391A88 /* Text Field Views */,
 				A15E63CE29B9654500391A88 /* Page Transition Views */,
+				A15E63CC29B9654500391A88 /* TitlePageView.swift */,
 				A15E63D329B9654500391A88 /* BackCoverView.swift */,
 				A15E63DF29B9654500391A88 /* Experimental Views */,
 				A15E63B529B964BB00391A88 /* Preview Content */,
@@ -160,9 +161,7 @@
 		A15E63C929B9654500391A88 /* Bottom Sheet */ = {
 			isa = PBXGroup;
 			children = (
-				A15E63CA29B9654500391A88 /* BlurredSheetView.swift */,
 				A15E63CB29B9654500391A88 /* BottomSheetView.swift */,
-				A15E63CC29B9654500391A88 /* TitlePageView.swift */,
 				A15E63CD29B9654500391A88 /* BottomSheetIconView.swift */,
 			);
 			path = "Bottom Sheet";
@@ -204,6 +203,7 @@
 		A15E63DF29B9654500391A88 /* Experimental Views */ = {
 			isa = PBXGroup;
 			children = (
+				A15E63CA29B9654500391A88 /* BlurredSheetView.swift */,
 				A15E63DA29B9654500391A88 /* PoemPhotoView.swift */,
 				A15E63E029B9654500391A88 /* PrototypePoemView.swift */,
 				A15E63E129B9654500391A88 /* AnimatedWaveView.swift */,

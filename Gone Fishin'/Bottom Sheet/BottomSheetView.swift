@@ -9,19 +9,26 @@ import SwiftUI
 
 struct BottomSheetView: View { // Creat a view for each Bottom Sheet
     @State var presentSheet = false
-    
+    @State private var path = NavigationPath()
     var body: some View {
        
-        Button(action: { presentSheet = true }) {
-         BottomSheetIconView()
+        
+        Button {
+            path.removeAll()
+        } label: {
+            Label("", systemImage: "text.book.closed")
         }
-                .sheet(isPresented: $presentSheet) {
-                           PoemListView()
+        
+//        Button(action: { presentSheet = true }) {
+//         BottomSheetIconView()
+//        }
+//                .sheet(isPresented: $presentSheet) {
+//                    path.removeAll()
 //                    TestTableOfContentsView()
-                        .presentationDetents([.large])
+//                        .presentationDetents([.large])
         }
     }
-}
+//}
 
 struct BottomSheetView_Previews: PreviewProvider {
     static var previews: some View {
