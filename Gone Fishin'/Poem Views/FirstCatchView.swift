@@ -52,6 +52,8 @@ var string = "FIRST CATCH"
         }//End of HStack
     }//End of VStack
 //        }//End of Nav. Stack
+        .navigationTitle("First Catch")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

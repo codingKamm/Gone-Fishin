@@ -12,7 +12,7 @@ struct TitlePageView: View {
     var body: some View {
        
         VStack {
-            NavigationLink(destination: TestTableOfContentsView()) { //used to move between views
+            NavigationLink(destination: BackCoverView()) { //used to move between views
                     Image("titlePageTree")
                         .resizable()
                         .ignoresSafeArea()

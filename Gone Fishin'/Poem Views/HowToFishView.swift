@@ -49,6 +49,8 @@ struct HowToFishView: View {
 //                Image(systemName: "chevron.right")
 //                })//Ask Academy Mentor About Text Bug
 //        }//End of Nav. Stack
+        .navigationTitle("How To Fish")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

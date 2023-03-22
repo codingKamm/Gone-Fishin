@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import CoreData
+//import CoreData
 
 struct TextFieldView: View {
     @State private var poemNotes = ""
@@ -46,3 +46,7 @@ struct TextFieldView_Previews: PreviewProvider {
 }
 
 // Text Field Courtesy of https://www.simpleswiftguide.com/swiftui-textfield-complete-tutorial/
+
+// User Defaults courtesy of https://www.hackingwithswift.com/books/ios-swiftui/storing-user-settings-with-userdefaults
+
+

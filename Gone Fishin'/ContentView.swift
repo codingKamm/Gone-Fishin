@@ -12,7 +12,7 @@ struct ContentView: View {
     var body: some View {
         NavigationStack{
             VStack{
-                NavigationLink(destination: TestTableOfContentsView()){
+                NavigationLink(destination: PoemListView()){
                     Image("coverPageToo")
                         .resizable()
                         .ignoresSafeArea(.all)
