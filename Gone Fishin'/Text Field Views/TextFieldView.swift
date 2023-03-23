@@ -18,7 +18,8 @@ struct TextFieldView: View {
                     TextField("Have a thought? Reflect && write it here...", text: $poemNotes)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                     
-                    Text("\(poemNotes)")
+//                    Text("\(poemNotes)")
+                    
                 }//End of VStack
                 .padding()
             }//End of VStack

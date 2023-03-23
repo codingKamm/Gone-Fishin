@@ -23,11 +23,11 @@ struct TestTableOfContentsView: View {
             }//End of VStack
             .navigationBarTitle("Table of Contents")
             .navigationBarTitleDisplayMode(.large)
-            .navigationBarItems(trailing:
-                    NavigationLink(destination: BackCoverView()){
-                    Image(systemName: "chevron.right")
-                    }
-            )
+//            .navigationBarItems(trailing:
+//                    NavigationLink(destination: BackCoverView()){
+//                    Image(systemName: "chevron.right")
+//                    }
+//            )
         }//End of Nav. Stack
     }
 }
