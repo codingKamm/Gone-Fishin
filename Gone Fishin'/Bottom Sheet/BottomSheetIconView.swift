@@ -9,7 +9,7 @@ import SwiftUI
 
 struct BottomSheetIconView: View {
     var body: some View {
-       Image(systemName: "book")
+       Image(systemName: "text.book.closed")
             .font(.title2)
     }
 }

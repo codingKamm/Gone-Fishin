@@ -15,47 +15,50 @@ struct PoemListView: View {
     
     var body: some View {
         NavigationStack(path: $path){
-            List(Chapter.allCases, id: \.self) { chapter in
-                     Label{
-                         Text(chapter.title)
-                         Spacer()
-                         Image(systemName: "chevron.right")
-                             .foregroundColor(.blue)
-                     }
-                 icon:{}
-                    .onTapGesture {
-                        for number in 1...chapter.rawValue {
-                            if let tableOfContents = Chapter(rawValue: number) {
-                                path.append(tableOfContents)
-//                                print(path)
+            VStack{
+                List(Chapter.allCases, id: \.self) { chapter in
+                    Label{
+                        Text(chapter.title)
+                        Spacer()
+                        Image(systemName: "chevron.right")
+                            .foregroundColor(.blue)
+                    }
+                icon:{}
+                        .onTapGesture {
+                            for number in 1...chapter.rawValue {
+                                if let tableOfContents = Chapter(rawValue: number) {
+                                    path.append(tableOfContents)
+                                    //                                print(path)
+                                }
                             }
-                        }
-                    } //onTapGesture allows users to nav through enum
-                
-//                 }//End of Nav. Link
+                        } //onTapGesture allows users to nav through enum
+                    
+                    //                 }//End of Nav. Link
                 }//End of Lists
-            .navigationTitle("Table of Contents")
-//            .navigationBarItems(trailing:
-//                    NavigationLink(destination: BackCoverView()){
-//                    Image(systemName: "chevron.right")
-//                    }
-//                                )
-            .navigationBarTitleDisplayMode(.automatic)
-            
-            .navigationDestination(for: Chapter.self) { chapter in
-                   switch chapter{
-                   case .howToFish:
-                       HowToFishView()
-                   case .goneFishin:
-                       GoneFishin_View()
-                   case .firstCatch:
-                      FirstCatchView()
-                   case .catchNRelease:
-                       CatchNReleaseView()
-                   case .trophies:
-                       TrophiesView()
-                   }//End of Switch
-               }// End of Loop
+                .navigationTitle("Table of Contents")
+                //            .navigationBarItems(trailing:
+                //                    NavigationLink(destination: BackCoverView()){
+                //                    Image(systemName: "chevron.right")
+                //                    }
+                //                                ) //crashes app
+                .navigationBarTitleDisplayMode(.automatic)
+                
+                .navigationDestination(for: Chapter.self) { chapter in
+                    switch chapter{
+                    case .howToFish:
+                        HowToFishView()
+                    case .goneFishin:
+                        GoneFishin_View()
+                    case .firstCatch:
+                        FirstCatchView()
+                    case .catchNRelease:
+                        CatchNReleaseView()
+                    case .trophies:
+                        TrophiesView()
+                    }//End of Switch
+                }// End of Loop
+           BottomSheetView()
+            }//End of VStack
         }//End of Nav. Stack
     }
 }

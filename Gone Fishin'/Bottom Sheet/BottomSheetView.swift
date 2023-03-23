@@ -12,23 +12,23 @@ struct BottomSheetView: View { // Creat a view for each Bottom Sheet
     @State private var path = NavigationPath()
     var body: some View {
        
-        
-        Button {
-            path.removeAll()
-        } label: {
-            Label("", systemImage: "text.book.closed")
-        }
-        
-//        Button(action: { presentSheet = true }) {
-//         BottomSheetIconView()
+//
+//        Button {
+//            path.removeAll()
+//        } label: {
+//            Label("", systemImage: "text.book.closed")
 //        }
-//                .sheet(isPresented: $presentSheet) {
+        
+        Button(action: { presentSheet = true }) {
+         BottomSheetIconView()
+        }
+                .sheet(isPresented: $presentSheet) {
 //                    path.removeAll()
-//                    TestTableOfContentsView()
-//                        .presentationDetents([.large])
+                   BackCoverView()
+                        .presentationDetents([.large])
         }
     }
-//}
+}
 
 struct BottomSheetView_Previews: PreviewProvider {
     static var previews: some View {
