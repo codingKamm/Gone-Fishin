@@ -27,7 +27,7 @@ struct PoemListView: View {
                         for number in 1...chapter.rawValue {
                             if let tableOfContents = Chapter(rawValue: number) {
                                 path.append(tableOfContents)
-                                print(path)
+//                                print(path)
                             }
                         }
                     } //onTapGesture allows users to nav through enum
@@ -35,11 +35,11 @@ struct PoemListView: View {
 //                 }//End of Nav. Link
                 }//End of Lists
             .navigationTitle("Table of Contents")
-            .navigationBarItems(trailing:
-                    NavigationLink(destination: BackCoverView()){
-                    Image(systemName: "chevron.right")
-                    }
-                                )
+//            .navigationBarItems(trailing:
+//                    NavigationLink(destination: BackCoverView()){
+//                    Image(systemName: "chevron.right")
+//                    }
+//                                )
             .navigationBarTitleDisplayMode(.automatic)
             
             .navigationDestination(for: Chapter.self) { chapter in

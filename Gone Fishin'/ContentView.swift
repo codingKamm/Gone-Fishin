@@ -8,17 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
-
+    @State var isActive: Bool = false
     var body: some View {
-        NavigationStack{
-            VStack{
-                NavigationLink(destination: PoemListView()){
+//        NavigationStack{
+            ZStack{
+                if self.isActive{
+                    PoemListView()
+                } else {
                     Image("coverPageToo")
                         .resizable()
                         .ignoresSafeArea(.all)
                 }
-            }// End of VStack
-        }// End of Nav. Stack
+            }// End of ZStack
+            .onAppear {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
+                               withAnimation {
+                                   self.isActive = true
+                               }
+                           }
+            }
+//        }// End of Nav. Stack
     }
     
 }
@@ -28,3 +37,8 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+
+//Splash Screen coutresy of https://medium.com/@liyicky/how-to-make-a-splash-screen-in-swift-ui-83b02984a6ab
+
+

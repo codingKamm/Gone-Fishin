@@ -45,6 +45,7 @@
 		A15E640929B9654500391A88 /* NotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15E63E929B9654500391A88 /* NotesView.swift */; };
 		A15E640A29B9654500391A88 /* PoemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15E63EB29B9654500391A88 /* PoemListView.swift */; };
 		A15E640B29B9654500391A88 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15E63EC29B9654500391A88 /* ListView.swift */; };
+		A1982B5929CA9ACB00688BCF /* LabelIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1982B5829CA9ACB00688BCF /* LabelIconView.swift */; };
 		A1F0384429B966E00091FD30 /* Assests.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F0384329B966E00091FD30 /* Assests.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +89,7 @@
 		A15E63E929B9654500391A88 /* NotesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesView.swift; sourceTree = "<group>"; };
 		A15E63EB29B9654500391A88 /* PoemListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoemListView.swift; sourceTree = "<group>"; };
 		A15E63EC29B9654500391A88 /* ListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		A1982B5829CA9ACB00688BCF /* LabelIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelIconView.swift; sourceTree = "<group>"; };
 		A1F0384329B966E00091FD30 /* Assests.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assests.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,6 +125,7 @@
 			children = (
 				A15E63AF29B964BA00391A88 /* Gone_Fishin_App.swift */,
 				A15E63B129B964BA00391A88 /* ContentView.swift */,
+				A1982B5829CA9ACB00688BCF /* LabelIconView.swift */,
 				A15E63BD29B9652300391A88 /* Table of Content Views */,
 				A15E63D429B9654500391A88 /* Poem Views */,
 				A15E63C929B9654500391A88 /* Bottom Sheet */,
@@ -298,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1982B5929CA9ACB00688BCF /* LabelIconView.swift in Sources */,
 				A15E63B229B964BA00391A88 /* ContentView.swift in Sources */,
 				A15E63C629B9652300391A88 /* NewTableOfContentsView.swift in Sources */,
 				A15E63F829B9654500391A88 /* HowToFishView.swift in Sources */,
@@ -477,7 +481,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.4.2;
+				MARKETING_VERSION = 0.5.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "me.Warner.Cameron.Gone-Fishin-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -508,7 +512,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.4.2;
+				MARKETING_VERSION = 0.5.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "me.Warner.Cameron.Gone-Fishin-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

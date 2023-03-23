@@ -42,8 +42,8 @@ struct TrophiesView: View {
                 .multilineTextAlignment(.center)
             } //End of HStack
             HStack{
-                BottomSheetView()
-                    .padding()
+//                BottomSheetView()
+                    
                 TextFieldBottomSheetView()
             }//End of HStack
         }//End of VStack
