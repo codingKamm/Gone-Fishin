@@ -14,7 +14,6 @@ struct BackCoverView: View {
             Image("backCover")
                 .resizable()
                 .ignoresSafeArea()
-            //            .navigationBarBackButtonHidden(true)
         }//End of Nav. Stack
     }
 }
