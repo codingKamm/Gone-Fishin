@@ -43,8 +43,8 @@ struct GoneFishin_View: View {
                 .padding()
             }//End of HStack
             HStack{
-                BottomSheetView()
-                    .padding()
+//                BottomSheetView()
+                   
                 TextFieldBottomSheetView()
             }//End of HStack
         }//End of VStack

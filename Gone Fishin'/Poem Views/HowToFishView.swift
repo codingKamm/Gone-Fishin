@@ -20,6 +20,8 @@ struct HowToFishView: View {
                     ForEach(stringArray, id: \.self) { i in
                         Text("\(i)\n")
                             .font(.headline)
+//                            .truncationMode(.tail)
+//                            .fixedSize(horizontal: false, vertical: true)
                     }
                 }// End of VStack
                 .onAppear
@@ -39,8 +41,8 @@ struct HowToFishView: View {
                 .padding()
             }//End of HStack
             HStack{
-                BottomSheetView()
-                    .padding()
+//                BottomSheetView()
+//                    .padding()
                 TextFieldBottomSheetView()
             }//End of HStack
         }//End of VStack
