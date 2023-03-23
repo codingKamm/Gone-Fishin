@@ -9,7 +9,7 @@ import SwiftUI
 
 struct BottomSheetView: View { // Creat a view for each Bottom Sheet
     @State var presentSheet = false
-    @State private var path = NavigationPath()
+//    @State private var path = NavigationPath()
     var body: some View {
        
 //
@@ -26,7 +26,9 @@ struct BottomSheetView: View { // Creat a view for each Bottom Sheet
 //                    path.removeAll()
                    BackCoverView()
                         .presentationDetents([.large])
+                        .presentationDragIndicator(.visible)
         }
+                
     }
 }
 

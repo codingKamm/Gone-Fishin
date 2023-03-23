@@ -42,7 +42,8 @@ struct CatchNReleaseView: View {
                 .multilineTextAlignment(.center)
             }//End of HStack
             HStack{
-//                BottomSheetView()
+                ChapterView()
+                    .padding()
                 TextFieldBottomSheetView()
             }//End of HStack
         }//End of VStack

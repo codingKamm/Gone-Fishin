@@ -28,19 +28,16 @@ struct PoemListView: View {
                             for number in 1...chapter.rawValue {
                                 if let tableOfContents = Chapter(rawValue: number) {
                                     path.append(tableOfContents)
-                                    //                                print(path)
                                 }
                             }
                         } //onTapGesture allows users to nav through enum
-                    
-                    //                 }//End of Nav. Link
                 }//End of Lists
                 .navigationTitle("Table of Contents")
-                //            .navigationBarItems(trailing:
-                //                    NavigationLink(destination: BackCoverView()){
-                //                    Image(systemName: "chevron.right")
-                //                    }
-                //                                ) //crashes app
+//                            .navigationBarItems(trailing:
+//                                    NavigationLink(destination: BackCoverView()){
+//                                    Image(systemName: "chevron.right")
+//                                    }
+//                                                ) //crashes app
                 .navigationBarTitleDisplayMode(.automatic)
                 
                 .navigationDestination(for: Chapter.self) { chapter in
@@ -57,7 +54,12 @@ struct PoemListView: View {
                         TrophiesView()
                     }//End of Switch
                 }// End of Loop
-           BottomSheetView()
+                HStack{
+                    BottomSheetView()
+                  
+                }//End of HStack
+               
+                
             }//End of VStack
         }//End of Nav. Stack
     }
