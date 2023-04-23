@@ -43,14 +43,17 @@ struct GoneFishin_View: View {
                 .padding()
             }//End of HStack
             HStack{
-               ChapterView()
-                .padding()
                 TextFieldBottomSheetView()
             }//End of HStack
         }//End of VStack
         //                }//End of Nav. Stack
         .navigationTitle("Gone Fishin")
         .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+               ChapterView()
+                }
+            }// End of Toolbar
     }
         }
     

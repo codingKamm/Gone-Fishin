@@ -46,14 +46,18 @@ var string = "FIRST CATCH"
             .multilineTextAlignment(.center)
         } //End of HStack
         HStack{
-            ChapterView()
-                .padding()
+
             TextFieldBottomSheetView()
         }//End of HStack
     }//End of VStack
 //        }//End of Nav. Stack
         .navigationTitle("First Catch")
         .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+               ChapterView()
+                }
+            }// End of Toolbar
     }
 }
 
