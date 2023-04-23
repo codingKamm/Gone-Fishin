@@ -42,14 +42,17 @@ struct CatchNReleaseView: View {
                 .multilineTextAlignment(.center)
             }//End of HStack
             HStack{
-                ChapterView()
-                    .padding()
                 TextFieldBottomSheetView()
             }//End of HStack
         }//End of VStack
 //        }//End of Nav. Stack
         .navigationTitle("Catch & Release")
         .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+               ChapterView()
+                }
+            }// End of Toolbar
     }
 }
 

@@ -6,32 +6,36 @@
 //
 
 import SwiftUI
-
-
+import Pages
 
 
 struct PoemListView: View {
     @State private var path = NavigationPath()
+    @State var index: Int = 0
     
     var body: some View {
         NavigationStack(path: $path){
             VStack{
-                List(Chapter.allCases, id: \.self) { chapter in
-                    Label{
-                        Text(chapter.title)
-                        Spacer()
-                        Image(systemName: "chevron.right")
-                            .foregroundColor(.blue)
-                    }
-                icon:{}
-                        .onTapGesture {
-                            for number in 1...chapter.rawValue {
-                                if let tableOfContents = Chapter(rawValue: number) {
-                                    path.append(tableOfContents)
+                Pages(currentPage: $index, navigationOrientation: .vertical,
+                      transitionStyle: .pageCurl
+                  )  {
+                    List(Chapter.allCases, id: \.self) { chapter in
+                        Label{
+                            Text(chapter.title)
+                            Spacer()
+                            Image(systemName: "chevron.right")
+                                .foregroundColor(.blue)
+                        }
+                    icon:{}
+                            .onTapGesture {
+                                for number in 1...chapter.rawValue {
+                                    if let tableOfContents = Chapter(rawValue: number) {
+                                        path.append(tableOfContents)
+                                    }
                                 }
-                            }
-                        } //onTapGesture allows users to nav through enum
-                }//End of Lists
+                            } //onTapGesture allows users to nav through enum
+                    }//End of Lists
+                }//End of Pages
                 .navigationTitle("Table of Contents")
 //                            .navigationBarItems(trailing:
 //                                    NavigationLink(destination: BackCoverView()){

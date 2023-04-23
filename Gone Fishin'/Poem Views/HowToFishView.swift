@@ -41,26 +41,18 @@ struct HowToFishView: View {
                 .padding()
             }//End of HStack
             HStack{
-                ChapterView()
-                    .padding()
+           
+            
                 TextFieldBottomSheetView()
             }//End of HStack
         }//End of VStack
-      //Ask Academy Mentor About Text Bug
-//        }//End of Nav. Stack
         .navigationTitle("How To Fish")
         .navigationBarTitleDisplayMode(.inline)
-        
-//        .toolbar {
-//            ToolbarItem(placement: .navigationBarTrailing) {
-//                NavigationLink(value: Chapter.allCases){
-//                                Image(systemName: "chevron.right")}
-//            }
-//        }
-//        .navigationBarItems(trailing:
-//                NavigationLink(destination: GoneFishin_View()){
-//                Image(systemName: "chevron.right")
-//                })
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+               ChapterView()
+                }
+            }// End of Toolbar
     }
 }
 

@@ -48,6 +48,7 @@
 		A1745BC529CC97E900F7BCA6 /* ChapterBottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1745BC429CC97E900F7BCA6 /* ChapterBottomSheetView.swift */; };
 		A1745BC729CC98F400F7BCA6 /* ChapterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1745BC629CC98F400F7BCA6 /* ChapterView.swift */; };
 		A1982B5929CA9ACB00688BCF /* LabelIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1982B5829CA9ACB00688BCF /* LabelIconView.swift */; };
+		A1AC10A329F372E8006513EB /* Pages in Frameworks */ = {isa = PBXBuildFile; productRef = A1AC10A229F372E8006513EB /* Pages */; };
 		A1F0384429B966E00091FD30 /* Assests.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F0384329B966E00091FD30 /* Assests.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -102,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1AC10A329F372E8006513EB /* Pages in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +255,9 @@
 			dependencies = (
 			);
 			name = "Gone Fishin'";
+			packageProductDependencies = (
+				A1AC10A229F372E8006513EB /* Pages */,
+			);
 			productName = "Gone Fishin'";
 			productReference = A15E63AC29B964BA00391A88 /* Gone Fishin'.app */;
 			productType = "com.apple.product-type.application";
@@ -281,6 +286,9 @@
 				Base,
 			);
 			mainGroup = A15E63A329B964BA00391A88;
+			packageReferences = (
+				A1AC10A129F372E8006513EB /* XCRemoteSwiftPackageReference "Pages" */,
+			);
 			productRefGroup = A15E63AD29B964BA00391A88 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -551,6 +559,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A1AC10A129F372E8006513EB /* XCRemoteSwiftPackageReference "Pages" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nachonavarro/Pages";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A1AC10A229F372E8006513EB /* Pages */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1AC10A129F372E8006513EB /* XCRemoteSwiftPackageReference "Pages" */;
+			productName = Pages;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A15E63A429B964BA00391A88 /* Project object */;
 }
