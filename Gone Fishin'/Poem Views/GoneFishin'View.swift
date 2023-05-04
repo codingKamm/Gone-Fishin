@@ -12,7 +12,6 @@ struct GoneFishin_View: View {
     @State private var stringArray = [String]()
     
     var body: some View {
-        //        NavigationStack{
         VStack{
             HStack{
                 VStack {
@@ -26,8 +25,7 @@ struct GoneFishin_View: View {
                     for i in string {
                         stringArray.append(String(i))
                     }
-                }//End of for in
-                //                NavigationLink(destination: FirstCatchView()){
+                }
                 Text("""
                          routinely naïve
                          it’s the definition of insanity
@@ -46,7 +44,6 @@ struct GoneFishin_View: View {
                 TextFieldBottomSheetView()
             }//End of HStack
         }//End of VStack
-        //                }//End of Nav. Stack
         .navigationTitle("Gone Fishin")
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
