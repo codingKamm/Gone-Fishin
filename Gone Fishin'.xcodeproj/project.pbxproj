@@ -45,6 +45,9 @@
 		A15E640929B9654500391A88 /* NotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15E63E929B9654500391A88 /* NotesView.swift */; };
 		A15E640A29B9654500391A88 /* PoemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15E63EB29B9654500391A88 /* PoemListView.swift */; };
 		A15E640B29B9654500391A88 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15E63EC29B9654500391A88 /* ListView.swift */; };
+		A167D54A2A045854001D997A /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A167D5492A045854001D997A /* AboutView.swift */; };
+		A167D54C2A045A7A001D997A /* AboutMeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A167D54B2A045A7A001D997A /* AboutMeButtonView.swift */; };
+		A167D5502A045CC9001D997A /* CollectionExplanationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A167D54F2A045CC8001D997A /* CollectionExplanationView.swift */; };
 		A1745BC529CC97E900F7BCA6 /* ChapterBottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1745BC429CC97E900F7BCA6 /* ChapterBottomSheetView.swift */; };
 		A1745BC729CC98F400F7BCA6 /* ChapterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1745BC629CC98F400F7BCA6 /* ChapterView.swift */; };
 		A1982B5929CA9ACB00688BCF /* LabelIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1982B5829CA9ACB00688BCF /* LabelIconView.swift */; };
@@ -92,6 +95,10 @@
 		A15E63E929B9654500391A88 /* NotesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesView.swift; sourceTree = "<group>"; };
 		A15E63EB29B9654500391A88 /* PoemListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoemListView.swift; sourceTree = "<group>"; };
 		A15E63EC29B9654500391A88 /* ListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		A167D5482A014111001D997A /* Gone-Fishin--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Gone-Fishin--Info.plist"; sourceTree = SOURCE_ROOT; };
+		A167D5492A045854001D997A /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		A167D54B2A045A7A001D997A /* AboutMeButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeButtonView.swift; sourceTree = "<group>"; };
+		A167D54F2A045CC8001D997A /* CollectionExplanationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionExplanationView.swift; sourceTree = "<group>"; };
 		A1745BC429CC97E900F7BCA6 /* ChapterBottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterBottomSheetView.swift; sourceTree = "<group>"; };
 		A1745BC629CC98F400F7BCA6 /* ChapterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterView.swift; sourceTree = "<group>"; };
 		A1982B5829CA9ACB00688BCF /* LabelIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelIconView.swift; sourceTree = "<group>"; };
@@ -129,16 +136,18 @@
 		A15E63AE29B964BA00391A88 /* Gone Fishin' */ = {
 			isa = PBXGroup;
 			children = (
+				A167D5482A014111001D997A /* Gone-Fishin--Info.plist */,
 				A15E63AF29B964BA00391A88 /* Gone_Fishin_App.swift */,
 				A15E63B129B964BA00391A88 /* ContentView.swift */,
 				A1982B5829CA9ACB00688BCF /* LabelIconView.swift */,
 				A15E63BD29B9652300391A88 /* Table of Content Views */,
 				A15E63D429B9654500391A88 /* Poem Views */,
-				A15E63C929B9654500391A88 /* Bottom Sheet */,
+				A15E63C929B9654500391A88 /* Bottom Sheets */,
 				A15E63EA29B9654500391A88 /* List Views */,
 				A15E63DB29B9654500391A88 /* Text Field Views */,
 				A15E63CE29B9654500391A88 /* Page Transition Views */,
 				A15E63CC29B9654500391A88 /* TitlePageView.swift */,
+				A167D54F2A045CC8001D997A /* CollectionExplanationView.swift */,
 				A15E63D329B9654500391A88 /* BackCoverView.swift */,
 				A15E63DF29B9654500391A88 /* Experimental Views */,
 				A15E63B529B964BB00391A88 /* Preview Content */,
@@ -167,15 +176,17 @@
 			path = "Table of Content Views";
 			sourceTree = "<group>";
 		};
-		A15E63C929B9654500391A88 /* Bottom Sheet */ = {
+		A15E63C929B9654500391A88 /* Bottom Sheets */ = {
 			isa = PBXGroup;
 			children = (
-				A15E63CB29B9654500391A88 /* BottomSheetView.swift */,
+				A167D54B2A045A7A001D997A /* AboutMeButtonView.swift */,
+				A167D5492A045854001D997A /* AboutView.swift */,
 				A1745BC629CC98F400F7BCA6 /* ChapterView.swift */,
 				A15E63CD29B9654500391A88 /* BottomSheetIconView.swift */,
+				A15E63CB29B9654500391A88 /* BottomSheetView.swift */,
 				A1745BC429CC97E900F7BCA6 /* ChapterBottomSheetView.swift */,
 			);
-			path = "Bottom Sheet";
+			path = "Bottom Sheets";
 			sourceTree = "<group>";
 		};
 		A15E63CE29B9654500391A88 /* Page Transition Views */ = {
@@ -327,6 +338,7 @@
 				A15E63B029B964BA00391A88 /* Gone_Fishin_App.swift in Sources */,
 				A15E63F129B9654500391A88 /* BottomSheetIconView.swift in Sources */,
 				A15E640029B9654500391A88 /* PrototypePoemView.swift in Sources */,
+				A167D5502A045CC9001D997A /* CollectionExplanationView.swift in Sources */,
 				A15E640B29B9654500391A88 /* ListView.swift in Sources */,
 				A1745BC529CC97E900F7BCA6 /* ChapterBottomSheetView.swift in Sources */,
 				A1745BC729CC98F400F7BCA6 /* ChapterView.swift in Sources */,
@@ -335,7 +347,9 @@
 				A15E640729B9654500391A88 /* AcknowledgementView.swift in Sources */,
 				A15E63FF29B9654500391A88 /* TextFieldBottomSheetView.swift in Sources */,
 				A15E63FB29B9654500391A88 /* CatchNReleaseView.swift in Sources */,
+				A167D54A2A045854001D997A /* AboutView.swift in Sources */,
 				A15E640829B9654500391A88 /* AltPoemView.swift in Sources */,
+				A167D54C2A045A7A001D997A /* AboutMeButtonView.swift in Sources */,
 				A15E63F429B9654500391A88 /* PageCurlView.swift in Sources */,
 				A15E63FD29B9654500391A88 /* TextFieldView.swift in Sources */,
 				A15E63FC29B9654500391A88 /* PoemPhotoView.swift in Sources */,
@@ -486,23 +500,28 @@
 				DEVELOPMENT_TEAM = WXWQYNX7C7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Gone-Fishin--Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Gone Fishin'";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.5.1;
+				MARKETING_VERSION = 0.7.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "me.Warner.Cameron.Gone-Fishin-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -517,23 +536,28 @@
 				DEVELOPMENT_TEAM = WXWQYNX7C7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Gone-Fishin--Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Gone Fishin'";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.5.1;
+				MARKETING_VERSION = 0.7.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "me.Warner.Cameron.Gone-Fishin-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

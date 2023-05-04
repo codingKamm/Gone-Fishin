@@ -11,14 +11,14 @@ import Pages
 
 struct PoemListView: View {
     @State private var path = NavigationPath()
-    @State var index: Int = 0
+//    @State var index: Int = 0
     
     var body: some View {
         NavigationStack(path: $path){
             VStack{
-                Pages(currentPage: $index, navigationOrientation: .vertical,
-                      transitionStyle: .pageCurl
-                  )  {
+//                Pages(currentPage: $index, navigationOrientation: .vertical,
+//                      transitionStyle: .pageCurl
+//                  )  {
                     List(Chapter.allCases, id: \.self) { chapter in
                         Label{
                             Text(chapter.title)
@@ -35,15 +35,14 @@ struct PoemListView: View {
                                 }
                             } //onTapGesture allows users to nav through enum
                     }//End of Lists
-                }//End of Pages
+//                }//End of Pages
                 .navigationTitle("Table of Contents")
-//                            .navigationBarItems(trailing:
-//                                    NavigationLink(destination: BackCoverView()){
-//                                    Image(systemName: "chevron.right")
-//                                    }
-//                                                ) //crashes app
                 .navigationBarTitleDisplayMode(.automatic)
-                
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                               AboutView()
+                            }
+                        }// End of toolbar
                 .navigationDestination(for: Chapter.self) { chapter in
                     switch chapter{
                     case .howToFish:
@@ -60,7 +59,6 @@ struct PoemListView: View {
                 }// End of Loop
                 HStack{
                     BottomSheetView()
-                  
                 }//End of HStack
                
                 

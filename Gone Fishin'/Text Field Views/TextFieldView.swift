@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-//import CoreData
 
 struct TextFieldView: View {
     @State private var poemNotes = ""
@@ -17,15 +16,11 @@ struct TextFieldView: View {
                 VStack(alignment: .leading) {
                     TextField("Have a thought? Reflect && write it here...", text: $poemNotes)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
-                    
-//                    Text("\(poemNotes)")
-                    
                 }//End of VStack
                 .padding()
             }//End of VStack
             .navigationTitle("Poetic Thoughts")
             .navigationBarTitleDisplayMode(.inline)
-            
             // Use the onDisappear modifier to save the state of the view when the user navigates away from it.
             .onDisappear {
                             UserDefaults.standard.set(poemNotes, forKey: "poemNotes")
