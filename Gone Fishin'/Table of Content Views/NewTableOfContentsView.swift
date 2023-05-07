@@ -11,7 +11,7 @@ struct NewTableOfContentsView: View {
     var body: some View {
         NavigationStack{
             VStack{
-                PoemListView()
+                TableOfContentsEnum()
                     .navigationBarItems(trailing:
                                             NavigationLink(destination: TitlePageView()){
                         Image(systemName: "chevron.right")

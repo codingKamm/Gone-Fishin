@@ -15,22 +15,8 @@ struct CatchNReleaseView: View {
 //        NavigationStack{
         VStack{
             HStack{
-                VStack {
-                    ForEach(stringArray, id: \.self) { i in
-                        Text("\(i)\n")
-                            .font(.headline)
-//                            .lineLimit(1)
-                            .truncationMode(.tail)
-                            .fixedSize(horizontal: false, vertical: true)
-                    }
-                }// End of VStack
-                .onAppear
-                {
-                    for i in string {
-                        stringArray.append(String(i))
-                    }//End of for in
-                }
-                //            NavigationLink(destination: TrophiesView()){
+               testCatchNReleaseView()
+                .padding(.leading)
                 Text("""
                          behind the scenes of curiosity
                          you’ll meet every opportunity

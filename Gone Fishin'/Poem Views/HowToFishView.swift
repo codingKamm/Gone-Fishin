@@ -16,21 +16,8 @@ struct HowToFishView: View {
 //        NavigationStack{
         VStack{
             HStack{
-                VStack {
-                    ForEach(stringArray, id: \.self) { i in
-                        Text("\(i)\n")
-                            .font(.headline)
-//                            .truncationMode(.tail)
-//                            .fixedSize(horizontal: false, vertical: true)
-                    }
-                }// End of VStack
-                .onAppear
-                {
-                    for i in string {
-                        stringArray.append(String(i))
-                    }
-                }//end of for in
-                //                NavigationLink(destination: GoneFishin_View()){
+               testHowToFishView()
+                    .padding(.leading)
                 Text("""
                          imagine an imposter among us
                          hooked on each line; it’s justice

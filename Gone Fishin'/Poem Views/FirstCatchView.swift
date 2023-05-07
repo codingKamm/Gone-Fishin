@@ -17,19 +17,8 @@ var string = "FIRST CATCH"
 //        NavigationStack{
         VStack{
         HStack{
-            VStack {
-                ForEach(stringArray, id: \.self) { i in
-                    Text("\(i)\n")
-                        .font(.headline)
-                }
-            }//End of VStack
-            .onAppear
-            {
-                for i in string {
-                    stringArray.append(String(i))
-                }//End of for in
-            }
-            //            NavigationLink(destination: CatchNReleaseView()){
+           testFirstCatchView()
+                .padding(.leading)
             Text("""
                  the excitement of completion
                  a thrill undefeated; conceited
