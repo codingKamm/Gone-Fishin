@@ -31,7 +31,6 @@ var string = "FIRST CATCH"
                  from humble beginnings; a process to trust
                  the first to tarnish from an everlasting rust
                  """)
-            .padding(10)
             .multilineTextAlignment(.center)
         } //End of HStack
         HStack{

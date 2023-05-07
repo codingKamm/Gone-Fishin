@@ -15,20 +15,8 @@ struct TrophiesView: View {
 //        NavigationStack{
         VStack{
             HStack{
-                VStack {
-                    ForEach(stringArray, id: \.self) { i in
-                        Text("\(i)\n")
-                            .font(.headline)
-                    }
-                }//End of VStack
-                .padding()
-                .onAppear
-                {
-                    for i in string {
-                        stringArray.append(String(i))
-                    }//End of for in
-                }
-                //            NavigationLink(destination: AcknowledgementView()){
+              testTrophiesView()
+                    .padding(.leading)
                 Text("""
                  prized catches dripping wet
                  a mount to nothing
