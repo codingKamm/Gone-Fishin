@@ -13,21 +13,21 @@ struct TestTableOfContentsView: View {
         NavigationStack{
             VStack{
                 List{
-                    NavigationLink(destination: HowToFishView()){ Text("How To Fish")}
-                    NavigationLink(destination: GoneFishin_View()){ Text("Gone Fishin'")}
-                    NavigationLink(destination: FirstCatchView()){ Text("First Catch")}
-                    NavigationLink(destination: CatchNReleaseView()){ Text("Catch & Release")}
-                    NavigationLink(destination: TrophiesView()){ Text("Trophies")}
+                    Text("How To Fish")
+                    Text("Gone Fishin'")
+                    Text("First Catch")
+                    Text("Catch & Release")
+                    Text("Trophies")
                 }//End of List
                 .listStyle(.sidebar)
             }//End of VStack
             .navigationBarTitle("Table of Contents")
-            .navigationBarTitleDisplayMode(.large)
-//            .navigationBarItems(trailing:
-//                    NavigationLink(destination: BackCoverView()){
-//                    Image(systemName: "chevron.right")
-//                    }
-//            )
+            .navigationBarTitleDisplayMode(.automatic)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                           AboutView()
+                        }
+                    }// End of toolbar
         }//End of Nav. Stack
     }
 }

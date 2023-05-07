@@ -6,10 +6,8 @@
 //
 
 import SwiftUI
-import Pages
 
-
-struct PoemListView: View {
+struct TableOfContentsEnum: View {
     @State private var path = NavigationPath()
 //    @State var index: Int = 0
     
@@ -69,7 +67,7 @@ struct PoemListView: View {
 
 struct PoemListView_Previews: PreviewProvider {
     static var previews: some View {
-        PoemListView()
+        TableOfContentsEnum()
     }
 }
 

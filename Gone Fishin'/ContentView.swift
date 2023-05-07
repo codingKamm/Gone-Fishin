@@ -13,7 +13,7 @@ struct ContentView: View {
 //        NavigationStack{
             ZStack{
                 if self.isActive{
-                    PoemListView()
+                    TableOfContentsEnum()
                 } else {
                     Image("coverPageToo")
                         .resizable()

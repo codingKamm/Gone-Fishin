@@ -15,7 +15,7 @@ struct ChapterView: View {
                ChapterBottomSheetView()
             }// End of Button
             .fullScreenCover(isPresented: $chapterSheet, content: {
-               PoemListView()                   .presentationDetents([.medium])
+               TableOfContentsEnum()                   .presentationDetents([.medium])
                     .presentationDragIndicator(.visible)
         })// End of Bottom Sheet
     }

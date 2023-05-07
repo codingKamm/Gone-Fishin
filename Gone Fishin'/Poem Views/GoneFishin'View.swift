@@ -14,18 +14,8 @@ struct GoneFishin_View: View {
     var body: some View {
         VStack{
             HStack{
-                VStack {
-                    ForEach(stringArray, id: \.self) { i in
-                        Text("\(i)\n")
-                            .font(.headline)
-                    }
-                }// End of VStack
-                .onAppear
-                {
-                    for i in string {
-                        stringArray.append(String(i))
-                    }
-                }
+              testGoneFishinTextView()
+                    .padding(.leading)
                 Text("""
                          routinely naïve
                          it’s the definition of insanity
