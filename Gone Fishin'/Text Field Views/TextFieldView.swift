@@ -14,8 +14,10 @@ struct TextFieldView: View {
         NavigationStack{
             VStack{
                 VStack(alignment: .leading) {
-                    TextField("Have a thought? Reflect && write it here...", text: $poemNotes)
+                    TextField("Have a thought? Reflect && write it here...", text: $poemNotes, axis: .vertical)
+//                        .frame(width: 120)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
+//                        .fixedSize(horizontal: true, vertical: true)
                 }//End of VStack
                 .padding()
             }//End of VStack
@@ -42,6 +44,8 @@ struct TextFieldView_Previews: PreviewProvider {
 }
 
 // Text Field Courtesy of https://www.simpleswiftguide.com/swiftui-textfield-complete-tutorial/
+
+// Expandable Text Field Courtesy of https://serialcoder.dev/presenting-expandable-textfields-in-swiftui/
 
 // User Defaults courtesy of https://www.hackingwithswift.com/books/ios-swiftui/storing-user-settings-with-userdefaults
 
