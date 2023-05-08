@@ -28,8 +28,6 @@ struct HowToFishView: View {
                 .padding()
             }//End of HStack
             HStack{
-           
-            
                 TextFieldBottomSheetView()
             }//End of HStack
         }//End of VStack

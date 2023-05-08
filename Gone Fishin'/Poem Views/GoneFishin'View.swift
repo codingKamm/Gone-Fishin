@@ -39,9 +39,9 @@ struct GoneFishin_View: View {
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                ChapterView()
-                }
-            }// End of Toolbar
-    }
+                    }
+                }// End of Toolbar
+            }
         }
     
 

@@ -14,7 +14,6 @@ var string = "FIRST CATCH"
 @State private var stringArray = [String]()
     
     var body: some View {
-//        NavigationStack{
         VStack{
         HStack{
            testFirstCatchView()
@@ -38,7 +37,6 @@ var string = "FIRST CATCH"
             TextFieldBottomSheetView()
         }//End of HStack
     }//End of VStack
-//        }//End of Nav. Stack
         .navigationTitle("First Catch")
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {

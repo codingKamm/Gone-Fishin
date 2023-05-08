@@ -12,7 +12,6 @@ struct TrophiesView: View {
     @State private var stringArray = [String]()
     
     var body: some View {
-//        NavigationStack{
         VStack{
             HStack{
               testTrophiesView()
@@ -33,7 +32,6 @@ struct TrophiesView: View {
                 TextFieldBottomSheetView()
             }//End of HStack
         }//End of VStack
-//        }//End of Nav. Stack
         .navigationTitle("Trophies")
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {

@@ -10,11 +10,9 @@ import SwiftUI
 struct BackCoverView: View {
     
     var body: some View {
-        NavigationStack{
             Image("backCover")
                 .resizable()
                 .ignoresSafeArea()
-        }//End of Nav. Stack
     }
 }
 

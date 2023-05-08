@@ -11,7 +11,7 @@ import SwiftUI
 struct Gone_Fishin_App: App {
     var body: some Scene {
         WindowGroup {
-          MainContentView()
+            finalContentView()
         }
     }
 }

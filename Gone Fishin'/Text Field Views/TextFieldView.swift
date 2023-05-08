@@ -15,9 +15,7 @@ struct TextFieldView: View {
             VStack{
                 VStack(alignment: .leading) {
                     TextField("Have a thought? Reflect && write it here...", text: $poemNotes, axis: .vertical)
-//                        .frame(width: 120)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
-//                        .fixedSize(horizontal: true, vertical: true)
                 }//End of VStack
                 .padding()
             }//End of VStack

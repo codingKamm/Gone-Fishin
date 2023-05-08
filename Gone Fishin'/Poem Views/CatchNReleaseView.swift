@@ -12,7 +12,6 @@ struct CatchNReleaseView: View {
     @State private var stringArray = [String]()
     
     var body: some View {
-//        NavigationStack{
         VStack{
             HStack{
                testCatchNReleaseView()
@@ -31,7 +30,6 @@ struct CatchNReleaseView: View {
                 TextFieldBottomSheetView()
             }//End of HStack
         }//End of VStack
-//        }//End of Nav. Stack
         .navigationTitle("Catch & Release")
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {

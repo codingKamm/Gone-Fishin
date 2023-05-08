@@ -17,7 +17,6 @@ struct TitlePageView: View {
                         .resizable()
                         .ignoresSafeArea()
                         .padding()
-                
 //                        .alert(isPresented: $showingAlert) {
 //                            Alert(title: Text("Special Announcement"), message: Text("Please, Swipe to Scroll"), dismissButton: .default(Text("Dismiss")))
 //                        } // End of Alert
