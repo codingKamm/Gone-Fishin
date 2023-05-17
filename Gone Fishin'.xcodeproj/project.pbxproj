@@ -45,8 +45,6 @@
 		A15E640B29B9654500391A88 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15E63EC29B9654500391A88 /* ListView.swift */; };
 		A1641CB62A0D248800B935EA /* Page Curl Practice View.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1641CB52A0D248800B935EA /* Page Curl Practice View.swift */; };
 		A1641CB82A0D352C00B935EA /* PoemArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1641CB72A0D352C00B935EA /* PoemArray.swift */; };
-		A1641CBB2A0E7C1800B935EA /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1641CB92A0E7C1800B935EA /* GalleryView.swift */; };
-		A1641CBC2A0E7C1800B935EA /* Painting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1641CBA2A0E7C1800B935EA /* Painting.swift */; };
 		A167D54A2A045854001D997A /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A167D5492A045854001D997A /* AboutView.swift */; };
 		A167D54C2A045A7A001D997A /* AboutMeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A167D54B2A045A7A001D997A /* AboutMeButtonView.swift */; };
 		A167D5502A045CC9001D997A /* CollectionExplanationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A167D54F2A045CC8001D997A /* CollectionExplanationView.swift */; };
@@ -109,8 +107,6 @@
 		A15E63EC29B9654500391A88 /* ListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		A1641CB52A0D248800B935EA /* Page Curl Practice View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Page Curl Practice View.swift"; sourceTree = "<group>"; };
 		A1641CB72A0D352C00B935EA /* PoemArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoemArray.swift; sourceTree = "<group>"; };
-		A1641CB92A0E7C1800B935EA /* GalleryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GalleryView.swift; path = "../../../../../PagesDemoFinal/PagesDemo/Gallery Demo/GalleryView.swift"; sourceTree = "<group>"; };
-		A1641CBA2A0E7C1800B935EA /* Painting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Painting.swift; path = "../../../../../PagesDemoFinal/PagesDemo/Gallery Demo/Painting.swift"; sourceTree = "<group>"; };
 		A167D5482A014111001D997A /* Gone-Fishin--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Gone-Fishin--Info.plist"; sourceTree = SOURCE_ROOT; };
 		A167D5492A045854001D997A /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		A167D54B2A045A7A001D997A /* AboutMeButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeButtonView.swift; sourceTree = "<group>"; };
@@ -304,8 +300,6 @@
 				A167D5B12A060512001D997A /* MainContentView.swift */,
 				A1641CB52A0D248800B935EA /* Page Curl Practice View.swift */,
 				A1641CB72A0D352C00B935EA /* PoemArray.swift */,
-				A1641CB92A0E7C1800B935EA /* GalleryView.swift */,
-				A1641CBA2A0E7C1800B935EA /* Painting.swift */,
 			);
 			path = "Page Curl Feature";
 			sourceTree = "<group>";
@@ -422,7 +416,6 @@
 				A15E63FF29B9654500391A88 /* TextFieldBottomSheetView.swift in Sources */,
 				A167D5A42A055136001D997A /* testCatchNReleaseView.swift in Sources */,
 				A167D6222A06FBC4001D997A /* finalContentView.swift in Sources */,
-				A1641CBB2A0E7C1800B935EA /* GalleryView.swift in Sources */,
 				A15E63FB29B9654500391A88 /* CatchNReleaseView.swift in Sources */,
 				A167D54A2A045854001D997A /* AboutView.swift in Sources */,
 				A167D5A22A055136001D997A /* testHowToFishView.swift in Sources */,
@@ -439,7 +432,6 @@
 				A15E640329B9654500391A88 /* PrototypePoemTooView.swift in Sources */,
 				A15E63F529B9654500391A88 /* TransitionPageView.swift in Sources */,
 				A167D5B42A060513001D997A /* MainContentView.swift in Sources */,
-				A1641CBC2A0E7C1800B935EA /* Painting.swift in Sources */,
 				A15E640629B9654500391A88 /* PoemView.swift in Sources */,
 				A15E63C529B9652300391A88 /* AltTooTableOfContentsView.swift in Sources */,
 				A15E63F629B9654500391A88 /* BackCoverView.swift in Sources */,
