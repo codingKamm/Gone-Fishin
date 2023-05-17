@@ -9,7 +9,7 @@ import SwiftUI
 
 struct NewChaptersComingSoonView: View {
     var body: some View {
-        Text("Thanks for reading! \nNew Poems Coming Soon!")
+        Text(LocalizedStringKey("Thanks for reading! \nNew Poems Coming Soon!"))
             .font(.title2)
             .multilineTextAlignment(.center)
     }

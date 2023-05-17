@@ -10,15 +10,15 @@ import SwiftUI
 struct htfPicView: View {
     
     var body: some View {
-        
-        VStack{
-            Image("HTF")
+     
+        Image("boyFishing")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .edgesIgnoringSafeArea(.all)
+//                .colorInvert()
         }
     }
-}
+
 
 struct htfPicView_Previews: PreviewProvider {
     static var previews: some View {
