@@ -8,35 +8,39 @@
 import SwiftUI
 
 struct CatchNReleaseView: View {
-    var string = "CATCH & RELEASE"
-    @State private var stringArray = [String]()
+    @State var index: Int = 0
     
     var body: some View {
-        VStack{
-            HStack{
-               testCatchNReleaseView()
-                .padding(.leading)
-                Text("""
+        NavigationStack{
+            VStack{
+                HStack{
+                    testCatchNReleaseView()
+                        .padding(.leading)
+                    Text("""
                          behind the scenes of curiosity
                          you’ll meet every opportunity
                          a constant fight; a timeless bout
                          counting losses, grudges, and doubt
                          \n just let it go..
                          """)
-                .padding()
-                .multilineTextAlignment(.center)
-            }//End of HStack
-            HStack{
-                TextFieldBottomSheetView()
-            }//End of HStack
-        }//End of VStack
-        .navigationTitle("Catch & Release")
-        .navigationBarTitleDisplayMode(.inline)
-        .toolbar {
-            ToolbarItem(placement: .navigationBarTrailing) {
-               ChapterView()
+                    .padding()
+                    .multilineTextAlignment(.center)
+                }//End of HStack
+                HStack{
+                    TextFieldBottomSheetView()
+                }//End of HStack
+            }//End of VStack
+            .navigationTitle("Catch & Release")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {
+                        self.index = 3
+                    }) { Image(systemName: "arrow.right")
+                    }
                 }
             }// End of Toolbar
+        }// End of Nav. Stack
     }
 }
 

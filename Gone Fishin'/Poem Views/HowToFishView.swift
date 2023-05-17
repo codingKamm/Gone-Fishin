@@ -9,9 +9,6 @@ import SwiftUI
 
 struct HowToFishView: View {
     
-    var string = "HOW TO FISH"
-    @State private var stringArray = [String]()
-    
     var body: some View {
 //        NavigationStack{
         VStack{

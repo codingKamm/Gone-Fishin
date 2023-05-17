@@ -1,26 +1,29 @@
 //
-//  testPageCurlFeature.swift
+//  Page Curl Practice View.swift
 //  Gone Fishin'
 //
-//  Created by Cameron Warner on 5/6/23.
+//  Created by Cameron Warner on 5/11/23.
 //
 
 import SwiftUI
 import Pages
 
-
-struct finalContentView: View {
+struct Page_Curl_Practice_View: View {
+    
     @State var index: Int = 0
  
     var body: some View {
 
-        Pages(currentPage: $index, transitionStyle: .scroll, bounce: true, wrap: true) {
+        Pages(currentPage: $index, transitionStyle: .pageCurl, bounce: true, wrap: true) {
                 TitlePageView()
                 TestTableOfContentsView()
                 HowToFishView()
                 GoneFishin_View()
                 FirstCatchView()
-                CatchNReleaseView()
+            Button(action: {
+                self.index = 3
+            }) { CatchNReleaseView()
+            }
                 TrophiesView()
                 BackCoverView()
                 NewChaptersComingSoonView()
@@ -28,8 +31,9 @@ struct finalContentView: View {
         .edgesIgnoringSafeArea(.all)
     }
 }
-struct testPageCurlFeature_Previews: PreviewProvider {
+
+struct Page_Curl_Practice_View_Previews: PreviewProvider {
     static var previews: some View {
-        finalContentView()
+        Page_Curl_Practice_View()
     }
 }
