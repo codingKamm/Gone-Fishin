@@ -11,19 +11,27 @@ import Pages
 
 struct finalContentView: View {
     @State var index: Int = 0
+    @State var poemIndex: Int = 0
  
     var body: some View {
 
+     
+        
         Pages(currentPage: $index, transitionStyle: .scroll, bounce: true, wrap: true) {
                 TitlePageView()
                 TestTableOfContentsView()
+        Pages(currentPage: $poemIndex, navigationOrientation: .vertical, transitionStyle: .scroll, wrap: true) {
                 HowToFishView()
                 GoneFishin_View()
                 FirstCatchView()
                 CatchNReleaseView()
                 TrophiesView()
+            }
+            
                 BackCoverView()
+            // add Create A Poem/ Journal View
                 NewChaptersComingSoonView()
+            BackCoverView()
         }
         .edgesIgnoringSafeArea(.all)
     }

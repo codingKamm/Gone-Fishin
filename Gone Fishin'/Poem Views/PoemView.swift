@@ -18,7 +18,7 @@ struct PoemView: View {
         NavigationStack{
             VStack{
                 HStack{
-                    ModelPages(poemArray, currentPage: $index, navigationOrientation: .horizontal, transitionStyle: .pageCurl, bounce: true, wrap: true){
+                    ModelPages(poemArray, currentPage: $index, navigationOrientation: .horizontal, transitionStyle: .scroll, bounce: true, wrap: true){
                         i, poems in PoemsView(poems: poems)
                     }
                 }// End of HStack

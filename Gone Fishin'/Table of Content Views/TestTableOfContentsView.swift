@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct TestTableOfContentsView: View {
-    
+    @EnvironmentObject var localNotificationManager: LocalNotificationManager
+
     var body: some View {
+        
         NavigationStack{
             VStack{
                 List{
@@ -20,15 +22,20 @@ struct TestTableOfContentsView: View {
                     Text("Trophies")
                 }//End of List
                 .listStyle(.sidebar)
+                
             }//End of VStack
+            
             .navigationBarTitle("Table of Contents")
             .navigationBarTitleDisplayMode(.automatic)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                            AboutView()
+                    
                         }
                     }// End of toolbar
+            
         }//End of Nav. Stack
+        
     }
 }
 

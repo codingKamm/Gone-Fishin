@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct AboutView: View {
-            @State var presentSheet = false
+    @EnvironmentObject var localNotificationManager: LocalNotificationManager
+    @State var presentSheet = false
+    
             var body: some View {
         
                 Button(action: { presentSheet = true }) {
@@ -19,7 +21,7 @@ struct AboutView: View {
                                 .presentationDetents([.large])
                                 .presentationDragIndicator(.visible)
                 }
-                        
+                       
             }
         }
 
