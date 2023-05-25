@@ -10,13 +10,23 @@ import SwiftUI
 @main
 struct Gone_Fishin_App: App {
     
+    //used for Local Notifications
     @StateObject var localNotificationManager = LocalNotificationManager()
     @Environment(\.scenePhase) var scenePhase
 
+    //used for Journal Feature
+    @StateObject var entryController = EntryController();
+    @StateObject var entryUser = User(name: "visitor");
     
     var body: some Scene {
         WindowGroup {
             finalContentView()
+                //used for Journal feature
+                .environmentObject(entryController)
+                .environmentObject(entryUser)
+
+                
+                //used for local notifications
                 .environmentObject(localNotificationManager)
                 .task {
                     try? await localNotificationManager.requestAuthorization()
