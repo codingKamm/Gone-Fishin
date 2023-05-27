@@ -15,12 +15,12 @@ struct ContentTooView: View {
     
     var body: some View {
         VStack{
-            NavigationView {
+            NavigationStack {
                 VStack(alignment: .leading) {
                     
                     // Greeting
                     HStack() {
-                        Text("Good morning, \(entryUser.name)!")
+                        Text("Hi, \(entryUser.name)!")
                         .font(.system(size: 24).weight(.semibold))
                         .padding()
                     }
@@ -28,17 +28,25 @@ struct ContentTooView: View {
                     // Promt
                     VStack() {
                         Text("How about creating a new post today?")
-                        .font(.system(size: 18))
-                        .background(myCustomColor.palePink)
-                        .padding(10)
-                            
-                        NavigationLink(destination: CreateEntry()) {
-                           Text("Create new Entry")
-                        }.buttonStyle(MainButton())
+                            .font(.system(size: 18))
+                            .padding(10)
+                        Section{
+                            HStack{
+                                NavigationLink(destination: CreateEntry()) {
+                                    Text("Create new Entry")
+                                }.buttonStyle(MainButton())
+                                NavigationLink(destination: ShufflePrompts()) {
+                                    VStack{
+                                        Image(systemName: "shuffle")
+                                        Text("Random Prompts")
+                                    }
+                                }.buttonStyle(MainButton())
+                            }// End of HStack
+                        }// End of Section
                     }
                     .padding(24)
                     .frame(width: 360)
-                    .background(myCustomColor.palePink)
+                    .background(myCustomColor.greyKris)
                     .cornerRadius(16)
                     Spacer(minLength: 32)
                     
@@ -51,7 +59,7 @@ struct ContentTooView: View {
                         }
                         .onDelete(perform: deleteItems)
                         .padding([.top, .bottom], 5)
-                        .listRowBackground(myCustomColor.palePink)
+                        .listRowBackground(myCustomColor.greyKris)
                     }
                     .background(Color.white)
                     .navigationTitle("Journal")
@@ -72,35 +80,26 @@ struct ContentTooView: View {
     }
 }
 
-struct MyCustomColors {
-    var palePink: Color {
-        return Color(red: 255 / 255, green: 243 / 255, blue: 243 / 255)
-    }
-    var oldPink: Color {
-        return Color(red: 254 / 255, green: 215 / 255, blue: 215 / 255)
-    }
-    
-    var slate: Color {
-        return Color(red: 80 / 255, green: 80 / 255, blue: 80 / 255)
-    }
-}
-
 struct MainButton: ButtonStyle {
     let myCC = MyCustomColors();
     
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .padding()
-            .background(myCC.oldPink)
-            .foregroundColor(myCC.slate)
+            .background(myCC.blackKris)
+            .foregroundColor(myCC.whiteFontKris)
             .cornerRadius(12)
     }
 }
+
 
 struct ContentTooView_Previews: PreviewProvider {
     static var previews: some View {
         ContentTooView()
             .environmentObject(EntryController())
-            .environmentObject(User(name: "Visitor"))
+            .environmentObject(User(name: "Friend"))
     }
 }
+
+
+// Journal feature Courtesy of https://github.com/kathhe/JournalApp

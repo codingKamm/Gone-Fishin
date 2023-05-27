@@ -9,21 +9,12 @@ import SwiftUI
 
 struct BottomSheetView: View { // Creat a view for each Bottom Sheet
     @State var presentSheet = false
-//    @State private var path = NavigationPath()
     var body: some View {
-       
-//
-//        Button {
-//            path.removeAll()
-//        } label: {
-//            Label("", systemImage: "text.book.closed")
-//        }
         
         Button(action: { presentSheet = true }) {
          BottomSheetIconView()
         }
                 .sheet(isPresented: $presentSheet) {
-//                    path.removeAll()
                    BackCoverView()
                         .presentationDetents([.large])
                         .presentationDragIndicator(.visible)

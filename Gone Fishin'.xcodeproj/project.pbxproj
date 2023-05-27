@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A13887CD2A2101FC006CE7F4 /* WritingPrompts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13887CC2A2101FC006CE7F4 /* WritingPrompts.swift */; };
+		A13887D02A229E07006CE7F4 /* TransitionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13887CF2A229E07006CE7F4 /* TransitionPage.swift */; };
+		A13887D22A22A324006CE7F4 /* JournalIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13887D12A22A324006CE7F4 /* JournalIcon.swift */; };
+		A13887D42A22A373006CE7F4 /* JournalIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13887D32A22A373006CE7F4 /* JournalIconButton.swift */; };
+		A13887D62A22B39B006CE7F4 /* ColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13887D52A22B39B006CE7F4 /* ColorScheme.swift */; };
+		A13887D82A22B707006CE7F4 /* PracticeContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13887D72A22B707006CE7F4 /* PracticeContentView.swift */; };
 		A15E63B029B964BA00391A88 /* Gone_Fishin_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15E63AF29B964BA00391A88 /* Gone_Fishin_App.swift */; };
 		A15E63B229B964BA00391A88 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15E63B129B964BA00391A88 /* ContentView.swift */; };
 		A15E63B729B964BB00391A88 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A15E63B629B964BB00391A88 /* Preview Assets.xcassets */; };
@@ -82,10 +88,17 @@
 		A1CBD1802A1F98CC00DB76C6 /* CreateEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CBD17F2A1F98CC00DB76C6 /* CreateEntry.swift */; };
 		A1CBD1822A1F993D00DB76C6 /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CBD1812A1F993D00DB76C6 /* EntryController.swift */; };
 		A1CBD1842A1F995200DB76C6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CBD1832A1F995200DB76C6 /* User.swift */; };
+		A1EF290D2A20E71B00FFF9B2 /* ShufflePrompts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF290C2A20E71B00FFF9B2 /* ShufflePrompts.swift */; };
 		A1F0384429B966E00091FD30 /* Assests.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F0384329B966E00091FD30 /* Assests.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A13887CC2A2101FC006CE7F4 /* WritingPrompts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingPrompts.swift; sourceTree = "<group>"; };
+		A13887CF2A229E07006CE7F4 /* TransitionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionPage.swift; sourceTree = "<group>"; };
+		A13887D12A22A324006CE7F4 /* JournalIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalIcon.swift; sourceTree = "<group>"; };
+		A13887D32A22A373006CE7F4 /* JournalIconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalIconButton.swift; sourceTree = "<group>"; };
+		A13887D52A22B39B006CE7F4 /* ColorScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorScheme.swift; sourceTree = "<group>"; };
+		A13887D72A22B707006CE7F4 /* PracticeContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeContentView.swift; sourceTree = "<group>"; };
 		A15E63AC29B964BA00391A88 /* Gone Fishin'.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gone Fishin'.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A15E63AF29B964BA00391A88 /* Gone_Fishin_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gone_Fishin_App.swift; sourceTree = "<group>"; };
 		A15E63B129B964BA00391A88 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -165,6 +178,7 @@
 		A1CBD17F2A1F98CC00DB76C6 /* CreateEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEntry.swift; sourceTree = "<group>"; };
 		A1CBD1812A1F993D00DB76C6 /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
 		A1CBD1832A1F995200DB76C6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A1EF290C2A20E71B00FFF9B2 /* ShufflePrompts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShufflePrompts.swift; sourceTree = "<group>"; };
 		A1F0384329B966E00091FD30 /* Assests.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assests.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -180,6 +194,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A13887CE2A227231006CE7F4 /* Unsused Views */ = {
+			isa = PBXGroup;
+			children = (
+				A1CBD16F2A1F96DB00DB76C6 /* StatView.swift */,
+				A1CBD17B2A1F985900DB76C6 /* MainView.swift */,
+			);
+			path = "Unsused Views";
+			sourceTree = "<group>";
+		};
 		A15E63A329B964BA00391A88 = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +226,8 @@
 				A15E63AF29B964BA00391A88 /* Gone_Fishin_App.swift */,
 				A15E63B129B964BA00391A88 /* ContentView.swift */,
 				A1982B5829CA9ACB00688BCF /* LabelIconView.swift */,
+				A13887D72A22B707006CE7F4 /* PracticeContentView.swift */,
+				A13887CF2A229E07006CE7F4 /* TransitionPage.swift */,
 				A167D5AE2A06041E001D997A /* Page Curl Feature */,
 				A15E63BD29B9652300391A88 /* Table of Content Views */,
 				A15E63D429B9654500391A88 /* Poem Views */,
@@ -250,7 +275,9 @@
 			isa = PBXGroup;
 			children = (
 				A167D54B2A045A7A001D997A /* AboutMeButtonView.swift */,
+				A13887D32A22A373006CE7F4 /* JournalIconButton.swift */,
 				A167D5492A045854001D997A /* AboutView.swift */,
+				A13887D12A22A324006CE7F4 /* JournalIcon.swift */,
 				A1745BC629CC98F400F7BCA6 /* ChapterView.swift */,
 				A15E63CD29B9654500391A88 /* BottomSheetIconView.swift */,
 				A15E63CB29B9654500391A88 /* BottomSheetView.swift */,
@@ -368,15 +395,17 @@
 		A1CBD16E2A1F95E200DB76C6 /* Journal Feature */ = {
 			isa = PBXGroup;
 			children = (
-				A1CBD16F2A1F96DB00DB76C6 /* StatView.swift */,
+				A13887CC2A2101FC006CE7F4 /* WritingPrompts.swift */,
 				A1CBD1712A1F976800DB76C6 /* Entry.swift */,
+				A13887CE2A227231006CE7F4 /* Unsused Views */,
 				A1CBD1732A1F97A300DB76C6 /* ContentTooView.swift */,
 				A1CBD1752A1F97DA00DB76C6 /* Helper.swift */,
+				A13887D52A22B39B006CE7F4 /* ColorScheme.swift */,
 				A1CBD1772A1F97F400DB76C6 /* EntryRow.swift */,
 				A1CBD1792A1F982B00DB76C6 /* EntryDetail.swift */,
-				A1CBD17B2A1F985900DB76C6 /* MainView.swift */,
 				A1CBD17D2A1F989C00DB76C6 /* SettingsView.swift */,
 				A1CBD17F2A1F98CC00DB76C6 /* CreateEntry.swift */,
+				A1EF290C2A20E71B00FFF9B2 /* ShufflePrompts.swift */,
 				A1CBD1812A1F993D00DB76C6 /* EntryController.swift */,
 				A1CBD1832A1F995200DB76C6 /* User.swift */,
 			);
@@ -465,6 +494,7 @@
 			files = (
 				A1982B5929CA9ACB00688BCF /* LabelIconView.swift in Sources */,
 				A15E63B229B964BA00391A88 /* ContentView.swift in Sources */,
+				A13887D82A22B707006CE7F4 /* PracticeContentView.swift in Sources */,
 				A15E63C629B9652300391A88 /* NewTableOfContentsView.swift in Sources */,
 				A167D5A32A055136001D997A /* testTrophiesView.swift in Sources */,
 				A15E63F829B9654500391A88 /* HowToFishView.swift in Sources */,
@@ -477,6 +507,7 @@
 				A15E63B029B964BA00391A88 /* Gone_Fishin_App.swift in Sources */,
 				A1CBD12C2A1976FF00DB76C6 /* Model Notification .swift in Sources */,
 				A15E63F129B9654500391A88 /* BottomSheetIconView.swift in Sources */,
+				A13887CD2A2101FC006CE7F4 /* WritingPrompts.swift in Sources */,
 				A15E640029B9654500391A88 /* PrototypePoemView.swift in Sources */,
 				A1CBD1302A1D0DE000DB76C6 /* NextView.swift in Sources */,
 				A167D5502A045CC9001D997A /* CollectionExplanationView.swift in Sources */,
@@ -502,15 +533,18 @@
 				A167D54C2A045A7A001D997A /* AboutMeButtonView.swift in Sources */,
 				A167D5A02A055136001D997A /* testGoneFishinTextView.swift in Sources */,
 				A1CBD1782A1F97F400DB76C6 /* EntryRow.swift in Sources */,
+				A13887D62A22B39B006CE7F4 /* ColorScheme.swift in Sources */,
 				A1CBD12A2A1976C300DB76C6 /* Notification Manager.swift in Sources */,
 				A15E63FD29B9654500391A88 /* TextFieldView.swift in Sources */,
 				A15E63FC29B9654500391A88 /* PoemPhotoView.swift in Sources */,
 				A167D6262A0726BD001D997A /* NewChaptersComingSoonView.swift in Sources */,
+				A13887D22A22A324006CE7F4 /* JournalIcon.swift in Sources */,
 				A15E63F029B9654500391A88 /* TitlePageView.swift in Sources */,
 				A15E640A29B9654500391A88 /* TableOfContentsEnum.swift in Sources */,
 				A1CBD1702A1F96DB00DB76C6 /* StatView.swift in Sources */,
 				A167D55E2A052DE2001D997A /* VText.swift in Sources */,
 				A1CBD1722A1F976800DB76C6 /* Entry.swift in Sources */,
+				A1EF290D2A20E71B00FFF9B2 /* ShufflePrompts.swift in Sources */,
 				A1CBD17C2A1F985900DB76C6 /* MainView.swift in Sources */,
 				A15E640129B9654500391A88 /* AnimatedWaveView.swift in Sources */,
 				A1CBD1252A168CBC00DB76C6 /* RevisedHowToFishView.swift in Sources */,
@@ -525,8 +559,10 @@
 				A15E63F329B9654500391A88 /* PageCurl.swift in Sources */,
 				A15E63F929B9654500391A88 /* TrophiesView.swift in Sources */,
 				A1CBD12E2A1CF85300DB76C6 /* Test Notification View.swift in Sources */,
+				A13887D02A229E07006CE7F4 /* TransitionPage.swift in Sources */,
 				A1641CB62A0D248800B935EA /* Page Curl Practice View.swift in Sources */,
 				A15E63C729B9652300391A88 /* Alt.TableOfContentsView.swift in Sources */,
+				A13887D42A22A373006CE7F4 /* JournalIconButton.swift in Sources */,
 				A19640B42A13B1B6005008B8 /* ImageTitleInvert.swift in Sources */,
 				A167D5602A052E10001D997A /* testVTextView.swift in Sources */,
 				A15E63EE29B9654500391A88 /* BlurredSheetView.swift in Sources */,

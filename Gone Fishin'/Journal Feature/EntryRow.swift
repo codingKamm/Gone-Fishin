@@ -19,11 +19,8 @@ struct EntryRow: View {
                         Text(item.getDateString(date: item.date))
                             .font(.system(size: 13))
                             .padding()
-                            .background(myCustomColor.oldPink)
+                            .background(myCustomColor.greyKris)
                             .cornerRadius(7)
-//                        Text(item.mood)
-//                            .font(.system(size: 12))
-                        
                     }
                     .padding(10)
                     

@@ -29,9 +29,11 @@ struct TestTableOfContentsView: View {
             .navigationBarTitleDisplayMode(.automatic)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                           AboutView()
-                    
-                        }
+                    HStack{
+                        JournalIcon()
+                        AboutView()
+                    }// End dof HStack
+                }
                     }// End of toolbar
             
         }//End of Nav. Stack
@@ -42,6 +44,8 @@ struct TestTableOfContentsView: View {
 struct TestTableOfContentsView_Previews: PreviewProvider {
     static var previews: some View {
         TestTableOfContentsView()
+            .environmentObject(EntryController())
+            .environmentObject(User(name: "Friend"))
     }
 }
 
