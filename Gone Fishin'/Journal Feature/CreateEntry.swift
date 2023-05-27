@@ -19,17 +19,12 @@ struct CreateEntry: View {
             Form {
                 Section {
                     TextField("Title", text: $createPoemTitle)
-                    
-//                    Picker("Mood:", selection: $entryMood) {
-//                        ForEach(entryMoods, id: \.self) {
-//                            Text("\($0)")
-//                        }
-//                    }
-                    .pickerStyle(SegmentedPickerStyle())
+                        .pickerStyle(SegmentedPickerStyle())
                     
                     TextEditor(text: $createPoemStanza)
                         .foregroundColor(.black)
-                }
+                        .lineSpacing(7)
+                }// End of Section
                 
                 Section {
                     Button(
@@ -42,10 +37,16 @@ struct CreateEntry: View {
                                 ButtonView()
                             }
                         }
-                    )
-                }
-            }
-        }
+                    )//End of Button
+                }// End of Section
+                
+            }// End of Form
+            
+            
+        }// End of VStack
+        .navigationTitle("Journal")
+        .navigationBarTitleDisplayMode(.inline)
+        .padding()
     }
 }
 
@@ -53,13 +54,14 @@ struct ButtonView: View {
     let myCC = MyCustomColors();
     
     var body: some View {
-        Text("Save")
-            .frame(width: 200, alignment: .center)
+        Text("Submit")
+            .frame(alignment: .center)
             .padding()
-            .background(myCC.oldPink)
-            .foregroundColor(myCC.slate)
+            .background(myCC.blackKris)
+            .foregroundColor(myCC.whiteFontKris)
             .cornerRadius(12)
     }
+        
 }
 
 struct CreateEntry_Previews: PreviewProvider {

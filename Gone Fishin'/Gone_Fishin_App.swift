@@ -16,11 +16,12 @@ struct Gone_Fishin_App: App {
 
     //used for Journal Feature
     @StateObject var entryController = EntryController();
-    @StateObject var entryUser = User(name: "visitor");
+    @StateObject var entryUser = User(name: "Friend");
     
     var body: some Scene {
         WindowGroup {
             finalContentView()
+//            ContentTooView()
                 //used for Journal feature
                 .environmentObject(entryController)
                 .environmentObject(entryUser)
