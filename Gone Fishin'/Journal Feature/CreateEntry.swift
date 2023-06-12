@@ -8,45 +8,64 @@
 import SwiftUI
 
 struct CreateEntry: View {
+    
+    // Local Notification feature
+    @EnvironmentObject var lnManager: LocalNotificationManager
+    @Environment(\.scenePhase) var scenePhase
+    @State private var scheduleDate = Date()
+    
+    //Journal feature
     @EnvironmentObject var entryController: EntryController
     @Environment(\.presentationMode) var presentationMode
     
+    @State var createPoemPrompt: String = ""
     @State var createPoemTitle: String = ""
     @State var createPoemStanza: String = ""
     
     var body: some View {
-        VStack {
-            Form {
-                Section {
-                    TextField("Title", text: $createPoemTitle)
-                        .pickerStyle(SegmentedPickerStyle())
+        ZStack{
+            StarBackground()
+            
+            VStack {
+                Text("Journal")
+                    .multilineTextAlignment(.center)
+                Form {
+                    Section {
+                        TextField("Title", text: $createPoemTitle)
+                            .pickerStyle(SegmentedPickerStyle())
+                        
+                        TextEditor(text: $createPoemStanza)
+                        //                        .foregroundColor(.black)
+                            .lineSpacing(7)
+                    }// End of Section
                     
-                    TextEditor(text: $createPoemStanza)
-                        .foregroundColor(.black)
-                        .lineSpacing(7)
-                }// End of Section
-                
-                Section {
-                    Button(
-                        action: {
-                            self.entryController.createEntry(title: self.createPoemTitle, date: Date(), desc: self.createPoemStanza)
-                            self.presentationMode.wrappedValue.dismiss()
-                        },
-                        label: {
-                            NavigationLink(destination: ContentTooView()) {
-                                ButtonView()
+                    Section {
+                        //lnManager
+                        //                    if lnManager.isGranted {
+                        Button(
+                            action: {
+                                self.entryController.createEntry(prompt: self.createPoemPrompt, title: self.createPoemTitle, date: Date(), desc: self.createPoemStanza)
+                                self.presentationMode.wrappedValue.dismiss()
+                            },
+                            label: {
+                                NavigationLink(destination: JournalMainView()) {
+                                    ButtonView()
+                                }
                             }
-                        }
-                    )//End of Button
-                }// End of Section
+                        )//End of Button
+                        //                    }
+                    }// End of Section
+                    
+                }// End of Form
                 
-            }// End of Form
-            
-            
-        }// End of VStack
-        .navigationTitle("Journal")
-        .navigationBarTitleDisplayMode(.inline)
-        .padding()
+                
+            }// End of VStack
+//            .navigationTitle("Journal")
+//            .navigationBarTitleDisplayMode(.inline)
+            .padding()
+            .listRowBackground(Color.black)
+            .colorScheme(.dark)
+        }// End of ZStack
     }
 }
 

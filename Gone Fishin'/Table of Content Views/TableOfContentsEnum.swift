@@ -45,14 +45,29 @@ struct TableOfContentsEnum: View {
                     switch chapter{
                     case .howToFish:
                         HowToFishView()
+                    case .baiting:
+                        RevisedHowToFishView()
+                    case .waiting:
+                        RevisedHowToFishView()
                     case .goneFishin:
                         GoneFishin_View()
+                    case .bigFishSmallPond:
+                        RevisedHowToFishView()
+                    case .hooked:
+                        RevisedHowToFishView()
                     case .firstCatch:
                         FirstCatchView()
+                    case .crabsInABucket:
+                        RevisedHowToFishView()
                     case .catchNRelease:
                         CatchNReleaseView()
+                    case .flyFishing:
+                        RevisedHowToFishView()
                     case .trophies:
                         TrophiesView()
+                    case .beyondTheHorizon:
+                        RevisedHowToFishView()
+                        
                     }//End of Switch
                 }// End of Loop
                 HStack{

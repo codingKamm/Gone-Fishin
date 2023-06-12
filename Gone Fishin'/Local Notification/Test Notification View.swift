@@ -22,11 +22,11 @@ struct Test_Notification_View: View {
                         Button("Interval Notification") {
                             Task {
                                 var localNotification = LocalNotification(identifier: UUID().uuidString,
-                                                                          title: "Some Title",
-                                                                          body: "some body",
+                                                                          title: "Gone Fishin'",
+                                                                          body: "Embrace the power of words and let inspiration find its way into your heart. Here's a brief moment of wisedom to uplift your spirit and ignite your inner fire.",
                                                                           timeInterval: 5,
                                                                           repeats: false)
-                                localNotification.subtitle = "This is a subtitle"
+                                localNotification.subtitle = "Stay Inspired"
                                 localNotification.bundleImageName = "Stewart.png"
                                 localNotification.userInfo = ["nextView" : NextView.renew.rawValue]
                                 localNotification.categoryIdentifier = "snooze"

@@ -12,50 +12,65 @@ struct ShufflePrompts: View {
     @EnvironmentObject var entryController: EntryController
     @Environment(\.presentationMode) var presentationMode
     
+    @State var createJournalPrompt: String = ""
     @State var createJournalShuffleTitle: String = ""
     @State var createJournalShuffleBody: String = ""
     
-        var body: some View {
-            let currentPrompt = WritingPromptsToShuffle.newPrompt
+    @State var currentPrompt = WritingPromptsToShuffle.newPrompt
+   
+    //Localized Shuffle Prompt
+    @State var localPrompt = NSLocalizedString(WritingPromptsToShuffle.allCases.randomElement()!.rawValue,
+        comment: "")
+    
+    
+    var body: some View {
+        ZStack{
+            StarBackground()
+        VStack {
+            Text("Today's Prompt:")
+                .multilineTextAlignment(.center)
             
-            VStack {
-             
-                Form {
-                    Text("Today's Prompt: \n\(currentPrompt)")
-                    .multilineTextAlignment(.center)
-                    
-                }
-                Form {
+            Form {
+                Section{
+                    TextField("", text: $localPrompt, axis: .vertical)
+                        .multilineTextAlignment(.center)
+                }// End of Section
                 Section {
-                        TextField("Title", text: $createJournalShuffleTitle)
-                            .pickerStyle(SegmentedPickerStyle())
-                        
-                        TextEditor(text: $createJournalShuffleBody)
-                            .foregroundColor(.black)
-                            .lineSpacing(7)
-                    }// End of Section
+                    TextField("Title", text: $createJournalShuffleTitle)
+                        .pickerStyle(SegmentedPickerStyle())
                     
-                    Section {
-                        Button(
-                            action: {
-                                self.entryController.createEntry(title: self.createJournalShuffleTitle, date: Date(), desc: self.createJournalShuffleBody)
-                                self.presentationMode.wrappedValue.dismiss()
-                            },
-                            label: {
-                                NavigationLink(destination: ContentTooView()) {
-                                    ButtonView()
-                                }
+                    TextEditor(text: $createJournalShuffleBody)
+                        .lineSpacing(7)
+                }// End of Section
+                
+                Section {
+                    Button(
+                        action: {
+                            self.entryController.createEntry(
+                                prompt: self.createJournalPrompt,
+                                title: self.createJournalShuffleTitle,
+                                date: Date(),
+                                desc: self.createJournalShuffleBody)
+                            self.presentationMode.wrappedValue.dismiss()
+                        },
+                        label: {
+                            NavigationLink(destination: JournalMainView()) {
+                                ButtonView()
                             }
-                        )//End of Button
-                    }// End of Section
-                    
-                }// End of Form
+                        }
+                    )//End of Button
+                }// End of Section
                 
-                
-            }// End of VStack
-            .navigationTitle("Journal")
-            .navigationBarTitleDisplayMode(.inline)
-            .padding()
+            }// End of Form
+            
+            
+        }// End of VStack
+//        .navigationTitle("Today's Prompt:")
+        .navigationBarTitleDisplayMode(.inline)
+        .padding()
+        .listRowBackground(Color.black)
+        .colorScheme(.dark)
+            }//ZStack
         }
     }
 
@@ -68,7 +83,4 @@ struct ShufflePrompts_Previews: PreviewProvider {
 }
 
 
-
-// Timer Courtesy of https://stackoverflow.com/questions/57199922/create-a-timer-publisher-using-swift-combine/57201744#57201744
-
-
+//Localized Shuffle Prompt https://www.appsloveworld.com/swift/100/122/swift-how-to-add-localization-on-enum-values

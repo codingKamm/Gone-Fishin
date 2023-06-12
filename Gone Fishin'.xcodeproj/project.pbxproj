@@ -7,16 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A10671952A2782E900B7E2F8 /* AboutMeTestNotificationFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10671942A2782E900B7E2F8 /* AboutMeTestNotificationFeature.swift */; };
+		A1155E6C2A2E29AD0067FE97 /* StarBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1155E6B2A2E29AD0067FE97 /* StarBackground.swift */; };
+		A12B82222A33572200ADB40F /* Bangla-Sangam-MN-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A12B82202A3352BB00ADB40F /* Bangla-Sangam-MN-Bold.ttf */; };
 		A13887CD2A2101FC006CE7F4 /* WritingPrompts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13887CC2A2101FC006CE7F4 /* WritingPrompts.swift */; };
 		A13887D02A229E07006CE7F4 /* TransitionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13887CF2A229E07006CE7F4 /* TransitionPage.swift */; };
 		A13887D22A22A324006CE7F4 /* JournalIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13887D12A22A324006CE7F4 /* JournalIcon.swift */; };
 		A13887D42A22A373006CE7F4 /* JournalIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13887D32A22A373006CE7F4 /* JournalIconButton.swift */; };
 		A13887D62A22B39B006CE7F4 /* ColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13887D52A22B39B006CE7F4 /* ColorScheme.swift */; };
-		A13887D82A22B707006CE7F4 /* PracticeContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13887D72A22B707006CE7F4 /* PracticeContentView.swift */; };
+		A13887DC2A26C964006CE7F4 /* NotificationMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13887DB2A26C964006CE7F4 /* NotificationMessages.swift */; };
+		A13887DE2A26D99F006CE7F4 /* NotificationButtonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13887DD2A26D99F006CE7F4 /* NotificationButtonTest.swift */; };
 		A15E63B029B964BA00391A88 /* Gone_Fishin_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15E63AF29B964BA00391A88 /* Gone_Fishin_App.swift */; };
 		A15E63B229B964BA00391A88 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15E63B129B964BA00391A88 /* ContentView.swift */; };
 		A15E63B729B964BB00391A88 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A15E63B629B964BB00391A88 /* Preview Assets.xcassets */; };
-		A15E63C429B9652300391A88 /* TestTableOfContentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15E63BF29B9652300391A88 /* TestTableOfContentsView.swift */; };
+		A15E63C429B9652300391A88 /* TableOfContentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15E63BF29B9652300391A88 /* TableOfContentsView.swift */; };
 		A15E63C529B9652300391A88 /* AltTooTableOfContentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15E63C029B9652300391A88 /* AltTooTableOfContentsView.swift */; };
 		A15E63C629B9652300391A88 /* NewTableOfContentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15E63C129B9652300391A88 /* NewTableOfContentsView.swift */; };
 		A15E63C729B9652300391A88 /* Alt.TableOfContentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15E63C229B9652300391A88 /* Alt.TableOfContentsView.swift */; };
@@ -56,22 +60,45 @@
 		A167D5502A045CC9001D997A /* CollectionExplanationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A167D54F2A045CC8001D997A /* CollectionExplanationView.swift */; };
 		A167D55E2A052DE2001D997A /* VText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A167D55D2A052DE2001D997A /* VText.swift */; };
 		A167D5602A052E10001D997A /* testVTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A167D55F2A052E10001D997A /* testVTextView.swift */; };
-		A167D5A02A055136001D997A /* testGoneFishinTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A167D59B2A055136001D997A /* testGoneFishinTextView.swift */; };
-		A167D5A12A055136001D997A /* testFirstCatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A167D59C2A055136001D997A /* testFirstCatchView.swift */; };
-		A167D5A22A055136001D997A /* testHowToFishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A167D59D2A055136001D997A /* testHowToFishView.swift */; };
-		A167D5A32A055136001D997A /* testTrophiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A167D59E2A055136001D997A /* testTrophiesView.swift */; };
-		A167D5A42A055136001D997A /* testCatchNReleaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A167D59F2A055136001D997A /* testCatchNReleaseView.swift */; };
-		A167D5B42A060513001D997A /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A167D5B12A060512001D997A /* MainContentView.swift */; };
+		A167D5A02A055136001D997A /* GoneFishinVTextTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A167D59B2A055136001D997A /* GoneFishinVTextTitleView.swift */; };
+		A167D5A12A055136001D997A /* FirstCatchVTextTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A167D59C2A055136001D997A /* FirstCatchVTextTitleView.swift */; };
+		A167D5A22A055136001D997A /* HowToFishVTextTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A167D59D2A055136001D997A /* HowToFishVTextTitleView.swift */; };
+		A167D5A32A055136001D997A /* TrophiesVTextTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A167D59E2A055136001D997A /* TrophiesVTextTitleView.swift */; };
+		A167D5A42A055136001D997A /* CatchNReleaseVTextTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A167D59F2A055136001D997A /* CatchNReleaseVTextTitleView.swift */; };
+		A167D5B42A060513001D997A /* Vol1Poems.swift in Sources */ = {isa = PBXBuildFile; fileRef = A167D5B12A060512001D997A /* Vol1Poems.swift */; };
 		A167D6222A06FBC4001D997A /* finalContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A167D6212A06FBC4001D997A /* finalContentView.swift */; };
 		A167D6262A0726BD001D997A /* NewChaptersComingSoonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A167D6252A0726BD001D997A /* NewChaptersComingSoonView.swift */; };
+		A16F0CB62A2F6C0C00913FE9 /* AddJournalEntryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16F0CB52A2F6C0C00913FE9 /* AddJournalEntryButton.swift */; };
 		A1745BC529CC97E900F7BCA6 /* ChapterBottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1745BC429CC97E900F7BCA6 /* ChapterBottomSheetView.swift */; };
 		A1745BC729CC98F400F7BCA6 /* ChapterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1745BC629CC98F400F7BCA6 /* ChapterView.swift */; };
+		A177BF092A2A4197003D59D1 /* BeyondTheHorizonBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A177BF082A2A4197003D59D1 /* BeyondTheHorizonBackgroundView.swift */; };
+		A17AB8B92A3544BD00C9745B /* testCustomViewModifer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17AB8B82A3544BD00C9745B /* testCustomViewModifer.swift */; };
 		A19640B42A13B1B6005008B8 /* ImageTitleInvert.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19640B32A13B1B6005008B8 /* ImageTitleInvert.swift */; };
 		A19640B82A13B9F1005008B8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A19640BA2A13B9F1005008B8 /* Localizable.strings */; };
 		A1982B5929CA9ACB00688BCF /* LabelIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1982B5829CA9ACB00688BCF /* LabelIconView.swift */; };
+		A19B92172A2A85D8009CE24F /* FirstCatchBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19B92162A2A85D8009CE24F /* FirstCatchBackgroundView.swift */; };
+		A19B92192A2A870D009CE24F /* CrabsInABucketBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19B92182A2A870D009CE24F /* CrabsInABucketBackgroundView.swift */; };
+		A19B921B2A2A8862009CE24F /* CatchNReleaseBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19B921A2A2A8862009CE24F /* CatchNReleaseBackgroundView.swift */; };
+		A19B921D2A2A88C8009CE24F /* FlyFishingBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19B921C2A2A88C8009CE24F /* FlyFishingBackgroundView.swift */; };
+		A19B921F2A2A8993009CE24F /* TrophiesBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19B921E2A2A8993009CE24F /* TrophiesBackgroundView.swift */; };
 		A1AC10A329F372E8006513EB /* Pages in Frameworks */ = {isa = PBXBuildFile; productRef = A1AC10A229F372E8006513EB /* Pages */; };
+		A1C9B3E62A28D374004AD210 /* BaitingVTextTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C9B3E52A28D374004AD210 /* BaitingVTextTitleView.swift */; };
+		A1C9B3EA2A28D45A004AD210 /* WadingVTextTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C9B3E92A28D45A004AD210 /* WadingVTextTitleView.swift */; };
+		A1C9B3EC2A28D568004AD210 /* BigFishSmallPondVTextTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C9B3EB2A28D568004AD210 /* BigFishSmallPondVTextTitleView.swift */; };
+		A1C9B3EE2A28D6A5004AD210 /* HookedVTextTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C9B3ED2A28D6A5004AD210 /* HookedVTextTitleView.swift */; };
+		A1C9B3F02A28D761004AD210 /* CrabsInABucketVTextTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C9B3EF2A28D761004AD210 /* CrabsInABucketVTextTitleView.swift */; };
+		A1C9B3F22A28D813004AD210 /* FlyFishingVTextTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C9B3F12A28D813004AD210 /* FlyFishingVTextTitleView.swift */; };
+		A1C9B3F42A28D89B004AD210 /* BeyondTheHorizonVTextTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C9B3F32A28D89B004AD210 /* BeyondTheHorizonVTextTitleView.swift */; };
+		A1C9B3F62A28D91F004AD210 /* WadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C9B3F52A28D91F004AD210 /* WadingView.swift */; };
+		A1C9B3F82A28D938004AD210 /* BigFishSmallPondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C9B3F72A28D938004AD210 /* BigFishSmallPondView.swift */; };
+		A1C9B3FA2A28D953004AD210 /* HookedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C9B3F92A28D953004AD210 /* HookedView.swift */; };
+		A1C9B3FC2A28D964004AD210 /* CrabsInABucketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C9B3FB2A28D964004AD210 /* CrabsInABucketView.swift */; };
+		A1C9B3FE2A28D971004AD210 /* FlyFishingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C9B3FD2A28D971004AD210 /* FlyFishingView.swift */; };
+		A1C9B4002A28D97E004AD210 /* BeyondTheHorizonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C9B3FF2A28D97E004AD210 /* BeyondTheHorizonView.swift */; };
+		A1C9B4022A2A1D9C004AD210 /* WadingBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C9B4012A2A1D9C004AD210 /* WadingBackgroundView.swift */; };
+		A1C9B4042A2A26BD004AD210 /* TableOfContentsBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C9B4032A2A26BD004AD210 /* TableOfContentsBackgroundView.swift */; };
+		A1C9B4062A2A2E69004AD210 /* TestListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C9B4052A2A2E69004AD210 /* TestListView.swift */; };
 		A1CBD1252A168CBC00DB76C6 /* RevisedHowToFishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CBD1242A168CBC00DB76C6 /* RevisedHowToFishView.swift */; };
-		A1CBD12A2A1976C300DB76C6 /* Notification Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CBD1292A1976C300DB76C6 /* Notification Manager.swift */; };
 		A1CBD12C2A1976FF00DB76C6 /* Model Notification .swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CBD12B2A1976FF00DB76C6 /* Model Notification .swift */; };
 		A1CBD12E2A1CF85300DB76C6 /* Test Notification View.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CBD12D2A1CF85300DB76C6 /* Test Notification View.swift */; };
 		A1CBD1302A1D0DE000DB76C6 /* NextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CBD12F2A1D0DE000DB76C6 /* NextView.swift */; };
@@ -79,7 +106,7 @@
 		A1CBD1342A1E5D2500DB76C6 /* NotificationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CBD1332A1E5D2500DB76C6 /* NotificationsListView.swift */; };
 		A1CBD1702A1F96DB00DB76C6 /* StatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CBD16F2A1F96DB00DB76C6 /* StatView.swift */; };
 		A1CBD1722A1F976800DB76C6 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CBD1712A1F976800DB76C6 /* Entry.swift */; };
-		A1CBD1742A1F97A300DB76C6 /* ContentTooView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CBD1732A1F97A300DB76C6 /* ContentTooView.swift */; };
+		A1CBD1742A1F97A300DB76C6 /* JournalMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CBD1732A1F97A300DB76C6 /* JournalMainView.swift */; };
 		A1CBD1762A1F97DA00DB76C6 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CBD1752A1F97DA00DB76C6 /* Helper.swift */; };
 		A1CBD1782A1F97F400DB76C6 /* EntryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CBD1772A1F97F400DB76C6 /* EntryRow.swift */; };
 		A1CBD17A2A1F982B00DB76C6 /* EntryDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CBD1792A1F982B00DB76C6 /* EntryDetail.swift */; };
@@ -88,22 +115,35 @@
 		A1CBD1802A1F98CC00DB76C6 /* CreateEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CBD17F2A1F98CC00DB76C6 /* CreateEntry.swift */; };
 		A1CBD1822A1F993D00DB76C6 /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CBD1812A1F993D00DB76C6 /* EntryController.swift */; };
 		A1CBD1842A1F995200DB76C6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CBD1832A1F995200DB76C6 /* User.swift */; };
+		A1E3D79F2A2A8B5E003C9D03 /* BaitingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E3D79E2A2A8B5E003C9D03 /* BaitingView.swift */; };
+		A1E3D7A12A2AAE86003C9D03 /* anotherTestVTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E3D7A02A2AAE86003C9D03 /* anotherTestVTextView.swift */; };
+		A1E3D7A32A2AB7D2003C9D03 /* Vol2Poems.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E3D7A22A2AB7D2003C9D03 /* Vol2Poems.swift */; };
+		A1E3D7A52A2AB883003C9D03 /* CombinedTableOfContentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E3D7A42A2AB883003C9D03 /* CombinedTableOfContentsView.swift */; };
 		A1EF290D2A20E71B00FFF9B2 /* ShufflePrompts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF290C2A20E71B00FFF9B2 /* ShufflePrompts.swift */; };
 		A1F0384429B966E00091FD30 /* Assests.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F0384329B966E00091FD30 /* Assests.xcassets */; };
+		A1FB04B92A2A783B003456F3 /* HowToFishBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FB04B82A2A783B003456F3 /* HowToFishBackgroundView.swift */; };
+		A1FB04BB2A2A7A29003456F3 /* BaitingBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FB04BA2A2A7A29003456F3 /* BaitingBackgroundView.swift */; };
+		A1FB04BD2A2A7BA1003456F3 /* GoneFishinBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FB04BC2A2A7BA1003456F3 /* GoneFishinBackgroundView.swift */; };
+		A1FB04BF2A2A8410003456F3 /* BigFishSmallPondBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FB04BE2A2A8410003456F3 /* BigFishSmallPondBackgroundView.swift */; };
+		A1FB04C12A2A848F003456F3 /* HookedBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FB04C02A2A848E003456F3 /* HookedBackgroundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A10671942A2782E900B7E2F8 /* AboutMeTestNotificationFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeTestNotificationFeature.swift; sourceTree = "<group>"; };
+		A1155E6B2A2E29AD0067FE97 /* StarBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarBackground.swift; sourceTree = "<group>"; };
+		A12B82202A3352BB00ADB40F /* Bangla-Sangam-MN-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Bangla-Sangam-MN-Bold.ttf"; path = "../../../../../Challenge 6ix/Gone Fishin Font/Bangla-Sangam-MN-Bold.ttf"; sourceTree = "<group>"; };
 		A13887CC2A2101FC006CE7F4 /* WritingPrompts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingPrompts.swift; sourceTree = "<group>"; };
 		A13887CF2A229E07006CE7F4 /* TransitionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionPage.swift; sourceTree = "<group>"; };
 		A13887D12A22A324006CE7F4 /* JournalIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalIcon.swift; sourceTree = "<group>"; };
 		A13887D32A22A373006CE7F4 /* JournalIconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalIconButton.swift; sourceTree = "<group>"; };
 		A13887D52A22B39B006CE7F4 /* ColorScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorScheme.swift; sourceTree = "<group>"; };
-		A13887D72A22B707006CE7F4 /* PracticeContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeContentView.swift; sourceTree = "<group>"; };
+		A13887DB2A26C964006CE7F4 /* NotificationMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationMessages.swift; sourceTree = "<group>"; };
+		A13887DD2A26D99F006CE7F4 /* NotificationButtonTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationButtonTest.swift; sourceTree = "<group>"; };
 		A15E63AC29B964BA00391A88 /* Gone Fishin'.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gone Fishin'.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A15E63AF29B964BA00391A88 /* Gone_Fishin_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gone_Fishin_App.swift; sourceTree = "<group>"; };
 		A15E63B129B964BA00391A88 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A15E63B629B964BB00391A88 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A15E63BF29B9652300391A88 /* TestTableOfContentsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestTableOfContentsView.swift; sourceTree = "<group>"; };
+		A15E63BF29B9652300391A88 /* TableOfContentsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableOfContentsView.swift; sourceTree = "<group>"; };
 		A15E63C029B9652300391A88 /* AltTooTableOfContentsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AltTooTableOfContentsView.swift; sourceTree = "<group>"; };
 		A15E63C129B9652300391A88 /* NewTableOfContentsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTableOfContentsView.swift; sourceTree = "<group>"; };
 		A15E63C229B9652300391A88 /* Alt.TableOfContentsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alt.TableOfContentsView.swift; sourceTree = "<group>"; };
@@ -144,24 +184,47 @@
 		A167D54F2A045CC8001D997A /* CollectionExplanationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionExplanationView.swift; sourceTree = "<group>"; };
 		A167D55D2A052DE2001D997A /* VText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VText.swift; sourceTree = "<group>"; };
 		A167D55F2A052E10001D997A /* testVTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testVTextView.swift; sourceTree = "<group>"; };
-		A167D59B2A055136001D997A /* testGoneFishinTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testGoneFishinTextView.swift; sourceTree = "<group>"; };
-		A167D59C2A055136001D997A /* testFirstCatchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testFirstCatchView.swift; sourceTree = "<group>"; };
-		A167D59D2A055136001D997A /* testHowToFishView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testHowToFishView.swift; sourceTree = "<group>"; };
-		A167D59E2A055136001D997A /* testTrophiesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testTrophiesView.swift; sourceTree = "<group>"; };
-		A167D59F2A055136001D997A /* testCatchNReleaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testCatchNReleaseView.swift; sourceTree = "<group>"; };
-		A167D5B12A060512001D997A /* MainContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
+		A167D59B2A055136001D997A /* GoneFishinVTextTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoneFishinVTextTitleView.swift; sourceTree = "<group>"; };
+		A167D59C2A055136001D997A /* FirstCatchVTextTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstCatchVTextTitleView.swift; sourceTree = "<group>"; };
+		A167D59D2A055136001D997A /* HowToFishVTextTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HowToFishVTextTitleView.swift; sourceTree = "<group>"; };
+		A167D59E2A055136001D997A /* TrophiesVTextTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrophiesVTextTitleView.swift; sourceTree = "<group>"; };
+		A167D59F2A055136001D997A /* CatchNReleaseVTextTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatchNReleaseVTextTitleView.swift; sourceTree = "<group>"; };
+		A167D5B12A060512001D997A /* Vol1Poems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vol1Poems.swift; sourceTree = "<group>"; };
 		A167D6212A06FBC4001D997A /* finalContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = finalContentView.swift; sourceTree = "<group>"; };
 		A167D6252A0726BD001D997A /* NewChaptersComingSoonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChaptersComingSoonView.swift; sourceTree = "<group>"; };
+		A16F0CB52A2F6C0C00913FE9 /* AddJournalEntryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddJournalEntryButton.swift; sourceTree = "<group>"; };
 		A1745BC429CC97E900F7BCA6 /* ChapterBottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterBottomSheetView.swift; sourceTree = "<group>"; };
 		A1745BC629CC98F400F7BCA6 /* ChapterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterView.swift; sourceTree = "<group>"; };
+		A177BF082A2A4197003D59D1 /* BeyondTheHorizonBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeyondTheHorizonBackgroundView.swift; sourceTree = "<group>"; };
+		A17AB8B82A3544BD00C9745B /* testCustomViewModifer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testCustomViewModifer.swift; sourceTree = "<group>"; };
 		A19640B32A13B1B6005008B8 /* ImageTitleInvert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTitleInvert.swift; sourceTree = "<group>"; };
 		A19640B92A13B9F1005008B8 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A19640BB2A13B9F5005008B8 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A19640BC2A13B9F6005008B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A1982B5829CA9ACB00688BCF /* LabelIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelIconView.swift; sourceTree = "<group>"; };
+		A19B92162A2A85D8009CE24F /* FirstCatchBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCatchBackgroundView.swift; sourceTree = "<group>"; };
+		A19B92182A2A870D009CE24F /* CrabsInABucketBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrabsInABucketBackgroundView.swift; sourceTree = "<group>"; };
+		A19B921A2A2A8862009CE24F /* CatchNReleaseBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatchNReleaseBackgroundView.swift; sourceTree = "<group>"; };
+		A19B921C2A2A88C8009CE24F /* FlyFishingBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyFishingBackgroundView.swift; sourceTree = "<group>"; };
+		A19B921E2A2A8993009CE24F /* TrophiesBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrophiesBackgroundView.swift; sourceTree = "<group>"; };
+		A1C9B3E52A28D374004AD210 /* BaitingVTextTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaitingVTextTitleView.swift; sourceTree = "<group>"; };
+		A1C9B3E92A28D45A004AD210 /* WadingVTextTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WadingVTextTitleView.swift; sourceTree = "<group>"; };
+		A1C9B3EB2A28D568004AD210 /* BigFishSmallPondVTextTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigFishSmallPondVTextTitleView.swift; sourceTree = "<group>"; };
+		A1C9B3ED2A28D6A5004AD210 /* HookedVTextTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HookedVTextTitleView.swift; sourceTree = "<group>"; };
+		A1C9B3EF2A28D761004AD210 /* CrabsInABucketVTextTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrabsInABucketVTextTitleView.swift; sourceTree = "<group>"; };
+		A1C9B3F12A28D813004AD210 /* FlyFishingVTextTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyFishingVTextTitleView.swift; sourceTree = "<group>"; };
+		A1C9B3F32A28D89B004AD210 /* BeyondTheHorizonVTextTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeyondTheHorizonVTextTitleView.swift; sourceTree = "<group>"; };
+		A1C9B3F52A28D91F004AD210 /* WadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WadingView.swift; sourceTree = "<group>"; };
+		A1C9B3F72A28D938004AD210 /* BigFishSmallPondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigFishSmallPondView.swift; sourceTree = "<group>"; };
+		A1C9B3F92A28D953004AD210 /* HookedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HookedView.swift; sourceTree = "<group>"; };
+		A1C9B3FB2A28D964004AD210 /* CrabsInABucketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrabsInABucketView.swift; sourceTree = "<group>"; };
+		A1C9B3FD2A28D971004AD210 /* FlyFishingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyFishingView.swift; sourceTree = "<group>"; };
+		A1C9B3FF2A28D97E004AD210 /* BeyondTheHorizonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeyondTheHorizonView.swift; sourceTree = "<group>"; };
+		A1C9B4012A2A1D9C004AD210 /* WadingBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WadingBackgroundView.swift; sourceTree = "<group>"; };
+		A1C9B4032A2A26BD004AD210 /* TableOfContentsBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableOfContentsBackgroundView.swift; sourceTree = "<group>"; };
+		A1C9B4052A2A2E69004AD210 /* TestListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestListView.swift; sourceTree = "<group>"; };
 		A1CBD1242A168CBC00DB76C6 /* RevisedHowToFishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevisedHowToFishView.swift; sourceTree = "<group>"; };
 		A1CBD1262A17A04E00DB76C6 /* ms */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ms; path = ms.lproj/Localizable.strings; sourceTree = "<group>"; };
-		A1CBD1292A1976C300DB76C6 /* Notification Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification Manager.swift"; sourceTree = "<group>"; };
 		A1CBD12B2A1976FF00DB76C6 /* Model Notification .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Model Notification .swift"; sourceTree = "<group>"; };
 		A1CBD12D2A1CF85300DB76C6 /* Test Notification View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Test Notification View.swift"; sourceTree = "<group>"; };
 		A1CBD12F2A1D0DE000DB76C6 /* NextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NextView.swift; path = "../../../../../../Downloads/LocalNotifications-Lesson-4-Complete/LocalNotifications/NextView.swift"; sourceTree = "<group>"; };
@@ -169,7 +232,7 @@
 		A1CBD1332A1E5D2500DB76C6 /* NotificationsListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationsListView.swift; path = "../../../../../../Downloads/LocalNotifications-Lesson-4-Complete/LocalNotifications/NotificationsListView.swift"; sourceTree = "<group>"; };
 		A1CBD16F2A1F96DB00DB76C6 /* StatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatView.swift; sourceTree = "<group>"; };
 		A1CBD1712A1F976800DB76C6 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
-		A1CBD1732A1F97A300DB76C6 /* ContentTooView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentTooView.swift; sourceTree = "<group>"; };
+		A1CBD1732A1F97A300DB76C6 /* JournalMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalMainView.swift; sourceTree = "<group>"; };
 		A1CBD1752A1F97DA00DB76C6 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		A1CBD1772A1F97F400DB76C6 /* EntryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryRow.swift; sourceTree = "<group>"; };
 		A1CBD1792A1F982B00DB76C6 /* EntryDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetail.swift; sourceTree = "<group>"; };
@@ -178,8 +241,17 @@
 		A1CBD17F2A1F98CC00DB76C6 /* CreateEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEntry.swift; sourceTree = "<group>"; };
 		A1CBD1812A1F993D00DB76C6 /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
 		A1CBD1832A1F995200DB76C6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A1E3D79E2A2A8B5E003C9D03 /* BaitingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaitingView.swift; sourceTree = "<group>"; };
+		A1E3D7A02A2AAE86003C9D03 /* anotherTestVTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = anotherTestVTextView.swift; sourceTree = "<group>"; };
+		A1E3D7A22A2AB7D2003C9D03 /* Vol2Poems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vol2Poems.swift; sourceTree = "<group>"; };
+		A1E3D7A42A2AB883003C9D03 /* CombinedTableOfContentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinedTableOfContentsView.swift; sourceTree = "<group>"; };
 		A1EF290C2A20E71B00FFF9B2 /* ShufflePrompts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShufflePrompts.swift; sourceTree = "<group>"; };
 		A1F0384329B966E00091FD30 /* Assests.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assests.xcassets; sourceTree = "<group>"; };
+		A1FB04B82A2A783B003456F3 /* HowToFishBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToFishBackgroundView.swift; sourceTree = "<group>"; };
+		A1FB04BA2A2A7A29003456F3 /* BaitingBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaitingBackgroundView.swift; sourceTree = "<group>"; };
+		A1FB04BC2A2A7BA1003456F3 /* GoneFishinBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoneFishinBackgroundView.swift; sourceTree = "<group>"; };
+		A1FB04BE2A2A8410003456F3 /* BigFishSmallPondBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigFishSmallPondBackgroundView.swift; sourceTree = "<group>"; };
+		A1FB04C02A2A848E003456F3 /* HookedBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HookedBackgroundView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +266,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A12B821F2A33525C00ADB40F /* Custom Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A12B82202A3352BB00ADB40F /* Bangla-Sangam-MN-Bold.ttf */,
+			);
+			path = "Custom Fonts";
+			sourceTree = "<group>";
+		};
 		A13887CE2A227231006CE7F4 /* Unsused Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -224,10 +304,14 @@
 			children = (
 				A167D5482A014111001D997A /* Gone-Fishin--Info.plist */,
 				A15E63AF29B964BA00391A88 /* Gone_Fishin_App.swift */,
-				A15E63B129B964BA00391A88 /* ContentView.swift */,
-				A1982B5829CA9ACB00688BCF /* LabelIconView.swift */,
-				A13887D72A22B707006CE7F4 /* PracticeContentView.swift */,
+				A167D6212A06FBC4001D997A /* finalContentView.swift */,
+				A15E63CC29B9654500391A88 /* TitlePageView.swift */,
+				A167D54F2A045CC8001D997A /* CollectionExplanationView.swift */,
 				A13887CF2A229E07006CE7F4 /* TransitionPage.swift */,
+				A167D5B12A060512001D997A /* Vol1Poems.swift */,
+				A1E3D7A22A2AB7D2003C9D03 /* Vol2Poems.swift */,
+				A15E63D329B9654500391A88 /* BackCoverView.swift */,
+				A167D6252A0726BD001D997A /* NewChaptersComingSoonView.swift */,
 				A167D5AE2A06041E001D997A /* Page Curl Feature */,
 				A15E63BD29B9652300391A88 /* Table of Content Views */,
 				A15E63D429B9654500391A88 /* Poem Views */,
@@ -236,14 +320,9 @@
 				A15E63DB29B9654500391A88 /* Text Field Views */,
 				A19640B52A13B9A0005008B8 /* Localization  */,
 				A15E63CE29B9654500391A88 /* Page Transition Views */,
-				A15E63CC29B9654500391A88 /* TitlePageView.swift */,
-				A15E63D329B9654500391A88 /* BackCoverView.swift */,
 				A1CBD1282A1972EC00DB76C6 /* Local Notification */,
-				A167D54F2A045CC8001D997A /* CollectionExplanationView.swift */,
 				A1CBD16E2A1F95E200DB76C6 /* Journal Feature */,
-				A167D6252A0726BD001D997A /* NewChaptersComingSoonView.swift */,
-				A15E63E729B9654500391A88 /* AcknowledgementView.swift */,
-				A167D5632A05311C001D997A /* Vertical Text */,
+				A12B821F2A33525C00ADB40F /* Custom Fonts */,
 				A15E63DF29B9654500391A88 /* Experimental Views */,
 				A15E63B529B964BB00391A88 /* Preview Content */,
 				A1F0384329B966E00091FD30 /* Assests.xcassets */,
@@ -262,9 +341,9 @@
 		A15E63BD29B9652300391A88 /* Table of Content Views */ = {
 			isa = PBXGroup;
 			children = (
+				A15E63BF29B9652300391A88 /* TableOfContentsView.swift */,
 				A15E63EB29B9654500391A88 /* TableOfContentsEnum.swift */,
-				A15E63BF29B9652300391A88 /* TestTableOfContentsView.swift */,
-				A15E63C029B9652300391A88 /* AltTooTableOfContentsView.swift */,
+				A1C9B4032A2A26BD004AD210 /* TableOfContentsBackgroundView.swift */,
 				A15E63C129B9652300391A88 /* NewTableOfContentsView.swift */,
 				A15E63C229B9652300391A88 /* Alt.TableOfContentsView.swift */,
 			);
@@ -277,6 +356,7 @@
 				A167D54B2A045A7A001D997A /* AboutMeButtonView.swift */,
 				A13887D32A22A373006CE7F4 /* JournalIconButton.swift */,
 				A167D5492A045854001D997A /* AboutView.swift */,
+				A10671942A2782E900B7E2F8 /* AboutMeTestNotificationFeature.swift */,
 				A13887D12A22A324006CE7F4 /* JournalIcon.swift */,
 				A1745BC629CC98F400F7BCA6 /* ChapterView.swift */,
 				A15E63CD29B9654500391A88 /* BottomSheetIconView.swift */,
@@ -301,11 +381,20 @@
 			children = (
 				A15E63E629B9654500391A88 /* PoemView.swift */,
 				A15E63D629B9654500391A88 /* HowToFishView.swift */,
+				A1E3D79E2A2A8B5E003C9D03 /* BaitingView.swift */,
+				A1C9B3F52A28D91F004AD210 /* WadingView.swift */,
 				A15E63D829B9654500391A88 /* GoneFishin'View.swift */,
+				A1C9B3F72A28D938004AD210 /* BigFishSmallPondView.swift */,
+				A1C9B3F92A28D953004AD210 /* HookedView.swift */,
 				A15E63D529B9654500391A88 /* FirstCatchView.swift */,
+				A1C9B3FB2A28D964004AD210 /* CrabsInABucketView.swift */,
 				A15E63D929B9654500391A88 /* CatchNReleaseView.swift */,
+				A1C9B3FD2A28D971004AD210 /* FlyFishingView.swift */,
 				A15E63D729B9654500391A88 /* TrophiesView.swift */,
+				A1C9B3FF2A28D97E004AD210 /* BeyondTheHorizonView.swift */,
+				A1FB04B72A2A767A003456F3 /* Poem BackgroundViews */,
 				A1CBD1242A168CBC00DB76C6 /* RevisedHowToFishView.swift */,
+				A167D5632A05311C001D997A /* Vertical Text Poem Views */,
 			);
 			path = "Poem Views";
 			sourceTree = "<group>";
@@ -323,6 +412,11 @@
 		A15E63DF29B9654500391A88 /* Experimental Views */ = {
 			isa = PBXGroup;
 			children = (
+				A15E63E729B9654500391A88 /* AcknowledgementView.swift */,
+				A17AB8B82A3544BD00C9745B /* testCustomViewModifer.swift */,
+				A1982B5829CA9ACB00688BCF /* LabelIconView.swift */,
+				A15E63B129B964BA00391A88 /* ContentView.swift */,
+				A15E63C029B9652300391A88 /* AltTooTableOfContentsView.swift */,
 				A15E63CA29B9654500391A88 /* BlurredSheetView.swift */,
 				A15E63DA29B9654500391A88 /* PoemPhotoView.swift */,
 				A15E63E029B9654500391A88 /* PrototypePoemView.swift */,
@@ -342,33 +436,49 @@
 			isa = PBXGroup;
 			children = (
 				A15E63EC29B9654500391A88 /* ListView.swift */,
+				A1C9B4052A2A2E69004AD210 /* TestListView.swift */,
 			);
 			path = "List Views";
 			sourceTree = "<group>";
 		};
-		A167D5632A05311C001D997A /* Vertical Text */ = {
+		A167D5632A05311C001D997A /* Vertical Text Poem Views */ = {
 			isa = PBXGroup;
 			children = (
-				A167D59F2A055136001D997A /* testCatchNReleaseView.swift */,
-				A167D59C2A055136001D997A /* testFirstCatchView.swift */,
-				A167D59B2A055136001D997A /* testGoneFishinTextView.swift */,
-				A167D59D2A055136001D997A /* testHowToFishView.swift */,
-				A167D59E2A055136001D997A /* testTrophiesView.swift */,
+				A167D59D2A055136001D997A /* HowToFishVTextTitleView.swift */,
+				A1C9B3E52A28D374004AD210 /* BaitingVTextTitleView.swift */,
+				A1C9B3E92A28D45A004AD210 /* WadingVTextTitleView.swift */,
+				A167D59B2A055136001D997A /* GoneFishinVTextTitleView.swift */,
+				A1C9B3EB2A28D568004AD210 /* BigFishSmallPondVTextTitleView.swift */,
+				A1C9B3ED2A28D6A5004AD210 /* HookedVTextTitleView.swift */,
+				A167D59C2A055136001D997A /* FirstCatchVTextTitleView.swift */,
+				A1C9B3EF2A28D761004AD210 /* CrabsInABucketVTextTitleView.swift */,
+				A167D59F2A055136001D997A /* CatchNReleaseVTextTitleView.swift */,
+				A1C9B3F12A28D813004AD210 /* FlyFishingVTextTitleView.swift */,
+				A167D59E2A055136001D997A /* TrophiesVTextTitleView.swift */,
+				A1C9B3F32A28D89B004AD210 /* BeyondTheHorizonVTextTitleView.swift */,
 				A167D55D2A052DE2001D997A /* VText.swift */,
 				A167D55F2A052E10001D997A /* testVTextView.swift */,
+				A1E3D7A02A2AAE86003C9D03 /* anotherTestVTextView.swift */,
 			);
-			path = "Vertical Text";
+			path = "Vertical Text Poem Views";
 			sourceTree = "<group>";
 		};
 		A167D5AE2A06041E001D997A /* Page Curl Feature */ = {
 			isa = PBXGroup;
 			children = (
-				A167D6212A06FBC4001D997A /* finalContentView.swift */,
-				A167D5B12A060512001D997A /* MainContentView.swift */,
+				A1E3D7A42A2AB883003C9D03 /* CombinedTableOfContentsView.swift */,
 				A1641CB52A0D248800B935EA /* Page Curl Practice View.swift */,
 				A1641CB72A0D352C00B935EA /* PoemArray.swift */,
 			);
 			path = "Page Curl Feature";
+			sourceTree = "<group>";
+		};
+		A16F0CB42A2F6BF400913FE9 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				A16F0CB52A2F6C0C00913FE9 /* AddJournalEntryButton.swift */,
+			);
+			path = Button;
 			sourceTree = "<group>";
 		};
 		A19640B52A13B9A0005008B8 /* Localization  */ = {
@@ -382,11 +492,12 @@
 		A1CBD1282A1972EC00DB76C6 /* Local Notification */ = {
 			isa = PBXGroup;
 			children = (
-				A1CBD1292A1976C300DB76C6 /* Notification Manager.swift */,
 				A1CBD1312A1E5C8800DB76C6 /* LocalNotificationManager.swift */,
 				A1CBD12F2A1D0DE000DB76C6 /* NextView.swift */,
+				A13887DB2A26C964006CE7F4 /* NotificationMessages.swift */,
 				A1CBD12B2A1976FF00DB76C6 /* Model Notification .swift */,
 				A1CBD1332A1E5D2500DB76C6 /* NotificationsListView.swift */,
+				A13887DD2A26D99F006CE7F4 /* NotificationButtonTest.swift */,
 				A1CBD12D2A1CF85300DB76C6 /* Test Notification View.swift */,
 			);
 			path = "Local Notification";
@@ -398,18 +509,39 @@
 				A13887CC2A2101FC006CE7F4 /* WritingPrompts.swift */,
 				A1CBD1712A1F976800DB76C6 /* Entry.swift */,
 				A13887CE2A227231006CE7F4 /* Unsused Views */,
-				A1CBD1732A1F97A300DB76C6 /* ContentTooView.swift */,
+				A1CBD1732A1F97A300DB76C6 /* JournalMainView.swift */,
+				A1CBD17F2A1F98CC00DB76C6 /* CreateEntry.swift */,
+				A1EF290C2A20E71B00FFF9B2 /* ShufflePrompts.swift */,
 				A1CBD1752A1F97DA00DB76C6 /* Helper.swift */,
+				A16F0CB42A2F6BF400913FE9 /* Button */,
 				A13887D52A22B39B006CE7F4 /* ColorScheme.swift */,
 				A1CBD1772A1F97F400DB76C6 /* EntryRow.swift */,
 				A1CBD1792A1F982B00DB76C6 /* EntryDetail.swift */,
 				A1CBD17D2A1F989C00DB76C6 /* SettingsView.swift */,
-				A1CBD17F2A1F98CC00DB76C6 /* CreateEntry.swift */,
-				A1EF290C2A20E71B00FFF9B2 /* ShufflePrompts.swift */,
 				A1CBD1812A1F993D00DB76C6 /* EntryController.swift */,
 				A1CBD1832A1F995200DB76C6 /* User.swift */,
 			);
 			path = "Journal Feature";
+			sourceTree = "<group>";
+		};
+		A1FB04B72A2A767A003456F3 /* Poem BackgroundViews */ = {
+			isa = PBXGroup;
+			children = (
+				A1155E6B2A2E29AD0067FE97 /* StarBackground.swift */,
+				A1FB04B82A2A783B003456F3 /* HowToFishBackgroundView.swift */,
+				A1FB04BA2A2A7A29003456F3 /* BaitingBackgroundView.swift */,
+				A1C9B4012A2A1D9C004AD210 /* WadingBackgroundView.swift */,
+				A1FB04BC2A2A7BA1003456F3 /* GoneFishinBackgroundView.swift */,
+				A1FB04BE2A2A8410003456F3 /* BigFishSmallPondBackgroundView.swift */,
+				A1FB04C02A2A848E003456F3 /* HookedBackgroundView.swift */,
+				A19B92162A2A85D8009CE24F /* FirstCatchBackgroundView.swift */,
+				A19B92182A2A870D009CE24F /* CrabsInABucketBackgroundView.swift */,
+				A19B921A2A2A8862009CE24F /* CatchNReleaseBackgroundView.swift */,
+				A19B921C2A2A88C8009CE24F /* FlyFishingBackgroundView.swift */,
+				A19B921E2A2A8993009CE24F /* TrophiesBackgroundView.swift */,
+				A177BF082A2A4197003D59D1 /* BeyondTheHorizonBackgroundView.swift */,
+			);
+			path = "Poem BackgroundViews";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -479,6 +611,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A12B82222A33572200ADB40F /* Bangla-Sangam-MN-Bold.ttf in Resources */,
 				A1F0384429B966E00091FD30 /* Assests.xcassets in Resources */,
 				A19640B82A13B9F1005008B8 /* Localizable.strings in Resources */,
 				A15E63B729B964BB00391A88 /* Preview Assets.xcassets in Resources */,
@@ -492,84 +625,119 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1FB04C12A2A848F003456F3 /* HookedBackgroundView.swift in Sources */,
 				A1982B5929CA9ACB00688BCF /* LabelIconView.swift in Sources */,
 				A15E63B229B964BA00391A88 /* ContentView.swift in Sources */,
-				A13887D82A22B707006CE7F4 /* PracticeContentView.swift in Sources */,
 				A15E63C629B9652300391A88 /* NewTableOfContentsView.swift in Sources */,
-				A167D5A32A055136001D997A /* testTrophiesView.swift in Sources */,
+				A1C9B3F22A28D813004AD210 /* FlyFishingVTextTitleView.swift in Sources */,
+				A1C9B3F82A28D938004AD210 /* BigFishSmallPondView.swift in Sources */,
+				A167D5A32A055136001D997A /* TrophiesVTextTitleView.swift in Sources */,
 				A15E63F829B9654500391A88 /* HowToFishView.swift in Sources */,
 				A15E63EF29B9654500391A88 /* BottomSheetView.swift in Sources */,
+				A1C9B3EE2A28D6A5004AD210 /* HookedVTextTitleView.swift in Sources */,
 				A1CBD1802A1F98CC00DB76C6 /* CreateEntry.swift in Sources */,
 				A15E63FA29B9654500391A88 /* GoneFishin'View.swift in Sources */,
 				A15E63F729B9654500391A88 /* FirstCatchView.swift in Sources */,
 				A15E640429B9654500391A88 /* ClearBackgroundView.swift in Sources */,
+				A177BF092A2A4197003D59D1 /* BeyondTheHorizonBackgroundView.swift in Sources */,
 				A15E640929B9654500391A88 /* NotesView.swift in Sources */,
 				A15E63B029B964BA00391A88 /* Gone_Fishin_App.swift in Sources */,
+				A1E3D7A52A2AB883003C9D03 /* CombinedTableOfContentsView.swift in Sources */,
+				A1C9B3EA2A28D45A004AD210 /* WadingVTextTitleView.swift in Sources */,
 				A1CBD12C2A1976FF00DB76C6 /* Model Notification .swift in Sources */,
 				A15E63F129B9654500391A88 /* BottomSheetIconView.swift in Sources */,
 				A13887CD2A2101FC006CE7F4 /* WritingPrompts.swift in Sources */,
 				A15E640029B9654500391A88 /* PrototypePoemView.swift in Sources */,
+				A1E3D7A32A2AB7D2003C9D03 /* Vol2Poems.swift in Sources */,
 				A1CBD1302A1D0DE000DB76C6 /* NextView.swift in Sources */,
 				A167D5502A045CC9001D997A /* CollectionExplanationView.swift in Sources */,
+				A19B921F2A2A8993009CE24F /* TrophiesBackgroundView.swift in Sources */,
 				A15E640B29B9654500391A88 /* ListView.swift in Sources */,
 				A1745BC529CC97E900F7BCA6 /* ChapterBottomSheetView.swift in Sources */,
 				A1641CB82A0D352C00B935EA /* PoemArray.swift in Sources */,
+				A17AB8B92A3544BD00C9745B /* testCustomViewModifer.swift in Sources */,
+				A1FB04BD2A2A7BA1003456F3 /* GoneFishinBackgroundView.swift in Sources */,
 				A1CBD1342A1E5D2500DB76C6 /* NotificationsListView.swift in Sources */,
+				A1C9B3FE2A28D971004AD210 /* FlyFishingView.swift in Sources */,
 				A1745BC729CC98F400F7BCA6 /* ChapterView.swift in Sources */,
-				A167D5A12A055136001D997A /* testFirstCatchView.swift in Sources */,
+				A1C9B4062A2A2E69004AD210 /* TestListView.swift in Sources */,
+				A19B92192A2A870D009CE24F /* CrabsInABucketBackgroundView.swift in Sources */,
+				A167D5A12A055136001D997A /* FirstCatchVTextTitleView.swift in Sources */,
 				A15E640529B9654500391A88 /* TestImageView.swift in Sources */,
+				A1E3D7A12A2AAE86003C9D03 /* anotherTestVTextView.swift in Sources */,
 				A1CBD1822A1F993D00DB76C6 /* EntryController.swift in Sources */,
-				A1CBD1742A1F97A300DB76C6 /* ContentTooView.swift in Sources */,
+				A1CBD1742A1F97A300DB76C6 /* JournalMainView.swift in Sources */,
+				A1155E6C2A2E29AD0067FE97 /* StarBackground.swift in Sources */,
 				A1CBD17E2A1F989C00DB76C6 /* SettingsView.swift in Sources */,
 				A15E63FE29B9654500391A88 /* TextFieldIcon.swift in Sources */,
 				A15E640729B9654500391A88 /* AcknowledgementView.swift in Sources */,
 				A15E63FF29B9654500391A88 /* TextFieldBottomSheetView.swift in Sources */,
-				A167D5A42A055136001D997A /* testCatchNReleaseView.swift in Sources */,
+				A167D5A42A055136001D997A /* CatchNReleaseVTextTitleView.swift in Sources */,
 				A167D6222A06FBC4001D997A /* finalContentView.swift in Sources */,
+				A1C9B4022A2A1D9C004AD210 /* WadingBackgroundView.swift in Sources */,
 				A15E63FB29B9654500391A88 /* CatchNReleaseView.swift in Sources */,
 				A167D54A2A045854001D997A /* AboutView.swift in Sources */,
-				A167D5A22A055136001D997A /* testHowToFishView.swift in Sources */,
+				A167D5A22A055136001D997A /* HowToFishVTextTitleView.swift in Sources */,
 				A15E640829B9654500391A88 /* AltPoemView.swift in Sources */,
 				A167D54C2A045A7A001D997A /* AboutMeButtonView.swift in Sources */,
-				A167D5A02A055136001D997A /* testGoneFishinTextView.swift in Sources */,
+				A167D5A02A055136001D997A /* GoneFishinVTextTitleView.swift in Sources */,
 				A1CBD1782A1F97F400DB76C6 /* EntryRow.swift in Sources */,
 				A13887D62A22B39B006CE7F4 /* ColorScheme.swift in Sources */,
-				A1CBD12A2A1976C300DB76C6 /* Notification Manager.swift in Sources */,
+				A13887DE2A26D99F006CE7F4 /* NotificationButtonTest.swift in Sources */,
 				A15E63FD29B9654500391A88 /* TextFieldView.swift in Sources */,
 				A15E63FC29B9654500391A88 /* PoemPhotoView.swift in Sources */,
 				A167D6262A0726BD001D997A /* NewChaptersComingSoonView.swift in Sources */,
 				A13887D22A22A324006CE7F4 /* JournalIcon.swift in Sources */,
+				A1FB04BB2A2A7A29003456F3 /* BaitingBackgroundView.swift in Sources */,
 				A15E63F029B9654500391A88 /* TitlePageView.swift in Sources */,
 				A15E640A29B9654500391A88 /* TableOfContentsEnum.swift in Sources */,
+				A1C9B3F02A28D761004AD210 /* CrabsInABucketVTextTitleView.swift in Sources */,
 				A1CBD1702A1F96DB00DB76C6 /* StatView.swift in Sources */,
 				A167D55E2A052DE2001D997A /* VText.swift in Sources */,
+				A1C9B4002A28D97E004AD210 /* BeyondTheHorizonView.swift in Sources */,
+				A1C9B3F62A28D91F004AD210 /* WadingView.swift in Sources */,
 				A1CBD1722A1F976800DB76C6 /* Entry.swift in Sources */,
 				A1EF290D2A20E71B00FFF9B2 /* ShufflePrompts.swift in Sources */,
+				A19B921D2A2A88C8009CE24F /* FlyFishingBackgroundView.swift in Sources */,
+				A1C9B3FA2A28D953004AD210 /* HookedView.swift in Sources */,
 				A1CBD17C2A1F985900DB76C6 /* MainView.swift in Sources */,
 				A15E640129B9654500391A88 /* AnimatedWaveView.swift in Sources */,
 				A1CBD1252A168CBC00DB76C6 /* RevisedHowToFishView.swift in Sources */,
+				A19B92172A2A85D8009CE24F /* FirstCatchBackgroundView.swift in Sources */,
+				A19B921B2A2A8862009CE24F /* CatchNReleaseBackgroundView.swift in Sources */,
 				A1CBD1322A1E5C8800DB76C6 /* LocalNotificationManager.swift in Sources */,
+				A1FB04B92A2A783B003456F3 /* HowToFishBackgroundView.swift in Sources */,
 				A15E640329B9654500391A88 /* PrototypePoemTooView.swift in Sources */,
 				A15E63F529B9654500391A88 /* TransitionPageView.swift in Sources */,
-				A167D5B42A060513001D997A /* MainContentView.swift in Sources */,
+				A16F0CB62A2F6C0C00913FE9 /* AddJournalEntryButton.swift in Sources */,
+				A1FB04BF2A2A8410003456F3 /* BigFishSmallPondBackgroundView.swift in Sources */,
+				A167D5B42A060513001D997A /* Vol1Poems.swift in Sources */,
 				A1CBD17A2A1F982B00DB76C6 /* EntryDetail.swift in Sources */,
 				A15E640629B9654500391A88 /* PoemView.swift in Sources */,
+				A1C9B3EC2A28D568004AD210 /* BigFishSmallPondVTextTitleView.swift in Sources */,
 				A15E63C529B9652300391A88 /* AltTooTableOfContentsView.swift in Sources */,
 				A15E63F629B9654500391A88 /* BackCoverView.swift in Sources */,
+				A10671952A2782E900B7E2F8 /* AboutMeTestNotificationFeature.swift in Sources */,
+				A1C9B3FC2A28D964004AD210 /* CrabsInABucketView.swift in Sources */,
+				A1C9B3F42A28D89B004AD210 /* BeyondTheHorizonVTextTitleView.swift in Sources */,
 				A15E63F329B9654500391A88 /* PageCurl.swift in Sources */,
 				A15E63F929B9654500391A88 /* TrophiesView.swift in Sources */,
 				A1CBD12E2A1CF85300DB76C6 /* Test Notification View.swift in Sources */,
 				A13887D02A229E07006CE7F4 /* TransitionPage.swift in Sources */,
 				A1641CB62A0D248800B935EA /* Page Curl Practice View.swift in Sources */,
 				A15E63C729B9652300391A88 /* Alt.TableOfContentsView.swift in Sources */,
+				A13887DC2A26C964006CE7F4 /* NotificationMessages.swift in Sources */,
 				A13887D42A22A373006CE7F4 /* JournalIconButton.swift in Sources */,
 				A19640B42A13B1B6005008B8 /* ImageTitleInvert.swift in Sources */,
 				A167D5602A052E10001D997A /* testVTextView.swift in Sources */,
 				A15E63EE29B9654500391A88 /* BlurredSheetView.swift in Sources */,
+				A1C9B4042A2A26BD004AD210 /* TableOfContentsBackgroundView.swift in Sources */,
+				A1E3D79F2A2A8B5E003C9D03 /* BaitingView.swift in Sources */,
+				A1C9B3E62A28D374004AD210 /* BaitingVTextTitleView.swift in Sources */,
 				A15E640229B9654500391A88 /* htfPicView.swift in Sources */,
 				A1CBD1842A1F995200DB76C6 /* User.swift in Sources */,
 				A1CBD1762A1F97DA00DB76C6 /* Helper.swift in Sources */,
-				A15E63C429B9652300391A88 /* TestTableOfContentsView.swift in Sources */,
+				A15E63C429B9652300391A88 /* TableOfContentsView.swift in Sources */,
 				A15E63F229B9654500391A88 /* RotatingTableOfContentsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

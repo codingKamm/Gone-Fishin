@@ -12,12 +12,12 @@ struct JournalIcon: View {
     
             var body: some View {
                 NavigationStack{
-//                    NavigationLink(destination: ContentTooView()) {
+//                    NavigationLink(destination: JournalMainView()) {
                         Button(action: { presentSheet = true}) {
                             JournalIconButton()
                         }
                         .sheet(isPresented: $presentSheet) {
-ContentTooView()                                .presentationDetents([.large])
+JournalMainView()                                .presentationDetents([.large])
                                 .presentationDragIndicator(.visible)
                 }
 //                    }
@@ -27,7 +27,7 @@ ContentTooView()                                .presentationDetents([.large])
 //                                    JournalIconButton()
 //                                    }
 //                , label: {
-//                    NavigationLink(destination: ContentTooView()) {
+//                    NavigationLink(destination: JournalMainView()) {
 //                         Text("Open View")
 //                     }
 //                {
@@ -41,7 +41,7 @@ ContentTooView()                                .presentationDetents([.large])
 //                JournalIconButton()
 //                }
 //                        .sheet(isPresented: $presentSheet) {
-//                        ContentTooView()
+//                        JournalMainView()
 //                                .presentationDetents([.large])
 //                                .presentationDragIndicator(.visible)
 //                }

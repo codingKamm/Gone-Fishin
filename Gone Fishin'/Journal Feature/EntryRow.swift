@@ -18,22 +18,36 @@ struct EntryRow: View {
                     VStack {
                         Text(item.getDateString(date: item.date))
                             .font(.system(size: 13))
+                            .foregroundColor(.black)
                             .padding()
-                            .background(myCustomColor.greyKris)
+                            .background(.white)
                             .cornerRadius(7)
                     }
                     .padding(10)
                     
                     VStack(alignment: .leading) {
+//                        Section{Text(item.prompt)
+//                                .font(.callout)
+//                                .italic()
+//                        }
+//                        .padding(.trailing)
                         Text(item.title)
-                            .font(.headline)
+                            .font(.title2)
+                            .foregroundColor(.black)
+                            .bold()
                         Text(item.stanza)
                             .frame(height: 50)
+                            .foregroundColor(.black)
                             .truncationMode(.tail)
                     }
-                }
-            }
-        }
+                }// End of HStack
+                .cornerRadius(7)
+//                .colorScheme(.dark)
+
+            }// End of VStack
+            .cornerRadius(7)
+        }// End of HStack
+        .cornerRadius(7)
     }
 }
 

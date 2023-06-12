@@ -8,15 +8,17 @@
 import SwiftUI
 
 struct GoneFishin_View: View {
-    var string = "GONE FISHIN"
-    @State private var stringArray = [String]()
+//    var string = "GONE FISHIN"
+//    @State private var stringArray = [String]()
     
     var body: some View {
-        VStack{
-            HStack{
-              testGoneFishinTextView()
-                    .padding(.leading)
-                Text("""
+        ZStack{
+            GoneFishinBackgroundView()
+            VStack{
+                HStack{
+                    GoneFishinVTextTitleView()
+                        .padding(.leading)
+                    Text("""
                          routinely naïve
                          it’s the definition of insanity
                          too careless to conceive
@@ -27,20 +29,23 @@ struct GoneFishin_View: View {
                          stir crazy; an idiomatic glass house
                          you can’t hide from yourself
                          """)
-                .multilineTextAlignment(.center)
-                .padding()
-            }//End of HStack
-            HStack{
-                TextFieldBottomSheetView()
-            }//End of HStack
-        }//End of VStack
-        .navigationTitle("Gone Fishin")
-        .navigationBarTitleDisplayMode(.inline)
-        .toolbar {
-            ToolbarItem(placement: .navigationBarTrailing) {
-               ChapterView()
-                    }
-                }// End of Toolbar
+                    .multilineTextAlignment(.center)
+                    .padding()
+                }//End of HStack
+                .foregroundColor(.white)
+                HStack{
+                    TextFieldBottomSheetView()
+                }//End of HStack
+//                .foregroundColor(.white)
+            }//End of VStack
+            .navigationTitle("Gone Fishin")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    ChapterView()
+                }
+            }// End of Toolbar
+                }//End of ZStack
             }
         }
     
@@ -48,6 +53,8 @@ struct GoneFishin_View: View {
 struct GoneFishin_View_Previews: PreviewProvider {
     static var previews: some View {
         GoneFishin_View()
+            .environmentObject(LocalNotificationManager())
+
     }
 }
 

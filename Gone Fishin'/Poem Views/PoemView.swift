@@ -22,6 +22,7 @@ struct PoemView: View {
                         i, poems in PoemsView(poems: poems)
                     }
                 }// End of HStack
+                .edgesIgnoringSafeArea(.all)
             }// End of VStack
             .navigationTitle("Title or E.M. Douglass") //Milk & Honey Inspo, thanks Krissie
             .navigationBarTitleDisplayMode(.inline)
@@ -33,24 +34,33 @@ private struct PoemsView: View {
     var poems: PoemArray
     
     var body: some View {
-        VStack{
-            HStack{
-//                poems.titleText
-                Text(poems.poemText)
-                .multilineTextAlignment(.center)
-                .padding()
-            }//End of HStack
-            HStack{
-                TextFieldBottomSheetView()
-            }//End of HStack
-        }//End of VStack
-        .navigationTitle("How To Fish")
-        .navigationBarTitleDisplayMode(.inline)
-//        .toolbar {
-//            ToolbarItem(placement: .navigationBarTrailing) {
-//               ChapterView()
-//                }
-//            }// End of Toolbar
+        ZStack{
+            Image(poems.backgroundImage)
+                .resizable()
+                .edgesIgnoringSafeArea(.all)
+            VStack{
+                HStack{
+                    anotherTestVTextView()
+                    Text(poems.poemText)
+                        .multilineTextAlignment(.center)
+                        .padding()
+                       
+
+                }//End of HStack
+                .foregroundColor(.white)
+                HStack{
+                    TextFieldBottomSheetView()
+                }//End of HStack
+            }//End of VStack
+            .navigationTitle("How To Fish")
+            .navigationBarTitleDisplayMode(.inline)
+            //        .toolbar {
+            //            ToolbarItem(placement: .navigationBarTrailing) {
+            //               ChapterView()
+            //                }
+            //            }// End of Toolbar
+            } //End of ZStack
+        
         }
     }
 

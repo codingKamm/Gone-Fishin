@@ -10,15 +10,17 @@ import SwiftUI
 
 struct FirstCatchView: View {
   
-var string = "FIRST CATCH"
-@State private var stringArray = [String]()
+//var string = "FIRST CATCH"
+//@State private var stringArray = [String]()
     
     var body: some View {
-        VStack{
-        HStack{
-           testFirstCatchView()
-                .padding(.leading)
-            Text("""
+        ZStack{
+            FirstCatchBackgroundView()
+            VStack{
+                HStack{
+                     FirstCatchVTextTitleView()
+//                        .padding(.leading)
+                    Text("""
                  the excitement of completion
                  a thrill undefeated; conceited
                  surrounded by an isolated hue
@@ -30,20 +32,21 @@ var string = "FIRST CATCH"
                  from humble beginnings; a process to trust
                  the first to tarnish from an everlasting rust
                  """)
-            .multilineTextAlignment(.center)
-        } //End of HStack
-        HStack{
-
-            TextFieldBottomSheetView()
-        }//End of HStack
-    }//End of VStack
-        .navigationTitle("First Catch")
-        .navigationBarTitleDisplayMode(.inline)
-        .toolbar {
-            ToolbarItem(placement: .navigationBarTrailing) {
-               ChapterView()
+                    .multilineTextAlignment(.leading)
+                } //End of HStack
+                HStack{
+                    
+                    TextFieldBottomSheetView()
+                }//End of HStack
+            }//End of VStack
+            .navigationTitle("First Catch")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    ChapterView()
                 }
             }// End of Toolbar
+        }// End of ZStack
     }
 }
 
