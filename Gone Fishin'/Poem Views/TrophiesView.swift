@@ -8,15 +8,17 @@
 import SwiftUI
 
 struct TrophiesView: View {
-    var string = "TROPHIES"
-    @State private var stringArray = [String]()
+//    var string = "TROPHIES"
+//    @State private var stringArray = [String]()
     
     var body: some View {
-        VStack{
-            HStack{
-              testTrophiesView()
-                    .padding(.leading)
-                Text("""
+        ZStack{
+            TrophiesBackgroundView()
+            VStack{
+                HStack{
+                    TrophiesVTextTitleView()
+                        .padding(.leading)
+                    Text("""
                  prized catches dripping wet
                  a mount to nothing
                  except golden silhouettes
@@ -25,20 +27,23 @@ struct TrophiesView: View {
                  some amount to something
                  an interest left to recollect
                  """)
-                .padding()
-                .multilineTextAlignment(.center)
-            } //End of HStack
-            HStack{
-                TextFieldBottomSheetView()
-            }//End of HStack
-        }//End of VStack
-        .navigationTitle("Trophies")
-        .navigationBarTitleDisplayMode(.inline)
-        .toolbar {
-            ToolbarItem(placement: .navigationBarTrailing) {
-               ChapterView()
+                    .padding()
+                    .multilineTextAlignment(.center)
+                } //End of HStack
+                .foregroundColor(.white)
+                HStack{
+                    TextFieldBottomSheetView()
+                }//End of HStack
+                .foregroundColor(.white)
+            }//End of VStack
+            .navigationTitle("Trophies")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    ChapterView()
                 }
             }// End of Toolbar
+        }//End of ZStack
     }
 }
 

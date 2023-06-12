@@ -16,7 +16,7 @@ struct Page_Curl_Practice_View: View {
 
         Pages(currentPage: $index, transitionStyle: .pageCurl, bounce: true, wrap: true) {
                 TitlePageView()
-                TestTableOfContentsView()
+                TableOfContentsView()
                 HowToFishView()
                 GoneFishin_View()
                 FirstCatchView()

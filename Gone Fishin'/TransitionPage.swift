@@ -12,7 +12,7 @@ struct TransitionPage: View {
         VStack{
             Image("transitionPage")
                 .resizable()
-                .scaledToFit()
+                .edgesIgnoringSafeArea(.all)
         }
     }
 }

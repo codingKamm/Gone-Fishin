@@ -17,7 +17,7 @@ struct TextFieldBottomSheetView: View {
         }
                 .sheet(isPresented: $presentSheet) {
                            TextFieldView()
-                        .presentationDetents([.height(100), .medium, .large])
+                        .presentationDetents([.height(125), .medium, .large])
         }
     }
 }

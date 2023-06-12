@@ -14,7 +14,7 @@ struct TextFieldView: View {
         NavigationStack{
             VStack{
                 VStack(alignment: .leading) {
-                    TextField("Have a thought? Reflect && write it here...", text: $poemNotes, axis: .vertical)
+                    TextField("Have a thought? Reflect and write it here...", text: $poemNotes, axis: .vertical)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                 }//End of VStack
                 .padding()

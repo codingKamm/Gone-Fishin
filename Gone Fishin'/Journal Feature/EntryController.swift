@@ -11,8 +11,8 @@ class EntryController: ObservableObject {
     @Published var entries: [EntrySection] = []
     @Published var entryCount: Int = 0
 
-    func createEntry (title: String, date: Date, desc: String) {
-        let newEntry = EntrySection(title: title, date: date, stanza: desc)
+    func createEntry (prompt: String, title: String, date: Date, desc: String) {
+        let newEntry = EntrySection(prompt: prompt, title: title, date: date, stanza: desc)
         entries.append(newEntry)
     }
 

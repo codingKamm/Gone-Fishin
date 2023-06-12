@@ -13,6 +13,8 @@ struct EntryDetail: View {
     var body: some View {
         
         VStack {
+            Text(entry.prompt)
+                .font(.callout)
             Text(entry.title)
                 .font(.largeTitle)
             Text(entry.getDateString(date: entry.date))
@@ -21,6 +23,7 @@ struct EntryDetail: View {
                 .padding()
             Spacer()
         }
+        .padding(.top, 25)
         .navigationTitle(entry.title)
         .navigationBarTitleDisplayMode(.inline)
     }

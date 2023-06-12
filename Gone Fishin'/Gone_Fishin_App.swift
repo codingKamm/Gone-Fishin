@@ -21,8 +21,9 @@ struct Gone_Fishin_App: App {
     var body: some Scene {
         WindowGroup {
             finalContentView()
-//            ContentTooView()
-                //used for Journal feature
+//NotificationButtonTest()
+//            AboutMeTestNotificationFeature()
+            //used for Journal feature
                 .environmentObject(entryController)
                 .environmentObject(entryUser)
 

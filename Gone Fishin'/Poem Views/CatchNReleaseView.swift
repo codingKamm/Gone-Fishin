@@ -11,10 +11,12 @@ struct CatchNReleaseView: View {
     @State var index: Int = 0
     
     var body: some View {
-        NavigationStack{
+//        NavigationStack{
+        ZStack{
+            CatchNReleaseBackgroundView()
             VStack{
                 HStack{
-                    testCatchNReleaseView()
+                    CatchNReleaseVTextTitleView()
                         .padding(.leading)
                     Text("""
                          behind the scenes of curiosity
@@ -26,21 +28,24 @@ struct CatchNReleaseView: View {
                     .padding()
                     .multilineTextAlignment(.center)
                 }//End of HStack
+                .foregroundColor(.white)
                 HStack{
                     TextFieldBottomSheetView()
                 }//End of HStack
+                .foregroundColor(.white)
             }//End of VStack
             .navigationTitle("Catch & Release")
             .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(action: {
-                        self.index = 3
-                    }) { Image(systemName: "arrow.right")
-                    }
-                }
-            }// End of Toolbar
-        }// End of Nav. Stack
+            //            .toolbar {
+            //                ToolbarItem(placement: .navigationBarTrailing) {
+            //                    Button(action: {
+            //                        self.index = 3
+            //                    }) { Image(systemName: "arrow.right")
+            //                    }
+            //                }
+            //            }// End of Toolbar
+            //        }// End of Nav. Stack
+        }//End of ZStack
     }
 }
 

@@ -18,7 +18,7 @@ struct MainView: View {
     
     var body: some View {
         TabView {
-            ContentTooView()
+            JournalMainView()
                 .tabItem {
                     Label("Journal", systemImage: "book")
                 }
