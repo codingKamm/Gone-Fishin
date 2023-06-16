@@ -17,7 +17,7 @@ struct GoneFishin_View: View {
             VStack{
                 HStack{
                     GoneFishinVTextTitleView()
-                        .padding(.leading)
+                        .padding(20)
                     Text("""
                          routinely naïve
                          it’s the definition of insanity
@@ -29,22 +29,25 @@ struct GoneFishin_View: View {
                          stir crazy; an idiomatic glass house
                          you can’t hide from yourself
                          """)
-                    .multilineTextAlignment(.center)
-                    .padding()
+                    .multilineTextAlignment(.leading)
+                    .font(Font.custom("Bangla-Sangam-MN-Bold", size: 16))
+                    .padding(.top, 350)
                 }//End of HStack
                 .foregroundColor(.white)
-                HStack{
-                    TextFieldBottomSheetView()
-                }//End of HStack
+                .padding()
+//                HStack{
+//                    TextFieldBottomSheetView()
+//                }//End of HStack
+                
 //                .foregroundColor(.white)
             }//End of VStack
             .navigationTitle("Gone Fishin")
             .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    ChapterView()
-                }
-            }// End of Toolbar
+//            .toolbar {
+//                ToolbarItem(placement: .navigationBarTrailing) {
+//                    ChapterView()
+//                }
+//            }// End of Toolbar
                 }//End of ZStack
             }
         }

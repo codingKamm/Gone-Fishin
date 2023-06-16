@@ -22,7 +22,6 @@ struct Gone_Fishin_App: App {
         WindowGroup {
             finalContentView()
 //NotificationButtonTest()
-//            AboutMeTestNotificationFeature()
             //used for Journal feature
                 .environmentObject(entryController)
                 .environmentObject(entryUser)

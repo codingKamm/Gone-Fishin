@@ -9,30 +9,39 @@ import SwiftUI
 
 struct FlyFishingView: View {
     var body: some View {
-        VStack{
-            HStack{
-                FlyFishingVTextTitleView()
-                .padding(.leading)
-            Text("""
+        ZStack{
+            FlyFishingBackgroundView()
+            VStack{
+                HStack{
+                    FlyFishingVTextTitleView()
+                        .padding(.leading)
+                    HStack{
+                        Text("""
                  im shallow in my stance
                  white waters raging at my feet
                  with each captivating experience
                  victory lies in defeat
                  """)
-            .multilineTextAlignment(.center)
-        } //End of HStack
-        HStack{
-
-            TextFieldBottomSheetView()
-        }//End of HStack
-    }//End of VStack
-        .navigationTitle("Fly Fishing")
-        .navigationBarTitleDisplayMode(.inline)
-        .toolbar {
-            ToolbarItem(placement: .navigationBarTrailing) {
-               ChapterView()
+                        .multilineTextAlignment(.leading)
+                        .font(Font.custom("Bangla-Sangam-MN-Bold", size: 19))
+                        .padding()
+                    }
+                    .padding(.bottom, 80)
+                } //End of HStack
+                
+//                HStack{
+//
+//                    TextFieldBottomSheetView()
+//                }//End of HStack
+            }//End of VStack
+            .navigationTitle("Fly Fishing")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    ChapterView()
                 }
             }// End of Toolbar
+        }
     }
 }
 

@@ -14,6 +14,15 @@ class EntryController: ObservableObject {
     func createEntry (prompt: String, title: String, date: Date, desc: String) {
         let newEntry = EntrySection(prompt: prompt, title: title, date: date, stanza: desc)
         entries.append(newEntry)
+        save()
+    }
+    
+    func save() {
+        DirectoryService.writeModelToDisk(entries)
+    }
+    
+    func load() {
+        self.entries = DirectoryService.readModelFromDisk()
     }
 
     func deleteEntry(at index: Int) {
@@ -36,5 +45,10 @@ class EntryController: ObservableObject {
     func listAllEntries() {
         print(self.entries);
     }
+    
+    init() {
+        load()
+    }
+    
     
 }

@@ -10,7 +10,7 @@ import SwiftUI
 enum Chapter: Int, CaseIterable {
     case howToFish = 1
     case baiting
-    case waiting
+    case wading
     case goneFishin
     case bigFishSmallPond
     case hooked
@@ -27,8 +27,8 @@ enum Chapter: Int, CaseIterable {
             return "How to Fish"
         case .baiting:
             return "Baiting"
-        case .waiting:
-            return "Waiting"
+        case .wading:
+            return "Wading"
         case .goneFishin:
             return "Gone Fishin'"
         case .bigFishSmallPond:

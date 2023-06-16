@@ -19,6 +19,8 @@ struct BackCoverView: View {
 struct BackCoverView_Previews: PreviewProvider {
     static var previews: some View {
         BackCoverView()
+            .environmentObject(LocalNotificationManager())
+
     }
 }
 

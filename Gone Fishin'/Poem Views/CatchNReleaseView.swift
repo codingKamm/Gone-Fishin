@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct CatchNReleaseView: View {
-    @State var index: Int = 0
     
     var body: some View {
 //        NavigationStack{
@@ -18,21 +17,27 @@ struct CatchNReleaseView: View {
                 HStack{
                     CatchNReleaseVTextTitleView()
                         .padding(.leading)
-                    Text("""
+                    HStack{
+                        Text("""
                          behind the scenes of curiosity
                          you’ll meet every opportunity
                          a constant fight; a timeless bout
                          counting losses, grudges, and doubt
                          \n just let it go..
                          """)
-                    .padding()
-                    .multilineTextAlignment(.center)
+                        .padding()
+                        .multilineTextAlignment(.leading)
+                        .font(Font.custom("Bangla-Sangam-MN-Bold", size: 18))
+                        Text("")
+                    }
+                    .padding(.bottom, 200)
+
                 }//End of HStack
                 .foregroundColor(.white)
-                HStack{
-                    TextFieldBottomSheetView()
-                }//End of HStack
-                .foregroundColor(.white)
+//                HStack{
+//                    TextFieldBottomSheetView()
+//                }//End of HStack
+//                .foregroundColor(.white)
             }//End of VStack
             .navigationTitle("Catch & Release")
             .navigationBarTitleDisplayMode(.inline)

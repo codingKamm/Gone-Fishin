@@ -9,34 +9,41 @@ import SwiftUI
 
 struct BeyondTheHorizonView: View {
     var body: some View {
+        NavigationStack{
         ZStack{
             BeyondTheHorizonBackgroundView()
             VStack{
                 HStack{
                     BeyondTheHorizonVTextTitleView()
                         .padding(.leading)
-                    Text("""
+                    HStack{
+                        Text("""
                  grandeur of serenity
                  that’s accepting of each doubt
                  courage is changing the inevitable
                  wisdom is weathering the drought
                  """)
-                    .multilineTextAlignment(.center)
+                        .multilineTextAlignment(.leading)
+                        .font(Font.custom("Bangla-Sangam-MN-Bold", size: 19))
+                        .padding()
+                    }
+                    .padding(.bottom, 600)
                 } //End of HStack
-                .foregroundColor(.white)
-                HStack{
-                    TextFieldBottomSheetView()
-                }//End of HStack
-                .foregroundColor(.white)
+                .foregroundColor(.black)
+                //                HStack{
+                //                    TextFieldBottomSheetView()
+                //                }//End of HStack
+                //                .foregroundColor(.white)
             }//End of VStack
-            .navigationTitle("Beyond the Horizon")
-            .navigationBarTitleDisplayMode(.inline)
+//            .navigationTitle("Beyond the Horizon")
+//            .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    ChapterView()
+                    CapsuleIconsView()
                 }
             }// End of Toolbar
         }// End of ZStack
+        }//End of Nav. Stack
     }
 }
 

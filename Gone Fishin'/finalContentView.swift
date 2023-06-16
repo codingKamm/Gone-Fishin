@@ -10,24 +10,25 @@ import Pages
 
 
 struct finalContentView: View {
-//    @EnvironmentObject var lnManager: LocalNotificationManager
-//    @Environment(\.scenePhase) var scenePhase
-//    
+
     @State var index: Int = 0
     @State var poemIndex: Int = 0
  
+    
     var body: some View {
 
      
         
         Pages(currentPage: $index, transitionStyle: .scroll, bounce: true, wrap: true) {
             TitlePageView()
-            TransitionPage()
-            TableOfContentsView()
+//            TableOfContentsView()
             Vol1Poems()
-            BackCoverView()
+            PartTwoCollectionView()
             Vol2Poems()
+            PartThreeCollectionView()
+            Vol3Poems()
             NewChaptersComingSoonView()
+
         }
         .edgesIgnoringSafeArea(.all)
     }

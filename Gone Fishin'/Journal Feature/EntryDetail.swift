@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct EntryDetail: View {
+    
     let entry: EntrySection
     
     var body: some View {
@@ -21,6 +22,7 @@ struct EntryDetail: View {
                 .font(.footnote)
             Text(entry.stanza)
                 .padding()
+                
             Spacer()
         }
         .padding(.top, 25)

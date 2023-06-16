@@ -47,7 +47,7 @@ struct TableOfContentsEnum: View {
                         HowToFishView()
                     case .baiting:
                         RevisedHowToFishView()
-                    case .waiting:
+                    case .wading:
                         RevisedHowToFishView()
                     case .goneFishin:
                         GoneFishin_View()

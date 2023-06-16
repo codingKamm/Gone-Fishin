@@ -26,5 +26,7 @@ struct CollectionExplanationView: View {
 struct CollectionExplanationView_Previews: PreviewProvider {
     static var previews: some View {
         CollectionExplanationView()
+            .environmentObject(LocalNotificationManager())
+
     }
 }

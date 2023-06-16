@@ -24,7 +24,7 @@ struct BeyondTheHorizonBackgroundView: View {
         
         func beyondTheHorizonTimer(){
             var index = 1
-            let timer = Timer.scheduledTimer(withTimeInterval: 0.97, repeats: true){ (Timer) in
+            _ = Timer.scheduledTimer(withTimeInterval: 0.97, repeats: true){ (Timer) in
                 
                 BeyondTheHorizonPoemAssets = "beyondTheHorizon\(index)"
                 

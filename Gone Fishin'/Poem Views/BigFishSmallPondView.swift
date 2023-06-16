@@ -14,20 +14,23 @@ struct BigFishSmallPondView: View {
             VStack{
                 HStack{
                     BigFishSmallPondVTextTitleView()
-                    //                .padding(.leading)
+                        .padding(.leading)
+                        Spacer()
                     Text("""
                  with remnants of toxicity
                  each day is a risk to take
                  in joy each thought is safe
                  enjoy, there’s a new mistake
                  """)
-                    .multilineTextAlignment(.center)
+                    .multilineTextAlignment(.leading)
+                    .font(Font.custom("Bangla-Sangam-MN-Bold", size: 18))
+                    .padding([.trailing, .bottom],80)
                 } //End of HStack
                 .foregroundColor(.white)
-                HStack{
-                    
-                    TextFieldBottomSheetView()
-                }//End of HStack
+//                HStack{
+//                    
+//                    TextFieldBottomSheetView()
+//                }//End of HStack
 //                .foregroundColor(.white)
             }//End of VStack
             .navigationTitle("Big Fish Small Pond")

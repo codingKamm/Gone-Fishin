@@ -33,11 +33,14 @@ struct FirstCatchView: View {
                  the first to tarnish from an everlasting rust
                  """)
                     .multilineTextAlignment(.leading)
+                    .font(Font.custom("Bangla-Sangam-MN-Bold", size: 17))
+                    .padding(2)
                 } //End of HStack
-                HStack{
-                    
-                    TextFieldBottomSheetView()
-                }//End of HStack
+                .padding(.bottom, 230)
+//                HStack{
+//                    
+//                    TextFieldBottomSheetView()
+//                }//End of HStack
             }//End of VStack
             .navigationTitle("First Catch")
             .navigationBarTitleDisplayMode(.inline)

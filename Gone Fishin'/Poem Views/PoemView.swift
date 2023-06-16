@@ -13,12 +13,11 @@ import Pages
 
 struct PoemView: View {
     @State var index: Int = 0
-    
     var body: some View {
         NavigationStack{
             VStack{
                 HStack{
-                    ModelPages(poemArray, currentPage: $index, navigationOrientation: .horizontal, transitionStyle: .scroll, bounce: true, wrap: true){
+                    ModelPages(Poem.poem, currentPage: $index, navigationOrientation: .horizontal, transitionStyle: .scroll, bounce: true, wrap: true){
                         i, poems in PoemsView(poems: poems)
                     }
                 }// End of HStack
@@ -31,7 +30,7 @@ struct PoemView: View {
 }
     
 private struct PoemsView: View {
-    var poems: PoemArray
+    var poems: Poem
     
     var body: some View {
         ZStack{

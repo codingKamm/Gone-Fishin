@@ -10,22 +10,17 @@ import SwiftUI
 import Pages
 
 struct Vol1Poems: View {
-    @State var index: Int = 0
     @State var poemIndex1: Int = 0
 
     var body: some View {
        
-        Pages(currentPage: $poemIndex1, navigationOrientation: .vertical, transitionStyle: .scroll, wrap: true) {
+        Pages(currentPage: $poemIndex1, navigationOrientation: .vertical, transitionStyle: .scroll, wrap: false) {
             HowToFishView()
             BaitingView()
             WadingView()
             GoneFishin_View()
             BigFishSmallPondView()
             HookedView()
-          
-           
-            
-            
             }// End of Table of Contents Views
         .edgesIgnoringSafeArea(.all)
     }
@@ -34,6 +29,8 @@ struct Vol1Poems: View {
     struct TableOfContentsPagesView_Previews: PreviewProvider {
     static var previews: some View {
         Vol1Poems()
+            .environmentObject(LocalNotificationManager())
+
     }
 }
 

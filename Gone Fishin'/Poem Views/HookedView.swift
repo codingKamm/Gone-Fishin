@@ -26,14 +26,17 @@ struct HookedView: View {
                  pierced from each ambition
                  im still stuck and in my way
                  """)
-                    .multilineTextAlignment(.center)
+                    .multilineTextAlignment(.leading)
+                    .font(Font.custom("Bangla-Sangam-MN-Bold", size: 16))
+                    .padding(30)
                 } //End of HStack
-                .foregroundColor(.white)
-
-                HStack{
-                    
-                    TextFieldBottomSheetView()
-                }//End of HStack
+                .foregroundColor(.black)
+                .padding(.bottom, 300)
+//
+//                HStack{
+//                    
+//                    TextFieldBottomSheetView()
+//                }//End of HStack
 //                .foregroundColor(.white)
             }//End of VStack
             .navigationTitle("Hooked")

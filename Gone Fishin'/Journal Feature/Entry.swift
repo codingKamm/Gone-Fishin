@@ -24,7 +24,6 @@ struct EntrySection: Codable, Identifiable, Equatable {
     func getDateString(date: Date) -> String {
         var dateString: String = "";
         let dateFormatter = DateFormatter()
-        
         // Format date for output
         dateFormatter.dateFormat = "MMM d"
         dateString = dateFormatter.string(from: date)
