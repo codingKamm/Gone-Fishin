@@ -12,21 +12,33 @@ struct TitlePageView: View {
     @State var isActive: Bool = false
 
     var body: some View {
-            VStack {
-                    Image("titlePageTree")
-                        .resizable()
-                        .ignoresSafeArea()
-                        .padding()
-//                        .alert(isPresented: $showingAlert) {
-//                            Alert(title: Text("Special Announcement"), message: Text("Please, Swipe to Scroll"), dismissButton: .default(Text("Dismiss")))
-//                        } // End of Alert
-                }// End of VStack
+        VStack {
+            if self.isActive{
+//                TransitionPage()
+                    PartOneCollectionView()
+            } else {
+                Image("titlePageTree")
+                    .resizable()
+                    .ignoresSafeArea()
+                    .padding()
+            }
+        }// End of VStack
+        .onAppear {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                withAnimation {
+                    self.isActive = true
+                }
+            }
+        }// End of onAppear
+        
             }
         }
    
 struct TitlePage_Previews: PreviewProvider {
     static var previews: some View {
         TitlePageView()
+            .environmentObject(LocalNotificationManager())
+
     }
 }
 

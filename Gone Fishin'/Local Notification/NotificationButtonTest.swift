@@ -35,6 +35,7 @@ struct NotificationButtonTest: View {
                             //                            localNotification.userInfo = ["nextView" : NextView.renew.rawValue]
                             localNotification.categoryIdentifier = "snooze"
                             await lnManager.schedule(localNotification: localNotification)
+                            print("The Task printed")
                         }
                         
                     },
@@ -42,6 +43,8 @@ struct NotificationButtonTest: View {
                         NavigationLink(destination: JournalMainView()){
                             Text ("Test New View")
                                 .foregroundColor(.white)
+                            Image(systemName: "pencil")
+                            
                         }
                     }
                     )
@@ -72,7 +75,6 @@ struct NotificationButtonTest: View {
                             .presentationDragIndicator(.visible)
                     }
                     
-                    //                    Image("journalHand")
 
                     Button("+")
                     {

@@ -18,5 +18,7 @@ struct NewChaptersComingSoonView: View {
 struct NewChaptersComingSoonView_Previews: PreviewProvider {
     static var previews: some View {
         NewChaptersComingSoonView()
+            .environmentObject(LocalNotificationManager())
+
     }
 }

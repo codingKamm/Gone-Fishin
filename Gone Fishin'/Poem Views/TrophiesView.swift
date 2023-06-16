@@ -17,8 +17,10 @@ struct TrophiesView: View {
             VStack{
                 HStack{
                     TrophiesVTextTitleView()
-                        .padding(.leading)
-                    Text("""
+//                        .padding(.leading)
+                        .padding(30)
+                    HStack{
+                        Text("""
                  prized catches dripping wet
                  a mount to nothing
                  except golden silhouettes
@@ -27,14 +29,18 @@ struct TrophiesView: View {
                  some amount to something
                  an interest left to recollect
                  """)
-                    .padding()
-                    .multilineTextAlignment(.center)
+                        .multilineTextAlignment(.leading)
+                        .font(Font.custom("Bangla-Sangam-MN-Bold", size: 20))
+                        .padding()
+                    }
+                    .padding(.bottom, 200)
                 } //End of HStack
                 .foregroundColor(.white)
-                HStack{
-                    TextFieldBottomSheetView()
-                }//End of HStack
-                .foregroundColor(.white)
+                .padding(.bottom, 40)
+//                HStack{
+//                    TextFieldBottomSheetView()
+//                }//End of HStack
+//                .foregroundColor(.white)
             }//End of VStack
             .navigationTitle("Trophies")
             .navigationBarTitleDisplayMode(.inline)

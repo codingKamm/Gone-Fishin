@@ -58,7 +58,7 @@ struct JournalMainView: View {
                                     Spacer()
                                     NavigationLink(destination: CreateEntry()) {
                                         Text("Create new Entry")
-                                            .frame(width: 135, height: 20)
+                                            .frame(width: 135, height: 25)
                                     }
                                     .buttonStyle(MainButton())
                                     .padding(.leading)
@@ -68,7 +68,7 @@ struct JournalMainView: View {
                                             Image(systemName: "shuffle")
                                             Text("Random Prompts")
                                         }
-                                        .frame(width: 135, height: 20)
+                                        .frame(width: 135, height: 25)
                                         
                                     }
                                     .buttonStyle(MainButton())

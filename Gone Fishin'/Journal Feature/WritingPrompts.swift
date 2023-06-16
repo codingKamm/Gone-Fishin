@@ -36,7 +36,7 @@ enum WritingPromptsToShuffle: String, CaseIterable, Localizable {
     case prompt27 = "Have you ever experienced 'Impostor Syndrome'?"
     case prompt28 = "What are you thankful for?"
     case prompt29 = "What bad habits are you trying to break?"
-    case prompt30 = "How do your express yourself?"
+    case prompt30 = "How do you express yourself?"
     case prompt31 = "What is your most embarrassing moment?"
     case prompt32 = "What do you do in your free time?"
     case prompt33 = "What is your favorite meal to cook for others?"

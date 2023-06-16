@@ -22,6 +22,15 @@ struct CreateEntry: View {
     @State var createPoemTitle: String = ""
     @State var createPoemStanza: String = ""
     
+    //Dismiss Keyboard
+    @FocusState private var focusedField: Field?
+    private enum Field: Int, CaseIterable {
+        case doneDisimssOnKeyBoard
+    }
+    
+    //Edit Prompt
+    @State private var isEditing: Bool = false
+
     var body: some View {
         ZStack{
             StarBackground()
@@ -31,12 +40,28 @@ struct CreateEntry: View {
                     .multilineTextAlignment(.center)
                 Form {
                     Section {
-                        TextField("Title", text: $createPoemTitle)
-                            .pickerStyle(SegmentedPickerStyle())
-                        
-                        TextEditor(text: $createPoemStanza)
-                        //                        .foregroundColor(.black)
-                            .lineSpacing(7)
+                            TextField("Title", text: $createPoemTitle)
+                            .foregroundColor(.white)
+                                .pickerStyle(SegmentedPickerStyle())
+                                .focused($focusedField, equals: .doneDisimssOnKeyBoard)
+                                .toolbar {
+                                    ToolbarItem(placement: .keyboard) {
+                                        Button("") {
+                                            focusedField = nil
+                                        }
+                                    }
+                                }
+                            TextEditor(text: $createPoemStanza)
+                                .foregroundColor(.white)
+                                .focused($focusedField, equals: .doneDisimssOnKeyBoard)
+                                .toolbar {
+                                    ToolbarItem(placement: .keyboard) {
+                                        Button("Done") {
+                                            focusedField = nil
+                                        }
+                                    }
+                                }
+                                .lineSpacing(7)
                     }// End of Section
                     
                     Section {

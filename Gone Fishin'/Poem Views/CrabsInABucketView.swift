@@ -14,8 +14,11 @@ struct CrabsInABucketView: View {
             VStack{
                 HStack{
                     CrabsInABucketVTextTitleView()
-                        .padding(.leading)
-                    Text("""
+//                        .padding(.leading)
+                    Text("")
+                        .padding()
+                    HStack{
+                        Text("""
                  how can I tell you?
                  what’s happened to me
                  could still happen to you
@@ -24,14 +27,21 @@ struct CrabsInABucketView: View {
                  when you try to get ahead
                  I’ll pull you back with the rest
                  """)
-                    .multilineTextAlignment(.center)
+                        .multilineTextAlignment(.leading)
+                        .font(Font.custom("Bangla-Sangam-MN-Bold", size: 20))
+                        //                    .padding(90)
+                        Text("")
+                            .padding(.bottom, 90)
+                    }
+                    .padding(.bottom, 190)
                 } //End of HStack
-                .foregroundColor(.white)
-                HStack{
-                    
-                    TextFieldBottomSheetView()
-                }//End of HStack
-                .foregroundColor(.white)
+                .foregroundColor(.black)
+                .padding(.bottom, 25)
+//                HStack{
+//                    
+//                    TextFieldBottomSheetView()
+//                }//End of HStack
+//                .foregroundColor(.white)
             }//End of VStack
             .navigationTitle("Crabs in a Bucket")
             .navigationBarTitleDisplayMode(.inline)

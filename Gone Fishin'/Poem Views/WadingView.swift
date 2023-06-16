@@ -16,17 +16,23 @@ struct WadingView: View {
                 HStack{
                     WadingVTextTitleView()
                         .padding(.leading)
+                    VStack{
             Text("""
                  I went from waiting
                  To wading
                  Just to wound up in the deep end
                  """)
-                    .multilineTextAlignment(.leading)
+                        .multilineTextAlignment(.leading)
+                        .font(Font.custom("Bangla-Sangam-MN-Bold", size: 16))
+                        .padding(.leading, 50)
+                    }// End of VStack
+                    .padding(.top, 100)
                 } //End of HStack
-                HStack{
-                    
-                    TextFieldBottomSheetView()
-                }//End of HStack
+                .padding(.bottom, 210)
+//                HStack{
+//                    
+//                    TextFieldBottomSheetView()
+//                }//End of HStack
             }//End of VStack
             .navigationTitle("Waiting")
             .navigationBarTitleDisplayMode(.inline)

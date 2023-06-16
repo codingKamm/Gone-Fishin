@@ -34,7 +34,7 @@ struct CatchNReleaseVTextTitleView: View {
             }
             Section{
                 HStack{
-                    Text("N")
+                    Text("&")
                 }
                 HStack{
                     Text("")

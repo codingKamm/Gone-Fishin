@@ -19,7 +19,6 @@ struct Vol2Poems: View {
             CatchNReleaseView()
             FlyFishingView()
             TrophiesView()
-            BeyondTheHorizonView()
         }//End of Pages Section Two
         .edgesIgnoringSafeArea(.all)
     }
@@ -28,5 +27,7 @@ struct Vol2Poems: View {
 struct TableOfContentsPagesTwoView_Previews: PreviewProvider {
     static var previews: some View {
         Vol2Poems()
+            .environmentObject(LocalNotificationManager())
+
     }
 }

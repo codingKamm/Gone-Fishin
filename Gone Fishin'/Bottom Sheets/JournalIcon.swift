@@ -11,7 +11,7 @@ struct JournalIcon: View {
     @State var presentSheet = false
     
             var body: some View {
-                NavigationStack{
+//                NavigationStack{
 //                    NavigationLink(destination: JournalMainView()) {
                         Button(action: { presentSheet = true}) {
                             JournalIconButton()
@@ -21,7 +21,7 @@ JournalMainView()                                .presentationDetents([.large])
                                 .presentationDragIndicator(.visible)
                 }
 //                    }
-                }// End of Nav. Stack
+//                }// End of Nav. Stack
                 
 //                Button( action: { presentSheet = true }) {
 //                                    JournalIconButton()
