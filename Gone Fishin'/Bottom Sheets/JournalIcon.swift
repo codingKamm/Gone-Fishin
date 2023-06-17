@@ -11,41 +11,15 @@ struct JournalIcon: View {
     @State var presentSheet = false
     
             var body: some View {
-//                NavigationStack{
-//                    NavigationLink(destination: JournalMainView()) {
                         Button(action: { presentSheet = true}) {
                             JournalIconButton()
                         }
                         .sheet(isPresented: $presentSheet) {
-JournalMainView()                                .presentationDetents([.large])
+                            JournalMainView()
+                                .presentationDetents([.large])
                                 .presentationDragIndicator(.visible)
                 }
-//                    }
-//                }// End of Nav. Stack
-                
-//                Button( action: { presentSheet = true }) {
-//                                    JournalIconButton()
-//                                    }
-//                , label: {
-//                    NavigationLink(destination: JournalMainView()) {
-//                         Text("Open View")
-//                     }
-//                {
-//        Image(systemName:"note.text.badge.plus")
-//        }
-//
-                
-                
-                
-//                Button( action: { presentSheet = true }) {
-//                JournalIconButton()
-//                }
-//                        .sheet(isPresented: $presentSheet) {
-//                        JournalMainView()
-//                                .presentationDetents([.large])
-//                                .presentationDragIndicator(.visible)
-//                }
-                       
+
             }
         }
 

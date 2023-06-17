@@ -24,11 +24,11 @@ struct BeyondTheHorizonView: View {
                  wisdom is weathering the drought
                  """)
                         .multilineTextAlignment(.leading)
-                        .font(Font.custom("Bangla-Sangam-MN-Bold", size: 21))
+                        .font(Font.custom("Bangla-Sangam-MN-Bold", size: 19))
                         .bold()
                         .padding()
                     }
-                    .padding(.bottom, 640)
+                    .padding(.bottom, 600)
                 } //End of HStack
                 .foregroundColor(.black)
                 //                HStack{

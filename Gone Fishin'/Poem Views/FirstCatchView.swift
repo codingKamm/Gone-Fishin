@@ -42,6 +42,7 @@ struct FirstCatchView: View {
 //                    TextFieldBottomSheetView()
 //                }//End of HStack
             }//End of VStack
+            .foregroundColor(.black)
 //            .navigationTitle("First Catch")
 //            .navigationBarTitleDisplayMode(.inline)
 //            .toolbar {
