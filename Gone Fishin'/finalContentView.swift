@@ -16,21 +16,23 @@ struct finalContentView: View {
  
     
     var body: some View {
-
-     
-        
-        Pages(currentPage: $index, transitionStyle: .scroll, bounce: true, wrap: true) {
-            TitlePageView()
-//            TableOfContentsView()
-            Vol1Poems()
-            PartTwoCollectionView()
-            Vol2Poems()
-            PartThreeCollectionView()
-            Vol3Poems()
-            NewChaptersComingSoonView()
-
+        NavigationStack{
+            Pages(currentPage: $index, transitionStyle: .scroll, bounce: true, wrap: true) {
+                TitlePageView()
+                Vol1Poems()
+                PartTwoCollectionView()
+                Vol2Poems()
+                NewChaptersComingSoonView()
+                  
+            }
+            .edgesIgnoringSafeArea(.all)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    CapsuleIconsView()
+                }
+                
+            }// End of Toolbar
         }
-        .edgesIgnoringSafeArea(.all)
     }
 }
 struct testPageCurlFeature_Previews: PreviewProvider {

@@ -35,7 +35,7 @@ struct CrabsInABucketView: View {
                     }
                     .padding(.bottom, 190)
                 } //End of HStack
-                .foregroundColor(.black)
+                .foregroundColor(.white)
                 .padding(.bottom, 25)
 //                HStack{
 //                    
@@ -43,13 +43,13 @@ struct CrabsInABucketView: View {
 //                }//End of HStack
 //                .foregroundColor(.white)
             }//End of VStack
-            .navigationTitle("Crabs in a Bucket")
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    ChapterView()
-                }
-            }// End of Toolbar
+//            .navigationTitle("Crabs in a Bucket")
+//            .navigationBarTitleDisplayMode(.inline)
+//            .toolbar {
+//                ToolbarItem(placement: .navigationBarTrailing) {
+//                    ChapterView()
+//                }
+//            }// End of Toolbar
         }// End of ZStack
     }
 }

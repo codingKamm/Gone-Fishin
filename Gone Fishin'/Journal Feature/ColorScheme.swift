@@ -24,6 +24,11 @@ struct MyCustomColors {
     var palePink: Color {
         return Color(red: 255 / 255, green: 243 / 255, blue: 243 / 255)
     }
+    
+    var partIICollectionTextColor: Color {
+        return Color(red: 40 / 255, green: 41 / 255, blue: 163 / 255)
+    }
+    
     var oldPink: Color {
         return Color(red: 254 / 255, green: 215 / 255, blue: 215 / 255)
     }

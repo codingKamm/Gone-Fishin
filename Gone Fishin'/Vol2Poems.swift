@@ -13,12 +13,13 @@ struct Vol2Poems: View {
 
     
     var body: some View {
-        Pages(currentPage: $poemIndex2, navigationOrientation: .vertical, transitionStyle: .scroll, wrap: true){
+        Pages(currentPage: $poemIndex2, navigationOrientation: .vertical, transitionStyle: .scroll, wrap: false){
             FirstCatchView()
             CrabsInABucketView()
             CatchNReleaseView()
             FlyFishingView()
             TrophiesView()
+            BeyondTheHorizonView()
         }//End of Pages Section Two
         .edgesIgnoringSafeArea(.all)
     }

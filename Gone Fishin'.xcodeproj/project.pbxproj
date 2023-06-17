@@ -120,7 +120,6 @@
 		A1CBD1802A1F98CC00DB76C6 /* CreateEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CBD17F2A1F98CC00DB76C6 /* CreateEntry.swift */; };
 		A1CBD1822A1F993D00DB76C6 /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CBD1812A1F993D00DB76C6 /* EntryController.swift */; };
 		A1CBD1842A1F995200DB76C6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CBD1832A1F995200DB76C6 /* User.swift */; };
-		A1CE872E2A38ABC30096E572 /* Vol3Poems.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE872D2A38ABC30096E572 /* Vol3Poems.swift */; };
 		A1CE87302A38AFB70096E572 /* testNotificationToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE872F2A38AFB70096E572 /* testNotificationToggleView.swift */; };
 		A1E3D79F2A2A8B5E003C9D03 /* BaitingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E3D79E2A2A8B5E003C9D03 /* BaitingView.swift */; };
 		A1E3D7A12A2AAE86003C9D03 /* anotherTestVTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E3D7A02A2AAE86003C9D03 /* anotherTestVTextView.swift */; };
@@ -253,7 +252,6 @@
 		A1CBD17F2A1F98CC00DB76C6 /* CreateEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEntry.swift; sourceTree = "<group>"; };
 		A1CBD1812A1F993D00DB76C6 /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
 		A1CBD1832A1F995200DB76C6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		A1CE872D2A38ABC30096E572 /* Vol3Poems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vol3Poems.swift; sourceTree = "<group>"; };
 		A1CE872F2A38AFB70096E572 /* testNotificationToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testNotificationToggleView.swift; sourceTree = "<group>"; };
 		A1E3D79E2A2A8B5E003C9D03 /* BaitingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaitingView.swift; sourceTree = "<group>"; };
 		A1E3D7A02A2AAE86003C9D03 /* anotherTestVTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = anotherTestVTextView.swift; sourceTree = "<group>"; };
@@ -324,8 +322,6 @@
 				A13887CF2A229E07006CE7F4 /* TransitionPage.swift */,
 				A167D5B12A060512001D997A /* Vol1Poems.swift */,
 				A1E3D7A22A2AB7D2003C9D03 /* Vol2Poems.swift */,
-				A1CE872D2A38ABC30096E572 /* Vol3Poems.swift */,
-				A15E63D329B9654500391A88 /* BackCoverView.swift */,
 				A167D6252A0726BD001D997A /* NewChaptersComingSoonView.swift */,
 				A167D5AE2A06041E001D997A /* Page Curl Feature */,
 				A15E63BD29B9652300391A88 /* Table of Content Views */,
@@ -430,6 +426,7 @@
 			isa = PBXGroup;
 			children = (
 				A15E63E729B9654500391A88 /* AcknowledgementView.swift */,
+				A15E63D329B9654500391A88 /* BackCoverView.swift */,
 				A17AB8B82A3544BD00C9745B /* testCustomViewModifer.swift */,
 				A1982B5829CA9ACB00688BCF /* LabelIconView.swift */,
 				A15E63B129B964BA00391A88 /* ContentView.swift */,
@@ -654,7 +651,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1CE872E2A38ABC30096E572 /* Vol3Poems.swift in Sources */,
 				A1FB04C12A2A848F003456F3 /* HookedBackgroundView.swift in Sources */,
 				A1982B5929CA9ACB00688BCF /* LabelIconView.swift in Sources */,
 				A15E63B229B964BA00391A88 /* ContentView.swift in Sources */,

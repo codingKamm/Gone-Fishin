@@ -41,8 +41,8 @@ struct GoneFishin_View: View {
                 
 //                .foregroundColor(.white)
             }//End of VStack
-            .navigationTitle("Gone Fishin")
-            .navigationBarTitleDisplayMode(.inline)
+//            .navigationTitle("Gone Fishin")
+//            .navigationBarTitleDisplayMode(.inline)
 //            .toolbar {
 //                ToolbarItem(placement: .navigationBarTrailing) {
 //                    ChapterView()

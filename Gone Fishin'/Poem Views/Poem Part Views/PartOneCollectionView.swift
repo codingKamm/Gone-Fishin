@@ -9,9 +9,19 @@ import SwiftUI
 
 struct PartOneCollectionView: View {
     var body: some View {
-        Image("partOne")
-            .resizable()
-            .edgesIgnoringSafeArea(.all)
+        ZStack{
+            
+            Image("partOne")
+                .resizable()
+                .edgesIgnoringSafeArea(.all)
+            Text("PART I")
+                .font(.system(size: 60, design: .serif))
+                .foregroundColor(.black)
+                .padding(.top, 220)
+                .padding(.leading, 90)
+
+        }//End of ZStack
+        
     }
 }
 

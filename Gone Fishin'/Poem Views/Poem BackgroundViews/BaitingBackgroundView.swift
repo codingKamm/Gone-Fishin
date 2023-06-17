@@ -24,7 +24,7 @@ struct BaitingBackgroundView: View {
         
         func baitingTimer(){
             var index = 1
-            let timer = Timer.scheduledTimer(withTimeInterval: 0.97, repeats: true){ (Timer) in
+             _ = Timer.scheduledTimer(withTimeInterval: 0.97, repeats: true){ (Timer) in
                 
                 BaitingPoemAssets = "baiting\(index)"
                 

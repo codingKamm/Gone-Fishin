@@ -34,13 +34,14 @@ struct WadingView: View {
 //                    TextFieldBottomSheetView()
 //                }//End of HStack
             }//End of VStack
-            .navigationTitle("Waiting")
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    ChapterView()
-                }
-            }// End of Toolbar
+            .foregroundColor(.black)
+//            .navigationTitle("Waiting")
+//            .navigationBarTitleDisplayMode(.inline)
+//            .toolbar {
+//                ToolbarItem(placement: .navigationBarTrailing) {
+//                    ChapterView()
+//                }
+//            }// End of Toolbar
         }// End of ZStack
     }
 }

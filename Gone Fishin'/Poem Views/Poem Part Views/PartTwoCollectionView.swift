@@ -8,10 +8,28 @@
 import SwiftUI
 
 struct PartTwoCollectionView: View {
+    var myCustomColor = MyCustomColors()
+
     var body: some View {
-        Image("partTwo")
-            .resizable()
-            .edgesIgnoringSafeArea(.all)
+//        NavigationStack{
+        ZStack{
+            Image("partTwo")
+                .resizable()
+                .edgesIgnoringSafeArea(.all)
+            Text("PART II")
+                .font(.system(size: 30, design: .serif))
+                .padding(.leading, 230)
+                .padding(.bottom, 670)
+            .foregroundColor(myCustomColor.partIICollectionTextColor)
+                    }
+//        .toolbar {
+//            ToolbarItem(placement: .navigationBarTrailing) {
+//                CapsuleIconsView()
+//                }
+//            }
+            
+            
+//        }
     }
 }
 

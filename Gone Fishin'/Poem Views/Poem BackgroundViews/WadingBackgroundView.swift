@@ -17,7 +17,7 @@ struct WadingBackgroundView: View {
     var body: some View {
         Image(WadingPoemAssets)
             .resizable()
-            .ignoresSafeArea()
+            .edgesIgnoringSafeArea(.all)
             .onAppear(perform: wadingTimer)
         
     }
@@ -38,8 +38,8 @@ struct WadingBackgroundView: View {
                 index = 1
             }
         }
-        
     }
+    
 }
 
 struct TestAssetsAnimation_Previews: PreviewProvider {

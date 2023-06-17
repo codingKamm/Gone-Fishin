@@ -9,8 +9,8 @@ import SwiftUI
 
 struct ChapterBottomSheetView: View {
     var body: some View {
-        Image(systemName: "book")
-            .font(.title3)
+        Image(systemName: "book.fill")
+            .font(.subheadline)
     }
 }
 
