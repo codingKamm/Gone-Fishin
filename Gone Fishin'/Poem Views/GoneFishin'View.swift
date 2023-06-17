@@ -8,8 +8,6 @@
 import SwiftUI
 
 struct GoneFishin_View: View {
-//    var string = "GONE FISHIN"
-//    @State private var stringArray = [String]()
     
     var body: some View {
         ZStack{
@@ -31,23 +29,12 @@ struct GoneFishin_View: View {
                          """)
                     .multilineTextAlignment(.leading)
                     .font(Font.custom("Bangla-Sangam-MN-Bold", size: 16))
+                    .fontWeight(.semibold)
                     .padding(.top, 350)
                 }//End of HStack
                 .foregroundColor(.white)
                 .padding()
-//                HStack{
-//                    TextFieldBottomSheetView()
-//                }//End of HStack
-                
-//                .foregroundColor(.white)
             }//End of VStack
-//            .navigationTitle("Gone Fishin")
-//            .navigationBarTitleDisplayMode(.inline)
-//            .toolbar {
-//                ToolbarItem(placement: .navigationBarTrailing) {
-//                    ChapterView()
-//                }
-//            }// End of Toolbar
                 }//End of ZStack
             }
         }

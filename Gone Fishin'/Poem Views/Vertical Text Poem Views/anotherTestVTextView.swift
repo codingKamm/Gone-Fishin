@@ -31,3 +31,5 @@ struct anotherTestVTextView_Previews: PreviewProvider {
         anotherTestVTextView()
     }
 }
+
+// Letters stacked vertically Retrieved from https://www.hackingwithswift.com/forums/swiftui/vertical-text/16935

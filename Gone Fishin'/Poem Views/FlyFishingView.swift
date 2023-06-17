@@ -14,7 +14,7 @@ struct FlyFishingView: View {
             VStack{
                 HStack{
                     FlyFishingVTextTitleView()
-                        .padding(.leading)
+                        .padding(.trailing)
                     HStack{
                         Text("""
                  im shallow in my stance
@@ -24,25 +24,15 @@ struct FlyFishingView: View {
                  """)
                         .multilineTextAlignment(.leading)
                         .font(Font.custom("Bangla-Sangam-MN-Bold", size: 19))
+                        .fontWeight(.semibold)
                         .padding()
                     }
                     .padding(.bottom, 80)
                 } //End of HStack
                 .foregroundColor(.black)
-                
-//                HStack{
-//
-//                    TextFieldBottomSheetView()
-//                }//End of HStack
             }//End of VStack
-//            .navigationTitle("Fly Fishing")
-//            .navigationBarTitleDisplayMode(.inline)
-//            .toolbar {
-//                ToolbarItem(placement: .navigationBarTrailing) {
-//                    ChapterView()
-//                }
-//            }// End of Toolbar
-        }
+        }// End of ZStack
+        
     }
 }
 

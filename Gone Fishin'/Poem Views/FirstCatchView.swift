@@ -10,8 +10,6 @@ import SwiftUI
 
 struct FirstCatchView: View {
   
-//var string = "FIRST CATCH"
-//@State private var stringArray = [String]()
     
     var body: some View {
         ZStack{
@@ -19,7 +17,7 @@ struct FirstCatchView: View {
             VStack{
                 HStack{
                      FirstCatchVTextTitleView()
-//                        .padding(.leading)
+                        .padding(.trailing)
                     Text("""
                  the excitement of completion
                  a thrill undefeated; conceited
@@ -34,22 +32,12 @@ struct FirstCatchView: View {
                  """)
                     .multilineTextAlignment(.leading)
                     .font(Font.custom("Bangla-Sangam-MN-Bold", size: 17))
+                    .fontWeight(.semibold)
                     .padding(2)
                 } //End of HStack
                 .padding(.bottom, 230)
-//                HStack{
-//                    
-//                    TextFieldBottomSheetView()
-//                }//End of HStack
             }//End of VStack
             .foregroundColor(.black)
-//            .navigationTitle("First Catch")
-//            .navigationBarTitleDisplayMode(.inline)
-//            .toolbar {
-//                ToolbarItem(placement: .navigationBarTrailing) {
-//                    ChapterView()
-//                }
-//            }// End of Toolbar
         }// End of ZStack
     }
 }
@@ -60,4 +48,3 @@ struct FirstCatchView_Previews: PreviewProvider {
     }
 }
 
-// Letters stacked vertically Retrieved from https://www.hackingwithswift.com/forums/swiftui/vertical-text/16935

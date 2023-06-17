@@ -7,6 +7,10 @@
 */
 // New Chapters Coming Soon View
 "Thanks for reading! \nNew Poems Coming Soon!" = "読んでくれてありがとう！\n新しい詩も近日公開予定!\n🇯🇵";
+// Ending Tanks View
+"We're thrilled to announce more poetry\nvolumes and merchandise coming soon.\nStay tuned for updates. Your presence\n means the world to us.\n
+With gratitude," = "さらに多くの詩と商品を\nまもなく発表できることを嬉しく思います。\n最新情報をお待ちください。 あなたの存在は\n 私たちにとって世界を意味します。\n\n🇯🇵
+感謝の気持ちを込めて、";
 //Journal feature
 "Journal" = "ジャーナル";
 "Hi" = "やあ";
@@ -21,7 +25,28 @@
 "Today's Prompt:" = "今日のプロンプト:";
 //Table of Contents
 "Table of Contents" = "目次";
-//"How to Fish" = "Cara Memancing";
+"PART I" = "パート1";
+"PART II" = "パート2";
+"How to Fish" = "釣り方";
+"Baiting" = "餌付け";
+"Wading" = "渡る";
+"Gone Fishin’" = "釣りに行ってる";
+"Big Fish, Small Pond" = "大物小沼";
+"Hooked" = "ハマる";
+"First Catch" = "初めての釣果";
+"Crabs in a Bucket" = "バケツの中のカニ";
+"Catch & Release" = "釣って放す";
+"Fly Fishing" = "フライフィッシング";
+"Trophies" = "トロフィー";
+"Beyond The Horizon" = "地平線の向こう";
+//Settings View
+"Settings" = "";
+
+//Notifications
+"Embrace the power of words and let inspiration find its way into your heart. Here's a brief moment of wisedom to uplift your spirit and ignite your inner fire." = "";
+"Just because your best is not good enough, doesn’t mean it can’t be." = "";
+"Overcoming self-doubt means finding your self-worth" = "";
+"Imposters Syndrome is a fraudulent fear of failure." = "";
 //Collection Explaination View
 "E.M. Douglass Presents \n Gone Fishin': A Poetry Book" = "E.M. ダグラス プレゼント \n Gone Fishin': A Poetry Book";
 "Submerged in the depths of creativity, Gone Fishin' explores the affects of imposter syndrome. \n\n Gone Fishin's mighty wave idiomatically details the progression of someone who is not very aware of what is happening around them. \n\nThe growing pains we expereince during our learning curve is necessary. This preperation needed to prepare for the manaifestion of our opportunities." = "創造性の深みに没頭した『Gone Fishin'』では、詐欺師症候群の影響を探ります。 \n\n Gone Fishin の強力な波は、周囲で何が起こっているかをあまり認識していない人の進歩を慣用的に詳述しています。 \n\n私たちが学習曲線の中で経験する成長の痛みは必要なものです。 この準備は、私たちの機会の実現に備えるために必要でした。";

@@ -14,7 +14,7 @@ struct CrabsInABucketView: View {
             VStack{
                 HStack{
                     CrabsInABucketVTextTitleView()
-//                        .padding(.leading)
+                        .padding([.trailing, .bottom], 40)
                     Text("")
                         .padding()
                     HStack{
@@ -29,7 +29,8 @@ struct CrabsInABucketView: View {
                  """)
                         .multilineTextAlignment(.leading)
                         .font(Font.custom("Bangla-Sangam-MN-Bold", size: 20))
-                        //                    .padding(90)
+                        .fontWeight(.semibold)
+
                         Text("")
                             .padding(.bottom, 90)
                     }
@@ -37,19 +38,7 @@ struct CrabsInABucketView: View {
                 } //End of HStack
                 .foregroundColor(.white)
                 .padding(.bottom, 25)
-//                HStack{
-//                    
-//                    TextFieldBottomSheetView()
-//                }//End of HStack
-//                .foregroundColor(.white)
             }//End of VStack
-//            .navigationTitle("Crabs in a Bucket")
-//            .navigationBarTitleDisplayMode(.inline)
-//            .toolbar {
-//                ToolbarItem(placement: .navigationBarTrailing) {
-//                    ChapterView()
-//                }
-//            }// End of Toolbar
         }// End of ZStack
     }
 }
