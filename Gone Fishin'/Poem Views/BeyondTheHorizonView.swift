@@ -24,10 +24,11 @@ struct BeyondTheHorizonView: View {
                  wisdom is weathering the drought
                  """)
                         .multilineTextAlignment(.leading)
-                        .font(Font.custom("Bangla-Sangam-MN-Bold", size: 19))
+                        .font(Font.custom("Bangla-Sangam-MN-Bold", size: 21))
+                        .bold()
                         .padding()
                     }
-                    .padding(.bottom, 600)
+                    .padding(.bottom, 640)
                 } //End of HStack
                 .foregroundColor(.black)
                 //                HStack{
@@ -37,11 +38,11 @@ struct BeyondTheHorizonView: View {
             }//End of VStack
 //            .navigationTitle("Beyond the Horizon")
 //            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    CapsuleIconsView()
-                }
-            }// End of Toolbar
+//            .toolbar {
+//                ToolbarItem(placement: .navigationBarTrailing) {
+//                    CapsuleIconsView()
+//                }
+           // }// End of Toolbar
         }// End of ZStack
         }//End of Nav. Stack
     }

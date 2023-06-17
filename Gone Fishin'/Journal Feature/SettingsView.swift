@@ -15,9 +15,9 @@ struct SettingsView: View {
     
     var body: some View {
         List {
-            Section {
-                TextField("Name", text: $entryUser.name)
-            }
+//            Section {
+//                TextField("Name", text: $entryUser.name)
+//            }
             
             Toggle("Activate reminder", isOn: $showTimePicker)
             

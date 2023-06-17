@@ -42,13 +42,13 @@ struct TrophiesView: View {
 //                }//End of HStack
 //                .foregroundColor(.white)
             }//End of VStack
-            .navigationTitle("Trophies")
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    ChapterView()
-                }
-            }// End of Toolbar
+//            .navigationTitle("Trophies")
+//            .navigationBarTitleDisplayMode(.inline)
+//            .toolbar {
+//                ToolbarItem(placement: .navigationBarTrailing) {
+//                    ChapterView()
+//                }
+//            }// End of Toolbar
         }//End of ZStack
     }
 }

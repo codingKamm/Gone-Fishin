@@ -12,10 +12,10 @@ struct BigFishSmallPondView: View {
         ZStack{
             BigFishSmallPondBackgroundView()
             VStack{
+               
                 HStack{
                     BigFishSmallPondVTextTitleView()
-                        .padding(.leading)
-                        Spacer()
+                        .padding(.trailing, 100)
                     Text("""
                  with remnants of toxicity
                  each day is a risk to take
@@ -24,22 +24,25 @@ struct BigFishSmallPondView: View {
                  """)
                     .multilineTextAlignment(.leading)
                     .font(Font.custom("Bangla-Sangam-MN-Bold", size: 18))
-                    .padding([.trailing, .bottom],80)
+                    .padding([.bottom, .trailing])
+                    .padding(.bottom, 100)
                 } //End of HStack
-                .foregroundColor(.white)
+                .padding(.bottom, 30)
 //                HStack{
 //                    
 //                    TextFieldBottomSheetView()
 //                }//End of HStack
 //                .foregroundColor(.white)
             }//End of VStack
-            .navigationTitle("Big Fish Small Pond")
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    ChapterView()
-                }
-            }// End of Toolbar
+            .foregroundColor(.white)
+
+//            .navigationTitle("Big Fish Small Pond")
+//            .navigationBarTitleDisplayMode(.inline)
+//            .toolbar {
+//                ToolbarItem(placement: .navigationBarTrailing) {
+//                    ChapterView()
+//                }
+//            }// End of Toolbar
         }// End of ZStack
     }
 }

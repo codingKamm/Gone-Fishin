@@ -39,8 +39,8 @@ struct CatchNReleaseView: View {
 //                }//End of HStack
 //                .foregroundColor(.white)
             }//End of VStack
-            .navigationTitle("Catch & Release")
-            .navigationBarTitleDisplayMode(.inline)
+//            .navigationTitle("Catch & Release")
+//            .navigationBarTitleDisplayMode(.inline)
             //            .toolbar {
             //                ToolbarItem(placement: .navigationBarTrailing) {
             //                    Button(action: {

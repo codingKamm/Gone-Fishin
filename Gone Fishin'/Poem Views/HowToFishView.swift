@@ -34,14 +34,13 @@ struct HowToFishView: View {
 //                    }//End of HStack
                     //                .foregroundColor(.white)
                 }//End of VStack
-                .navigationTitle("How To Fish")
-                .navigationBarTitleDisplayMode(.inline)
-                .toolbar {
-                    ToolbarItem(placement: .navigationBarTrailing) {
-                        CapsuleIconsView()
-                    }
-                    
-                }// End of Toolbar
+//                .navigationTitle("How To Fish")
+//                .navigationBarTitleDisplayMode(.inline)
+//                .toolbar {
+//                    ToolbarItem(placement: .navigationBarTrailing) {
+//                        CapsuleIconsView()
+//                    }
+//                }// End of Toolbar
             }// End of ZStack
         }// End of Nav. Stack
     }

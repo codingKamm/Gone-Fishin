@@ -28,19 +28,20 @@ struct FlyFishingView: View {
                     }
                     .padding(.bottom, 80)
                 } //End of HStack
+                .foregroundColor(.black)
                 
 //                HStack{
 //
 //                    TextFieldBottomSheetView()
 //                }//End of HStack
             }//End of VStack
-            .navigationTitle("Fly Fishing")
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    ChapterView()
-                }
-            }// End of Toolbar
+//            .navigationTitle("Fly Fishing")
+//            .navigationBarTitleDisplayMode(.inline)
+//            .toolbar {
+//                ToolbarItem(placement: .navigationBarTrailing) {
+//                    ChapterView()
+//                }
+//            }// End of Toolbar
         }
     }
 }

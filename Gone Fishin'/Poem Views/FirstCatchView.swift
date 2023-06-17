@@ -42,13 +42,13 @@ struct FirstCatchView: View {
 //                    TextFieldBottomSheetView()
 //                }//End of HStack
             }//End of VStack
-            .navigationTitle("First Catch")
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    ChapterView()
-                }
-            }// End of Toolbar
+//            .navigationTitle("First Catch")
+//            .navigationBarTitleDisplayMode(.inline)
+//            .toolbar {
+//                ToolbarItem(placement: .navigationBarTrailing) {
+//                    ChapterView()
+//                }
+//            }// End of Toolbar
         }// End of ZStack
     }
 }

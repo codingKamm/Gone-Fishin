@@ -39,13 +39,13 @@ struct HookedView: View {
 //                }//End of HStack
 //                .foregroundColor(.white)
             }//End of VStack
-            .navigationTitle("Hooked")
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    ChapterView()
-                }
-            }// End of Toolbar
+//            .navigationTitle("Hooked")
+//            .navigationBarTitleDisplayMode(.inline)
+//            .toolbar {
+//                ToolbarItem(placement: .navigationBarTrailing) {
+//                    ChapterView()
+//                }
+//            }// End of Toolbar
         }// End of ZStack
     }
 }

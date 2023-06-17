@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AboutMeButtonView: View {
     var body: some View {
-       Image(systemName: "info")
+       Image(systemName: "square.and.arrow.up.fill")
             .font(.headline)
     }
 }
