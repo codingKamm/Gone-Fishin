@@ -22,7 +22,7 @@ struct finalContentView: View {
                 Vol1Poems()
                 PartTwoCollectionView()
                 Vol2Poems()
-                NewChaptersComingSoonView()
+                EndingThanksView()
                   
             }
             .edgesIgnoringSafeArea(.all)

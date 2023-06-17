@@ -31,7 +31,7 @@ struct JournalMainView: View {
                     .foregroundColor(.white)
                     .font(.system(size: 40, design: .serif))
                     .bold()
-            }
+                }//End of ZStack
                                 .frame(height: 80)
             
                     // Greeting
@@ -98,43 +98,19 @@ struct JournalMainView: View {
                             .listRowBackground(myCustomColor.greyKris)
                             .cornerRadius(16)
                         }// End of List
-//                        .background(Color.white)
-//                        .navigationTitle("Journal")
+
                         .listStyle(GroupedListStyle())
-//                        .background(Color.black)
-                        .colorScheme(.dark)
+                        .preferredColorScheme(.dark)
                         .cornerRadius(16)
                         .padding()
                         .toolbar {
                                 AddJournalEntryButton()
-//                                EditButton()
                             }
-                       
-                        
+
                     }// End of Prompt && List VStack
             }// End of VStack
             .background(Color.white)
         }// End of Nav Stack
-     
-            //Try Local Notif here
-
-//            ToolbarItem(placement: .trailing)
-//            { EditButton()
-//
-//                                       }
-            
-//                                                    }
-//
-//                                                    ToolbarItem(placement: .secondaryAction) {
-//                                                        Button("Secondary action 1") {}
-//                                                    }
-                                    
-                                   
-//                            ToolbarItem(placement: .all){
-//                                    Image("starBackground")
-//                                        .resizable()
-//                            }
-//        }// End of Toolbar
     }
         func deleteItems(at offsets: IndexSet) {
             entryController.entries.remove(atOffsets: offsets)

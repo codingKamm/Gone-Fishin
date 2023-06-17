@@ -28,24 +28,12 @@ struct HookedView: View {
                  """)
                     .multilineTextAlignment(.leading)
                     .font(Font.custom("Bangla-Sangam-MN-Bold", size: 16))
+                    .fontWeight(.semibold)
                     .padding(30)
                 } //End of HStack
                 .foregroundColor(.black)
                 .padding(.bottom, 300)
-//
-//                HStack{
-//                    
-//                    TextFieldBottomSheetView()
-//                }//End of HStack
-//                .foregroundColor(.white)
             }//End of VStack
-//            .navigationTitle("Hooked")
-//            .navigationBarTitleDisplayMode(.inline)
-//            .toolbar {
-//                ToolbarItem(placement: .navigationBarTrailing) {
-//                    ChapterView()
-//                }
-//            }// End of Toolbar
         }// End of ZStack
     }
 }

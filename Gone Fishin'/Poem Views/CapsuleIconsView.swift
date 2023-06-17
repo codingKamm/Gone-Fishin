@@ -14,12 +14,11 @@ struct CapsuleIconsView: View {
                 Capsule()
                     .frame(width: 140, height: 40)
                     .foregroundColor(.white)
-//                    .overlay(Image(systemName: "pencil"))
                 HStack{
                     AboutView()
                     JournalIcon()
                     SettingsIconButton()
-                }
+                }// End of HStack
                 .foregroundColor(.black)
             }//End of ZStack
          

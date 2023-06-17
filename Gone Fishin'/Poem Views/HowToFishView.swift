@@ -25,6 +25,7 @@ struct HowToFishView: View {
                          syndromes ripple in form of what’s real
                          """)
                         .font(Font.custom("Bangla-Sangam-MN-Bold", size: 16))
+                        .fontWeight(.semibold)
                         .multilineTextAlignment(.leading)
                         .padding()
                     }//End of HStack

@@ -12,7 +12,6 @@ struct BigFishSmallPondView: View {
         ZStack{
             BigFishSmallPondBackgroundView()
             VStack{
-               
                 HStack{
                     BigFishSmallPondVTextTitleView()
                         .padding(.trailing, 100)
@@ -24,25 +23,14 @@ struct BigFishSmallPondView: View {
                  """)
                     .multilineTextAlignment(.leading)
                     .font(Font.custom("Bangla-Sangam-MN-Bold", size: 18))
+                    .fontWeight(.semibold)
                     .padding([.bottom, .trailing])
                     .padding(.bottom, 100)
                 } //End of HStack
                 .padding(.bottom, 30)
-//                HStack{
-//                    
-//                    TextFieldBottomSheetView()
-//                }//End of HStack
-//                .foregroundColor(.white)
+
             }//End of VStack
             .foregroundColor(.white)
-
-//            .navigationTitle("Big Fish Small Pond")
-//            .navigationBarTitleDisplayMode(.inline)
-//            .toolbar {
-//                ToolbarItem(placement: .navigationBarTrailing) {
-//                    ChapterView()
-//                }
-//            }// End of Toolbar
         }// End of ZStack
     }
 }

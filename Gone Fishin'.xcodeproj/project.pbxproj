@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A10671952A2782E900B7E2F8 /* AboutMeTestNotificationFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10671942A2782E900B7E2F8 /* AboutMeTestNotificationFeature.swift */; };
 		A1155E6C2A2E29AD0067FE97 /* StarBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1155E6B2A2E29AD0067FE97 /* StarBackground.swift */; };
 		A12B82222A33572200ADB40F /* Bangla-Sangam-MN-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A12B82202A3352BB00ADB40F /* Bangla-Sangam-MN-Bold.ttf */; };
 		A13887CD2A2101FC006CE7F4 /* WritingPrompts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13887CC2A2101FC006CE7F4 /* WritingPrompts.swift */; };
@@ -19,6 +18,7 @@
 		A13887DE2A26D99F006CE7F4 /* NotificationButtonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13887DD2A26D99F006CE7F4 /* NotificationButtonTest.swift */; };
 		A14042122A3D633200D9F6AE /* SettingsIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14042112A3D633200D9F6AE /* SettingsIconButton.swift */; };
 		A14042142A3D640F00D9F6AE /* SettingsIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14042132A3D640F00D9F6AE /* SettingsIconView.swift */; };
+		A14042162A3E115400D9F6AE /* EndingThanksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14042152A3E115400D9F6AE /* EndingThanksView.swift */; };
 		A15E63B029B964BA00391A88 /* Gone_Fishin_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15E63AF29B964BA00391A88 /* Gone_Fishin_App.swift */; };
 		A15E63B229B964BA00391A88 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15E63B129B964BA00391A88 /* ContentView.swift */; };
 		A15E63B729B964BB00391A88 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A15E63B629B964BB00391A88 /* Preview Assets.xcassets */; };
@@ -137,7 +137,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A10671942A2782E900B7E2F8 /* AboutMeTestNotificationFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeTestNotificationFeature.swift; sourceTree = "<group>"; };
 		A1155E6B2A2E29AD0067FE97 /* StarBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarBackground.swift; sourceTree = "<group>"; };
 		A12B82202A3352BB00ADB40F /* Bangla-Sangam-MN-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Bangla-Sangam-MN-Bold.ttf"; path = "../../../../../Challenge 6ix/Gone Fishin Font/Bangla-Sangam-MN-Bold.ttf"; sourceTree = "<group>"; };
 		A13887CC2A2101FC006CE7F4 /* WritingPrompts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingPrompts.swift; sourceTree = "<group>"; };
@@ -149,6 +148,7 @@
 		A13887DD2A26D99F006CE7F4 /* NotificationButtonTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationButtonTest.swift; sourceTree = "<group>"; };
 		A14042112A3D633200D9F6AE /* SettingsIconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsIconButton.swift; sourceTree = "<group>"; };
 		A14042132A3D640F00D9F6AE /* SettingsIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsIconView.swift; sourceTree = "<group>"; };
+		A14042152A3E115400D9F6AE /* EndingThanksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndingThanksView.swift; sourceTree = "<group>"; };
 		A15E63AC29B964BA00391A88 /* Gone Fishin'.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gone Fishin'.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A15E63AF29B964BA00391A88 /* Gone_Fishin_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gone_Fishin_App.swift; sourceTree = "<group>"; };
 		A15E63B129B964BA00391A88 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -323,10 +323,10 @@
 				A167D6212A06FBC4001D997A /* finalContentView.swift */,
 				A15E63CC29B9654500391A88 /* TitlePageView.swift */,
 				A167D54F2A045CC8001D997A /* CollectionExplanationView.swift */,
-				A13887CF2A229E07006CE7F4 /* TransitionPage.swift */,
 				A167D5B12A060512001D997A /* Vol1Poems.swift */,
 				A1E3D7A22A2AB7D2003C9D03 /* Vol2Poems.swift */,
-				A167D6252A0726BD001D997A /* NewChaptersComingSoonView.swift */,
+				A14042152A3E115400D9F6AE /* EndingThanksView.swift */,
+				A1CBD17D2A1F989C00DB76C6 /* SettingsView.swift */,
 				A167D5AE2A06041E001D997A /* Page Curl Feature */,
 				A15E63BD29B9652300391A88 /* Table of Content Views */,
 				A15E63D429B9654500391A88 /* Poem Views */,
@@ -371,7 +371,6 @@
 				A167D54B2A045A7A001D997A /* AboutMeButtonView.swift */,
 				A13887D32A22A373006CE7F4 /* JournalIconButton.swift */,
 				A167D5492A045854001D997A /* AboutView.swift */,
-				A10671942A2782E900B7E2F8 /* AboutMeTestNotificationFeature.swift */,
 				A13887D12A22A324006CE7F4 /* JournalIcon.swift */,
 				A1745BC629CC98F400F7BCA6 /* ChapterView.swift */,
 				A15E63CD29B9654500391A88 /* BottomSheetIconView.swift */,
@@ -431,6 +430,8 @@
 		A15E63DF29B9654500391A88 /* Experimental Views */ = {
 			isa = PBXGroup;
 			children = (
+				A167D6252A0726BD001D997A /* NewChaptersComingSoonView.swift */,
+				A13887CF2A229E07006CE7F4 /* TransitionPage.swift */,
 				A15E63E729B9654500391A88 /* AcknowledgementView.swift */,
 				A15E63D329B9654500391A88 /* BackCoverView.swift */,
 				A17AB8B82A3544BD00C9745B /* testCustomViewModifer.swift */,
@@ -548,7 +549,6 @@
 				A13887D52A22B39B006CE7F4 /* ColorScheme.swift */,
 				A1CBD1772A1F97F400DB76C6 /* EntryRow.swift */,
 				A1CBD1792A1F982B00DB76C6 /* EntryDetail.swift */,
-				A1CBD17D2A1F989C00DB76C6 /* SettingsView.swift */,
 				A1CBD1812A1F993D00DB76C6 /* EntryController.swift */,
 				A1CBD1832A1F995200DB76C6 /* User.swift */,
 				A1CAFDF72A3CA67F007896CE /* DirectoryService.swift */,
@@ -755,7 +755,6 @@
 				A1C9B3EC2A28D568004AD210 /* BigFishSmallPondVTextTitleView.swift in Sources */,
 				A15E63C529B9652300391A88 /* AltTooTableOfContentsView.swift in Sources */,
 				A15E63F629B9654500391A88 /* BackCoverView.swift in Sources */,
-				A10671952A2782E900B7E2F8 /* AboutMeTestNotificationFeature.swift in Sources */,
 				A1C9B3FC2A28D964004AD210 /* CrabsInABucketView.swift in Sources */,
 				A1C9B3F42A28D89B004AD210 /* BeyondTheHorizonVTextTitleView.swift in Sources */,
 				A15E63F329B9654500391A88 /* PageCurl.swift in Sources */,
@@ -775,6 +774,7 @@
 				A1C9B3E62A28D374004AD210 /* BaitingVTextTitleView.swift in Sources */,
 				A15E640229B9654500391A88 /* htfPicView.swift in Sources */,
 				A1CBD1842A1F995200DB76C6 /* User.swift in Sources */,
+				A14042162A3E115400D9F6AE /* EndingThanksView.swift in Sources */,
 				A1CBD1762A1F97DA00DB76C6 /* Helper.swift in Sources */,
 				A15E63C429B9652300391A88 /* TableOfContentsView.swift in Sources */,
 				A1CAFDFF2A3CB0D3007896CE /* PartTwoCollectionView.swift in Sources */,

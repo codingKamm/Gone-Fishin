@@ -26,22 +26,12 @@ struct WadingView: View {
                         .font(Font.custom("Bangla-Sangam-MN-Bold", size: 16))
                         .padding(.leading, 50)
                     }// End of VStack
-                    .padding(.top, 100)
+                    .fontWeight(.semibold)
+                    .padding(.top, 40)
                 } //End of HStack
                 .padding(.bottom, 210)
-//                HStack{
-//                    
-//                    TextFieldBottomSheetView()
-//                }//End of HStack
             }//End of VStack
             .foregroundColor(.black)
-//            .navigationTitle("Waiting")
-//            .navigationBarTitleDisplayMode(.inline)
-//            .toolbar {
-//                ToolbarItem(placement: .navigationBarTrailing) {
-//                    ChapterView()
-//                }
-//            }// End of Toolbar
         }// End of ZStack
     }
 }

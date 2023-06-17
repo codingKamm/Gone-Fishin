@@ -20,6 +20,8 @@ struct CollectionExplanationView: View {
         }
         .padding()
         .multilineTextAlignment(.center)
+        .preferredColorScheme(.dark)
+        .foregroundColor(.white)
     }
 }
 

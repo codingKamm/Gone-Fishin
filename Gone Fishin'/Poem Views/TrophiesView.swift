@@ -17,7 +17,7 @@ struct TrophiesView: View {
             VStack{
                 HStack{
                     TrophiesVTextTitleView()
-//                        .padding(.leading)
+                        .padding(.trailing) 
                         .padding(30)
                     HStack{
                         Text("""
@@ -31,25 +31,16 @@ struct TrophiesView: View {
                  """)
                         .multilineTextAlignment(.leading)
                         .font(Font.custom("Bangla-Sangam-MN-Bold", size: 20))
+                        .fontWeight(.semibold)
                         .padding()
                     }
                     .padding(.bottom, 200)
                 } //End of HStack
                 .foregroundColor(.white)
                 .padding(.bottom, 40)
-//                HStack{
-//                    TextFieldBottomSheetView()
-//                }//End of HStack
-//                .foregroundColor(.white)
             }//End of VStack
-//            .navigationTitle("Trophies")
-//            .navigationBarTitleDisplayMode(.inline)
-//            .toolbar {
-//                ToolbarItem(placement: .navigationBarTrailing) {
-//                    ChapterView()
-//                }
-//            }// End of Toolbar
         }//End of ZStack
+        
     }
 }
 
