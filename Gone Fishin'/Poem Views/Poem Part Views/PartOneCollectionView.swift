@@ -10,7 +10,6 @@ import SwiftUI
 struct PartOneCollectionView: View {
     var body: some View {
         ZStack{
-            
             Image("partOne")
                 .resizable()
                 .edgesIgnoringSafeArea(.all)

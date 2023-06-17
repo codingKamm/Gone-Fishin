@@ -17,6 +17,8 @@
 		A13887D62A22B39B006CE7F4 /* ColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13887D52A22B39B006CE7F4 /* ColorScheme.swift */; };
 		A13887DC2A26C964006CE7F4 /* NotificationMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13887DB2A26C964006CE7F4 /* NotificationMessages.swift */; };
 		A13887DE2A26D99F006CE7F4 /* NotificationButtonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13887DD2A26D99F006CE7F4 /* NotificationButtonTest.swift */; };
+		A14042122A3D633200D9F6AE /* SettingsIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14042112A3D633200D9F6AE /* SettingsIconButton.swift */; };
+		A14042142A3D640F00D9F6AE /* SettingsIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14042132A3D640F00D9F6AE /* SettingsIconView.swift */; };
 		A15E63B029B964BA00391A88 /* Gone_Fishin_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15E63AF29B964BA00391A88 /* Gone_Fishin_App.swift */; };
 		A15E63B229B964BA00391A88 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15E63B129B964BA00391A88 /* ContentView.swift */; };
 		A15E63B729B964BB00391A88 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A15E63B629B964BB00391A88 /* Preview Assets.xcassets */; };
@@ -145,6 +147,8 @@
 		A13887D52A22B39B006CE7F4 /* ColorScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorScheme.swift; sourceTree = "<group>"; };
 		A13887DB2A26C964006CE7F4 /* NotificationMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationMessages.swift; sourceTree = "<group>"; };
 		A13887DD2A26D99F006CE7F4 /* NotificationButtonTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationButtonTest.swift; sourceTree = "<group>"; };
+		A14042112A3D633200D9F6AE /* SettingsIconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsIconButton.swift; sourceTree = "<group>"; };
+		A14042132A3D640F00D9F6AE /* SettingsIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsIconView.swift; sourceTree = "<group>"; };
 		A15E63AC29B964BA00391A88 /* Gone Fishin'.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gone Fishin'.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A15E63AF29B964BA00391A88 /* Gone_Fishin_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gone_Fishin_App.swift; sourceTree = "<group>"; };
 		A15E63B129B964BA00391A88 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -373,6 +377,8 @@
 				A15E63CD29B9654500391A88 /* BottomSheetIconView.swift */,
 				A15E63CB29B9654500391A88 /* BottomSheetView.swift */,
 				A1745BC429CC97E900F7BCA6 /* ChapterBottomSheetView.swift */,
+				A14042112A3D633200D9F6AE /* SettingsIconButton.swift */,
+				A14042132A3D640F00D9F6AE /* SettingsIconView.swift */,
 			);
 			path = "Bottom Sheets";
 			sourceTree = "<group>";
@@ -689,6 +695,7 @@
 				A1C9B3FE2A28D971004AD210 /* FlyFishingView.swift in Sources */,
 				A1745BC729CC98F400F7BCA6 /* ChapterView.swift in Sources */,
 				A1C9B4062A2A2E69004AD210 /* TestListView.swift in Sources */,
+				A14042122A3D633200D9F6AE /* SettingsIconButton.swift in Sources */,
 				A19B92192A2A870D009CE24F /* CrabsInABucketBackgroundView.swift in Sources */,
 				A167D5A12A055136001D997A /* FirstCatchVTextTitleView.swift in Sources */,
 				A15E640529B9654500391A88 /* TestImageView.swift in Sources */,
@@ -710,6 +717,7 @@
 				A15E640829B9654500391A88 /* AltPoemView.swift in Sources */,
 				A167D54C2A045A7A001D997A /* AboutMeButtonView.swift in Sources */,
 				A167D5A02A055136001D997A /* GoneFishinVTextTitleView.swift in Sources */,
+				A14042142A3D640F00D9F6AE /* SettingsIconView.swift in Sources */,
 				A1CBD1782A1F97F400DB76C6 /* EntryRow.swift in Sources */,
 				A13887D62A22B39B006CE7F4 /* ColorScheme.swift in Sources */,
 				A13887DE2A26D99F006CE7F4 /* NotificationButtonTest.swift in Sources */,

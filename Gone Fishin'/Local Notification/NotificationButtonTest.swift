@@ -20,61 +20,61 @@ struct NotificationButtonTest: View {
             VStack{
                 if lnManager.isGranted{
                     
-                    Button(action: {
-                        
-                        Task {
-                            var localNotification = LocalNotification(
-                                identifier: UUID().uuidString,
-                                title: "Gone Fishin'",
-                                body: "Embrace the power of words and let inspiration find its way into your heart. Here's a brief moment of wisedom to uplift your spirit and ignite your inner fire.",
-                                timeInterval: 5,
-                                repeats: false // Must have a timeInterval of < 60 = true
-                            )
-                            localNotification.subtitle = "Stay Inspired"
-                            localNotification.bundleImageName = "Stewart.png"
-                            //                            localNotification.userInfo = ["nextView" : NextView.renew.rawValue]
-                            localNotification.categoryIdentifier = "snooze"
-                            await lnManager.schedule(localNotification: localNotification)
-                            print("The Task printed")
-                        }
-                        
-                    },
-                           label: {
-                        NavigationLink(destination: JournalMainView()){
-                            Text ("Test New View")
-                                .foregroundColor(.white)
-                            Image(systemName: "pencil")
-                            
-                        }
-                    }
-                    )
-//                    .disabled(timeReminder == Date.now)
-//                        .background(Color.blue)
-//                        .cornerRadius(8)
-//                        .padding([.top, .bottom], 16)
-                    
-                    
-                    HStack{
-                        Text("Words")
-                        //                    Image("backCover")
-                        Button(action: {
-                            print("Floating Button Click")
-                        }, label: {
-                            NavigationLink(destination: ShufflePrompts()) {
-                                //                        Text("Open View")
-                            }
-                        })
-                    }// End of HStack
-                    
-                    Button(action: { presentSheet = true && lnManager.isGranted}) {
-                        AboutMeButtonView()
-                    }
-                    .sheet(isPresented: $presentSheet) {
-                        CollectionExplanationView()
-                            .presentationDetents([.large])
-                            .presentationDragIndicator(.visible)
-                    }
-                    
+//                    Button(action: {
+//
+//                        Task {
+//                            var localNotification = LocalNotification(
+//                                identifier: UUID().uuidString,
+//                                title: "Gone Fishin'",
+//                                body: "Embrace the power of words and let inspiration find its way into your heart. Here's a brief moment of wisedom to uplift your spirit and ignite your inner fire.",
+//                                timeInterval: 5,
+//                                repeats: false // Must have a timeInterval of < 60 = true
+//                            )
+//                            localNotification.subtitle = "Stay Inspired"
+//                            localNotification.bundleImageName = "Stewart.png"
+//                            //                            localNotification.userInfo = ["nextView" : NextView.renew.rawValue]
+//                            localNotification.categoryIdentifier = "snooze"
+//                            await lnManager.schedule(localNotification: localNotification)
+//                            print("The Task printed")
+//                        }
+//
+//                    },
+//                           label: {
+//                        NavigationLink(destination: JournalMainView()){
+//                            Text ("Test New View")
+//                                .foregroundColor(.white)
+//                            Image(systemName: "pencil")
+//
+//                        }
+//                    }
+//                    )
+////                    .disabled(timeReminder == Date.now)
+////                        .background(Color.blue)
+////                        .cornerRadius(8)
+////                        .padding([.top, .bottom], 16)
+//
+//
+//                    HStack{
+//                        Text("Words")
+//                        //                    Image("backCover")
+//                        Button(action: {
+//                            print("Floating Button Click")
+//                        }, label: {
+//                            NavigationLink(destination: ShufflePrompts()) {
+//                                //                        Text("Open View")
+//                            }
+//                        })
+//                    }// End of HStack
+//
+//                    Button(action: { presentSheet = true && lnManager.isGranted}) {
+//                        AboutMeButtonView()
+//                    }
+//                    .sheet(isPresented: $presentSheet) {
+//                        CollectionExplanationView()
+//                            .presentationDetents([.large])
+//                            .presentationDragIndicator(.visible)
+//                    }
+//
 
                     Button("+")
                     {
@@ -111,9 +111,6 @@ struct NotificationButtonTest: View {
                     //                .buttonStyle(MainButton())
                 } else {
                     JournalIcon()
-                    
-                    //                    Text("🎣")
-                    //                        .font(.largeTitle)
                 }// End of Local Notification feature
             }//End of VStack
         }// End of Nav. Stack
@@ -135,11 +132,11 @@ struct NotificationButtonTest: View {
     }
 }
 
-extension View {
-  func customButton() -> some View {
-    modifier(testCustomViewModifer())
-  }
-}
+//extension View {
+//  func customButton() -> some View {
+//    modifier(testCustomViewModifer())
+//  }
+//}
 
 struct NotificationButtonTest_Previews: PreviewProvider {
     static var previews: some View {

@@ -11,7 +11,6 @@ struct PartTwoCollectionView: View {
     var myCustomColor = MyCustomColors()
 
     var body: some View {
-//        NavigationStack{
         ZStack{
             Image("partTwo")
                 .resizable()
@@ -20,16 +19,8 @@ struct PartTwoCollectionView: View {
                 .font(.system(size: 30, design: .serif))
                 .padding(.leading, 230)
                 .padding(.bottom, 670)
-            .foregroundColor(myCustomColor.partIICollectionTextColor)
+                .foregroundColor(myCustomColor.partIICollectionTextColor)
                     }
-//        .toolbar {
-//            ToolbarItem(placement: .navigationBarTrailing) {
-//                CapsuleIconsView()
-//                }
-//            }
-            
-            
-//        }
     }
 }
 

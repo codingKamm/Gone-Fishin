@@ -16,10 +16,9 @@ struct CapsuleIconsView: View {
                     .foregroundColor(.white)
 //                    .overlay(Image(systemName: "pencil"))
                 HStack{
-                    ChapterView()
                     AboutView()
                     JournalIcon()
-
+                    SettingsIconButton()
                 }
                 .foregroundColor(.black)
             }//End of ZStack
