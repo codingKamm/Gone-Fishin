@@ -16,8 +16,10 @@ struct FirstCatchView: View {
             FirstCatchBackgroundView()
             VStack{
                 HStack{
-                     FirstCatchVTextTitleView()
-                        .padding(.trailing)
+                    VStack{
+                        FirstCatchVTextTitleView()
+                            .padding(.leading)
+                    }
                     Text("""
                  the excitement of completion
                  a thrill undefeated; conceited
@@ -33,9 +35,10 @@ struct FirstCatchView: View {
                     .multilineTextAlignment(.leading)
                     .font(Font.custom("Bangla-Sangam-MN-Bold", size: 17))
                     .fontWeight(.semibold)
-                    .padding(2)
+//                    .padding(.leading)
+                    .padding(.bottom, 60)
                 } //End of HStack
-                .padding(.bottom, 230)
+                .padding(.bottom, 190)
             }//End of VStack
             .foregroundColor(.black)
         }// End of ZStack

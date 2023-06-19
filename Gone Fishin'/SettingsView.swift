@@ -8,15 +8,22 @@
 import SwiftUI
 import UserNotifications
 
+import Foundation
+import NotificationCenter
+
+
 struct SettingsView: View {
-    @State private var timeReminder = Date.now
+//    @State private var timeReminder = Date.now
     @State private var enableNotifications = false
-    @State private var enableLN = false
+    @State var enableLN = false
     @EnvironmentObject var entryUser: User
     @EnvironmentObject var lnManager: LocalNotificationManager
     @Environment(\.scenePhase) var scenePhase
     @State var presentSheet = false
-
+    
+//Alert after clicking Notifications
+    @State private var showingAlert = false
+    
 
     
     var body: some View {
@@ -28,13 +35,15 @@ struct SettingsView: View {
                         .font(.system(size: 40, design: .serif))
                         .bold()
                         .padding()
-                    List {
-                        Toggle("Enable Notifications", isOn: $enableNotifications)
-                        if enableNotifications {
-                          
+                    VStack(alignment: .center){
+                        List {
+                            //                        Toggle("Enable Notifications", isOn: $enableNotifications)
+                            //                        if enableNotifications {
                             if lnManager.isGranted{
                                 Button(
                                     action: {
+                                        showingAlert = true
+                                        
                                         Task {
                                             var localNotification = LocalNotification(
                                                 identifier: UUID().uuidString,
@@ -44,7 +53,7 @@ struct SettingsView: View {
                                                 repeats: false // Must have a timeInterval of < 60 = true
                                             )
                                             localNotification.subtitle = "Stay Inspired"
-//                                            localNotification.bundleImageName = "Stewart.png"
+                                            //                                            localNotification.bundleImageName = "Stewart.png"
                                             localNotification.categoryIdentifier = "snooze"
                                             await lnManager.schedule(localNotification: localNotification)
                                         }//End of Task 1
@@ -58,7 +67,7 @@ struct SettingsView: View {
                                                 repeats: true // Must have a timeInterval of < 60 = true
                                             )
                                             localNotification.subtitle = "Never Stop Trying!"
-//                                            localNotification.bundleImageName = "Stewart.png"
+                                            //                                            localNotification.bundleImageName = "Stewart.png"
                                             localNotification.categoryIdentifier = "snooze"
                                             await lnManager.schedule(localNotification: localNotification)
                                         }//End of Task 2
@@ -72,7 +81,7 @@ struct SettingsView: View {
                                                 repeats: false // Must have a timeInterval of < 60 = true
                                             )
                                             localNotification.subtitle = "You Are More Than Enough"
-//                                            localNotification.bundleImageName = "Stewart.png"
+                                            //                                            localNotification.bundleImageName = "Stewart.png"
                                             localNotification.categoryIdentifier = "snooze"
                                             await lnManager.schedule(localNotification: localNotification)
                                         }//End of Task 3
@@ -86,7 +95,7 @@ struct SettingsView: View {
                                                 repeats: true // Must have a timeInterval of < 60 = true
                                             )
                                             localNotification.subtitle = "Failure = Quitting"
-//                                            localNotification.bundleImageName = "Stewart.png"
+                                            //                                            localNotification.bundleImageName = "Stewart.png"
                                             localNotification.categoryIdentifier = "snooze"
                                             await lnManager.schedule(localNotification: localNotification)
                                         }//End of Task 4
@@ -100,7 +109,7 @@ struct SettingsView: View {
                                                 repeats: true // Must have a timeInterval of < 60 = true
                                             )
                                             localNotification.subtitle = "Keep Hope"
-//                                            localNotification.bundleImageName = "Stewart.png"
+                                            //                                            localNotification.bundleImageName = "Stewart.png"
                                             localNotification.categoryIdentifier = "snooze"
                                             await lnManager.schedule(localNotification: localNotification)
                                         }//End of Task 5
@@ -114,7 +123,7 @@ struct SettingsView: View {
                                                 repeats: true // Must have a timeInterval of < 60 = true
                                             )
                                             localNotification.subtitle = "Be willing to ask the help you need"
-//                                            localNotification.bundleImageName = "Stewart.png"
+                                            //                                            localNotification.bundleImageName = "Stewart.png"
                                             localNotification.categoryIdentifier = "snooze"
                                             await lnManager.schedule(localNotification: localNotification)
                                         }//End of Task 6
@@ -128,7 +137,7 @@ struct SettingsView: View {
                                                 repeats: true // Must have a timeInterval of < 60 = true
                                             )
                                             localNotification.subtitle = "You are more than the mistakes you make"
-//                                            localNotification.bundleImageName = "Stewart.png"
+                                            //                                            localNotification.bundleImageName = "Stewart.png"
                                             localNotification.categoryIdentifier = "snooze"
                                             await lnManager.schedule(localNotification: localNotification)
                                         }//End of Task 7
@@ -142,7 +151,7 @@ struct SettingsView: View {
                                                 repeats: true // Must have a timeInterval of < 60 = true
                                             )
                                             localNotification.subtitle = "Today is the day"
-//                                            localNotification.bundleImageName = "Stewart.png"
+                                            //                                            localNotification.bundleImageName = "Stewart.png"
                                             localNotification.categoryIdentifier = "snooze"
                                             await lnManager.schedule(localNotification: localNotification)
                                         }//End of Task 8
@@ -156,7 +165,7 @@ struct SettingsView: View {
                                                 repeats: true // Must have a timeInterval of < 60 = true
                                             )
                                             localNotification.subtitle = "I notice your progress"
-//                                            localNotification.bundleImageName = "Stewart.png"
+                                            //                                            localNotification.bundleImageName = "Stewart.png"
                                             localNotification.categoryIdentifier = "snooze"
                                             await lnManager.schedule(localNotification: localNotification)
                                         }//End of Task 9
@@ -170,35 +179,37 @@ struct SettingsView: View {
                                                 repeats: true // Must have a timeInterval of < 60 = true
                                             )
                                             localNotification.subtitle = "Did you journal today?"
-//                                            localNotification.bundleImageName = "Stewart.png"
+                                            //                                            localNotification.bundleImageName = "Stewart.png"
                                             localNotification.categoryIdentifier = "snooze"
                                             await lnManager.schedule(localNotification: localNotification)
                                         }//End of Task 10
                                     },
                                     label: {
-//                                        lnManager.isGranted = true
-//                                        Button(""){
-//
-//                                        }
-//                                        Text("Press to recieve notifications")
-//                                            .background(Color.blue)
-//                                            .foregroundColor(Color.white)
-//                                            .frame(
-//                                                width: 300,
-//                                                height: 40
-//                                            )
+                                        Text("Press to recieve notifications")
+                                            .background(Color.blue)
+                                            .foregroundColor(Color.white)
+                                            .frame(width: 300,height: 40)
                                     }// End of Label
                                     
+                                    
                                 )// End of Button
-//                                .background(Color.blue)
-//                                .cornerRadius(8)
-//                                .padding([.top, .bottom], 16)
+                                .background(Color.blue)
+                                .cornerRadius(8)
+                                .padding([.top, .bottom], 16)
+                                .alert("Expect Notifications Soon", isPresented: $showingAlert){
+                                    Button("OK", role: .cancel){}
+                                }
+                                //                                .hapticFeedback(feedbackStyle:.medium)
                             }// End of local notification manager
-                        }// //End of Enable Notifications
-                    }// End of List
-                    .preferredColorScheme(.dark)
-                    .foregroundColor(.white)
+                            //                        }// //End of Enable Notifications
+                        }// End of List
+                        .preferredColorScheme(.dark)
+                        .foregroundColor(.white)
+                    }// End of VStack
+//                    .hapticFeedback(feedbackStyle:.medium)
+
                     }//End of VStack
+
                 }// End of ZStack
             }// End of Nav. Stack
 //        .navigationTitle("Settings")

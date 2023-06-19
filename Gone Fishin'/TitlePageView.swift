@@ -14,13 +14,9 @@ struct TitlePageView: View {
     var body: some View {
         VStack {
             if self.isActive{
-//                TransitionPage()
                     PartOneCollectionView()
             } else {
-                Image("titlePageTree")
-                    .resizable()
-                    .ignoresSafeArea()
-                    .padding()
+               TransitionPage()
             }
         }// End of VStack
         .onAppear {

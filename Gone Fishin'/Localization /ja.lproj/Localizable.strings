@@ -39,6 +39,15 @@ With gratitude," = "さらに多くの詩と商品を\nまもなく発表でき�
 "Fly Fishing" = "フライフィッシング";
 "Trophies" = "トロフィー";
 "Beyond The Horizon" = "地平線の向こう";
+
+//Miscellaneous Words
+"Scroll" = "スクロール";
+
+//Alert Feature
+"Press to recieve notifications" = "押して通知を受け取ります";
+"Expect Notifications Soon" = "まもなく通知が届く予定です";
+"OK" = "オーケー";
+
 //Settings View
 "Settings" = "設定";
 "Enable Notifications" = "通知を有効にします";

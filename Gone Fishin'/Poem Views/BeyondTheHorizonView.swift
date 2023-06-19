@@ -14,7 +14,7 @@ struct BeyondTheHorizonView: View {
             VStack{
                 HStack{
                     BeyondTheHorizonVTextTitleView()
-                        .padding(.trailing)
+                        .padding(.trailing, 0)
                     HStack{
                         Text("""
                  grandeur of serenity
@@ -27,10 +27,14 @@ struct BeyondTheHorizonView: View {
                         .fontWeight(.semibold)
                         .padding()
                     }
-                    .padding(.bottom, 600)
+                    .padding(.bottom, 570) 
                 } //End of HStack
                 .foregroundColor(.black)
             }//End of VStack
+            ScrollBlinkingArrowRightView()
+                 .padding(.top, 700)
+                 .padding(.leading, 270)
+                 .foregroundColor(.white)
         }// End of ZStack
         
     }

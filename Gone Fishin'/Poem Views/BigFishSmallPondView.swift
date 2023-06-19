@@ -13,8 +13,10 @@ struct BigFishSmallPondView: View {
             BigFishSmallPondBackgroundView()
             VStack{
                 HStack{
-                    BigFishSmallPondVTextTitleView()
-                        .padding(.trailing, 100)
+                    VStack{
+                        BigFishSmallPondVTextTitleView()
+                            .padding(.trailing, 100)
+                    }
                     Text("""
                  with remnants of toxicity
                  each day is a risk to take

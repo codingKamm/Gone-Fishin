@@ -15,7 +15,7 @@ struct CatchNReleaseView: View {
             VStack{
                 HStack{
                     CatchNReleaseVTextTitleView()
-                        .padding(.trailing)
+                        .padding(.leading)
                     HStack{
                         Text("""
                          behind the scenes of curiosity

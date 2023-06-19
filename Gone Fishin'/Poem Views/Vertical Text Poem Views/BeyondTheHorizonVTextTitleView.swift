@@ -62,7 +62,7 @@ struct BeyondTheHorizonVTextTitleView: View {
                 }
                 HStack{
                     Text("R")
-                }
+                } 
                 HStack{
                     Text("I")
                 }
@@ -77,7 +77,7 @@ struct BeyondTheHorizonVTextTitleView: View {
                 }
             }
         }// End of VStack
-        .font(.system(size: 37, design: .serif))
+        .font(.system(size: 33, design: .serif))
     }
 }
 

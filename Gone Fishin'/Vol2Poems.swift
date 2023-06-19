@@ -13,15 +13,21 @@ struct Vol2Poems: View {
 
     
     var body: some View {
-        Pages(currentPage: $poemIndex2, navigationOrientation: .vertical, transitionStyle: .scroll, wrap: false){
-            FirstCatchView()
-            CrabsInABucketView()
-            CatchNReleaseView()
-            FlyFishingView()
-            TrophiesView()
-            BeyondTheHorizonView()
-        }//End of Pages Section Two
-        .edgesIgnoringSafeArea(.all)
+        ZStack{
+            Pages(currentPage: $poemIndex2, navigationOrientation: .vertical, transitionStyle: .scroll, wrap: false){
+                FirstCatchView()
+                CrabsInABucketView()
+                CatchNReleaseView()
+                FlyFishingView()
+                TrophiesView()
+                BeyondTheHorizonView()
+            }//End of Pages Section Two
+            .edgesIgnoringSafeArea(.all)
+            ScrollBlinkingArrowsUpDownView()
+                .foregroundColor(.blue)
+                .padding(.bottom, 750)
+                .padding(.trailing, 290)
+        }//End of ZStack
     }
 }
 

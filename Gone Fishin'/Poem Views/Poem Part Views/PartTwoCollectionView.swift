@@ -35,6 +35,10 @@ struct PartTwoCollectionView: View {
             .foregroundColor(.white)
             .padding(.bottom, 100)
             .padding(.trailing, 110)
+            ScrollBlinkingArrowRightView()
+                 .padding(.top, 700)
+                 .padding(.leading, 270)
+                 .foregroundColor(.white)
         }// End of ZStack
 
     }

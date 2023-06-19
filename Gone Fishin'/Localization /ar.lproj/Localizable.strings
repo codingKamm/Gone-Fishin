@@ -40,6 +40,15 @@ With gratitude," = "يسعدنا الإعلان عن المزيد من الأش�
 "Fly Fishing" = "صيد بالطعم الصناعي";
 "Trophies" = "الجوائز";
 "Beyond The Horizon" = "فوق الأفق";
+
+//Miscellaneous Words
+"Scroll" = "انتقل";
+
+//Alert Feature
+"Press to recieve notifications" = "اضغط لتلقي الإخطارات";
+"Expect Notifications Soon" = "توقع الإخطارات قريبًا";
+"OK" = "نعم";
+
 //Settings View
 "Settings" = "إعدادات";
 "Enable Notifications" = "تمكين الإخطارات";

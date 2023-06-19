@@ -14,7 +14,7 @@ struct HookedView: View {
             VStack{
                 HStack{
                     HookedVTextTitleView()
-                        .padding(.leading)
+                        .padding(.trailing)
                     Text("""
                  insightfully better
                  im stuck in a gaze
@@ -29,11 +29,15 @@ struct HookedView: View {
                     .multilineTextAlignment(.leading)
                     .font(Font.custom("Bangla-Sangam-MN-Bold", size: 16))
                     .fontWeight(.semibold)
-                    .padding(30)
+                    .padding(.trailing, 90)
                 } //End of HStack
                 .foregroundColor(.black)
                 .padding(.bottom, 300)
             }//End of VStack
+            ScrollBlinkingArrowRightView()
+                 .padding(.top, 700)
+                 .padding(.leading, 300)
+                 .foregroundColor(.white)
         }// End of ZStack
     }
 }

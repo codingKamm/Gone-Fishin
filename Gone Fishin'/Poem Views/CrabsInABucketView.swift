@@ -15,8 +15,8 @@ struct CrabsInABucketView: View {
                 HStack{
                     CrabsInABucketVTextTitleView()
                         .padding([.trailing, .bottom], 40)
-                    Text("")
-                        .padding()
+//                    Text("")
+//                        .padding()
                     HStack{
                         Text("""
                  how can I tell you?

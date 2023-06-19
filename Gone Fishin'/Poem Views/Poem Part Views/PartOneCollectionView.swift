@@ -41,15 +41,20 @@ struct PartOneCollectionView: View {
                     Text("Hooked")
                         .padding(.leading, 50)
                     
-                    // Add Poem Titles
+                  
                 }// End of Section 2
-               
+            
+
             }//End of VStack
             .font(.system(size: 24, weight: .semibold, design: .serif))
             .italic()
             .foregroundColor(.white)
             .padding(.bottom, 500)
             .padding(.trailing, 110)
+            ScrollBlinkingArrowRightView()
+                 .padding(.top, 700)
+                 .padding(.leading, 270)
+                 .foregroundColor(.white)
 
         }//End of ZStack
         

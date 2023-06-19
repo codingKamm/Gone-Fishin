@@ -65,8 +65,6 @@ struct CreateEntry: View {
                     }// End of Section
                     
                     Section {
-                        //lnManager
-                        //                    if lnManager.isGranted {
                         Button(
                             action: {
                                 self.entryController.createEntry(prompt: self.createPoemPrompt, title: self.createPoemTitle, date: Date(), desc: self.createPoemStanza)
@@ -85,8 +83,6 @@ struct CreateEntry: View {
                 
                 
             }// End of VStack
-//            .navigationTitle("Journal")
-//            .navigationBarTitleDisplayMode(.inline)
             .padding()
             .listRowBackground(Color.black)
             .colorScheme(.dark)

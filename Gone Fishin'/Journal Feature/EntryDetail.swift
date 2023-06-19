@@ -28,6 +28,7 @@ struct EntryDetail: View {
         .padding(.top, 25)
         .navigationTitle(entry.title)
         .navigationBarTitleDisplayMode(.inline)
+        .foregroundColor(.white)
     }
 }
 

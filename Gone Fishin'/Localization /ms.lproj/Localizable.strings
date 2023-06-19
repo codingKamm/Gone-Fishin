@@ -39,6 +39,15 @@ With gratitude," = "Kami sangat teruja untuk mengumumkan lebih banyak puisi\njil
 "Fly Fishing" = "Memancing Terbang";
 "Trophies" = "Piala";
 "Beyond The Horizon" = "Di Seberang Cakrawala";
+
+//Miscellaneous Words
+"Scroll" = "Tatal";
+
+//Alert Feature
+"Press to recieve notifications" = "Tekan untuk menerima pemberitahuan";
+"Expect Notifications Soon" = "Jangkakan Pemberitahuan Tidak Lama Lagi";
+"OK" = "okey";
+
 //Settings View
 "Settings" = "Tetapan";
 "Enable Notifications" = "Dayakan Pemberitahuan";
