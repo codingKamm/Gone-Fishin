@@ -40,13 +40,34 @@ With gratitude," = "さらに多くの詩と商品を\nまもなく発表でき�
 "Trophies" = "トロフィー";
 "Beyond The Horizon" = "地平線の向こう";
 //Settings View
-"Settings" = "";
+"Settings" = "設定";
+"Enable Notifications" = "通知を有効にします";
 
 //Notifications
-"Embrace the power of words and let inspiration find its way into your heart. Here's a brief moment of wisedom to uplift your spirit and ignite your inner fire." = "";
-"Just because your best is not good enough, doesn’t mean it can’t be." = "";
-"Overcoming self-doubt means finding your self-worth" = "";
-"Imposters Syndrome is a fraudulent fear of failure." = "";
+"Gone Fishin' 🎣" = "釣りに行ってきました🎣";
+"snooze" = "居眠りする";
+"Stay Inspired" = "インスピレーションを得る";
+"Never Stop Trying!" = "決して努力をやめないでください！";
+"You Are More Than Enough" = "あなたは十分すぎるほどです";
+"Failure = Quitting" = "失敗＝やめる";
+"Imposters Syndrome is a fraudulent fear of failure." = "インポスターズ症候群は、失敗に対する詐欺的な恐怖です。";
+"Self-reliance is recycled hope" = "自立は希望のリサイクルです";
+"Keep Hope" = "希望を持ち続ける";
+"Be willing to ask the help you need" = "必要な助けを喜んで求めてください";
+"Pulling yourself up means reaching for help" = "自分を引き上げるということは助けを求めることを意味します";
+"You are more than the mistakes you make" = "あなたはあなたが犯す間違い以上のものです";
+"Enjoy each mistake as you work towards becoming great" = "偉大になるために努力しながら、それぞれの間違いを楽しんでください";
+"Luck is when opportunity meets preparation at the intersection of determination" = "幸運とは、決意の交差点で機会と準備が出会うときです";
+"Today is the day" = "今日がその日だ";
+"Remember where you started and realize how far you’ve came" = "どこから始めたのかを思い出し、どこまで到達したかを認識してください";
+"I notice your progress" = "あなたの進歩に気づいています";
+"Like a cast of the reel, I’m hooked on each line." = "リールをキャストするように、私は各ラインに夢中になります。";
+"Did you journal today?" = "今日日記を書きましたか？";
+"Embrace the power of words and let inspiration find its way into your heart. Here's a brief moment of wisedom to uplift your spirit and ignite your inner fire." = "言葉の力を受け入れて、インスピレーションを心に届けましょう。 ここでは、あなたの精神を高揚させ、あなたの内なる火に火をつけるための、短い賢明な瞬間をご紹介します。";
+"Just because your best is not good enough, doesn’t mean it can’t be." = "ベストを尽くしても十分ではないからといって、それができないわけではありません。";
+"Overcoming self-doubt means finding your self-worth" = "自己不信を克服することは、自分の価値を見つけることを意味します";
+"Imposters Syndrome is a fraudulent fear of failure." = "インポスターズ症候群は、失敗に対する詐欺的な恐怖です。";
+
 //Collection Explaination View
 "E.M. Douglass Presents \n Gone Fishin': A Poetry Book" = "E.M. ダグラス プレゼント \n Gone Fishin': A Poetry Book";
 "Submerged in the depths of creativity, Gone Fishin' explores the affects of imposter syndrome. \n\n Gone Fishin's mighty wave idiomatically details the progression of someone who is not very aware of what is happening around them. \n\nThe growing pains we expereince during our learning curve is necessary. This preperation needed to prepare for the manaifestion of our opportunities." = "創造性の深みに没頭した『Gone Fishin'』では、詐欺師症候群の影響を探ります。 \n\n Gone Fishin の強力な波は、周囲で何が起こっているかをあまり認識していない人の進歩を慣用的に詳述しています。 \n\n私たちが学習曲線の中で経験する成長の痛みは必要なものです。 この準備は、私たちの機会の実現に備えるために必要でした。";

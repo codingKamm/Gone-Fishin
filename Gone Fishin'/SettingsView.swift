@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UserNotifications
 
 struct SettingsView: View {
     @State private var timeReminder = Date.now
@@ -22,7 +23,7 @@ struct SettingsView: View {
         NavigationStack{
             ZStack{
                 VStack(alignment: .leading){
-                    Text("Settings") //XL Bold
+                    Text("Settings")
                         .foregroundColor(.white)
                         .font(.system(size: 40, design: .serif))
                         .bold()
@@ -30,6 +31,7 @@ struct SettingsView: View {
                     List {
                         Toggle("Enable Notifications", isOn: $enableNotifications)
                         if enableNotifications {
+                          
                             if lnManager.isGranted{
                                 Button(
                                     action: {
@@ -38,11 +40,11 @@ struct SettingsView: View {
                                                 identifier: UUID().uuidString,
                                                 title: "Gone Fishin' 🎣",
                                                 body: "Embrace the power of words and let inspiration find its way into your heart. Here's a brief moment of wisedom to uplift your spirit and ignite your inner fire.",
-                                                timeInterval: 5, // = 5sec
+                                                timeInterval: 5, // = 5secs
                                                 repeats: false // Must have a timeInterval of < 60 = true
                                             )
                                             localNotification.subtitle = "Stay Inspired"
-                                            localNotification.bundleImageName = "Stewart.png"
+//                                            localNotification.bundleImageName = "Stewart.png"
                                             localNotification.categoryIdentifier = "snooze"
                                             await lnManager.schedule(localNotification: localNotification)
                                         }//End of Task 1
@@ -52,11 +54,11 @@ struct SettingsView: View {
                                                 identifier: UUID().uuidString,
                                                 title: "Gone Fishin' 🎣",
                                                 body: "Just because your best is not good enough, doesn’t mean it can’t be.",
-                                                timeInterval: 14_400, // = 4hr, 14_400sec
-                                                repeats: false // Must have a timeInterval of < 60 = true
+                                                timeInterval: 432_000, // = 5 days
+                                                repeats: true // Must have a timeInterval of < 60 = true
                                             )
                                             localNotification.subtitle = "Never Stop Trying!"
-                                            localNotification.bundleImageName = "Stewart.png"
+//                                            localNotification.bundleImageName = "Stewart.png"
                                             localNotification.categoryIdentifier = "snooze"
                                             await lnManager.schedule(localNotification: localNotification)
                                         }//End of Task 2
@@ -70,7 +72,7 @@ struct SettingsView: View {
                                                 repeats: false // Must have a timeInterval of < 60 = true
                                             )
                                             localNotification.subtitle = "You Are More Than Enough"
-                                            localNotification.bundleImageName = "Stewart.png"
+//                                            localNotification.bundleImageName = "Stewart.png"
                                             localNotification.categoryIdentifier = "snooze"
                                             await lnManager.schedule(localNotification: localNotification)
                                         }//End of Task 3
@@ -80,11 +82,11 @@ struct SettingsView: View {
                                                 identifier: UUID().uuidString,
                                                 title: "Gone Fishin' 🎣",
                                                 body: "Imposters Syndrome is a fraudulent fear of failure.",
-                                                timeInterval: 259_200, // = every 72hrs
+                                                timeInterval: 259_200, // = every 3 days
                                                 repeats: true // Must have a timeInterval of < 60 = true
                                             )
                                             localNotification.subtitle = "Failure = Quitting"
-                                            localNotification.bundleImageName = "Stewart.png"
+//                                            localNotification.bundleImageName = "Stewart.png"
                                             localNotification.categoryIdentifier = "snooze"
                                             await lnManager.schedule(localNotification: localNotification)
                                         }//End of Task 4
@@ -92,14 +94,13 @@ struct SettingsView: View {
                                         Task {
                                             var localNotification = LocalNotification(
                                                 identifier: UUID().uuidString,
-                                                title: "Test Gone Fishin' 🎣",
-                                                body: "Embrace the power of words and let inspiration find its way into your heart. Here's a brief moment of wisedom to uplift your spirit and ignite your inner fire.",
-                                                timeInterval: 28_800, // 60sec = 1min, , 1hr = 3_600sec, 8hrs = 28_800
-                                                //make every 72hrs
+                                                title: "Gone Fishin' 🎣",
+                                                body: "Self-reliance is recycled hope",
+                                                timeInterval: 604_800, // 1 week
                                                 repeats: true // Must have a timeInterval of < 60 = true
                                             )
-                                            localNotification.subtitle = "Stay Inspired"
-                                            localNotification.bundleImageName = "Stewart.png"
+                                            localNotification.subtitle = "Keep Hope"
+//                                            localNotification.bundleImageName = "Stewart.png"
                                             localNotification.categoryIdentifier = "snooze"
                                             await lnManager.schedule(localNotification: localNotification)
                                         }//End of Task 5
@@ -107,19 +108,75 @@ struct SettingsView: View {
                                         Task {
                                             var localNotification = LocalNotification(
                                                 identifier: UUID().uuidString,
-                                                title: "Test Gone Fishin' 🎣",
-                                                body: "Embrace the power of words and let inspiration find its way into your heart. Here's a brief moment of wisedom to uplift your spirit and ignite your inner fire.",
-                                                timeInterval: 28_800, // 60sec = 1min, , 1hr = 3_600sec, 8hrs = 28_800
-                                                //make every 72hrs
+                                                title: "Gone Fishin' 🎣",
+                                                body: "Pulling yourself up means reaching for help",
+                                                timeInterval: 1_209_600, // 2 weeks
                                                 repeats: true // Must have a timeInterval of < 60 = true
                                             )
-                                            localNotification.subtitle = "Stay Inspired"
-                                            localNotification.bundleImageName = "Stewart.png"
+                                            localNotification.subtitle = "Be willing to ask the help you need"
+//                                            localNotification.bundleImageName = "Stewart.png"
                                             localNotification.categoryIdentifier = "snooze"
                                             await lnManager.schedule(localNotification: localNotification)
                                         }//End of Task 6
+                                        
+                                        Task {
+                                            var localNotification = LocalNotification(
+                                                identifier: UUID().uuidString,
+                                                title: "Gone Fishin' 🎣",
+                                                body: "Enjoy each mistake as you work towards becoming great",
+                                                timeInterval: 1_036_800, // 12 days
+                                                repeats: true // Must have a timeInterval of < 60 = true
+                                            )
+                                            localNotification.subtitle = "You are more than the mistakes you make"
+//                                            localNotification.bundleImageName = "Stewart.png"
+                                            localNotification.categoryIdentifier = "snooze"
+                                            await lnManager.schedule(localNotification: localNotification)
+                                        }//End of Task 7
+                                        
+                                        Task {
+                                            var localNotification = LocalNotification(
+                                                identifier: UUID().uuidString,
+                                                title: "Gone Fishin' 🎣",
+                                                body: "Luck is when opportunity meets preparation at the intersection of determination",
+                                                timeInterval: 1_728_000, // 20 days
+                                                repeats: true // Must have a timeInterval of < 60 = true
+                                            )
+                                            localNotification.subtitle = "Today is the day"
+//                                            localNotification.bundleImageName = "Stewart.png"
+                                            localNotification.categoryIdentifier = "snooze"
+                                            await lnManager.schedule(localNotification: localNotification)
+                                        }//End of Task 8
+                                        
+                                        Task {
+                                            var localNotification = LocalNotification(
+                                                identifier: UUID().uuidString,
+                                                title: "Gone Fishin' 🎣",
+                                                body: "Remember where you started and realize how far you’ve came",
+                                                timeInterval: 2_678_400, // 31 days
+                                                repeats: true // Must have a timeInterval of < 60 = true
+                                            )
+                                            localNotification.subtitle = "I notice your progress"
+//                                            localNotification.bundleImageName = "Stewart.png"
+                                            localNotification.categoryIdentifier = "snooze"
+                                            await lnManager.schedule(localNotification: localNotification)
+                                        }//End of Task 9
+                                        
+                                        Task {
+                                            var localNotification = LocalNotification(
+                                                identifier: UUID().uuidString,
+                                                title: "Gone Fishin' 🎣",
+                                                body: "Like a cast of the reel, I’m hooked on each line.",
+                                                timeInterval: 115_200, // 32 hrs
+                                                repeats: true // Must have a timeInterval of < 60 = true
+                                            )
+                                            localNotification.subtitle = "Did you journal today?"
+//                                            localNotification.bundleImageName = "Stewart.png"
+                                            localNotification.categoryIdentifier = "snooze"
+                                            await lnManager.schedule(localNotification: localNotification)
+                                        }//End of Task 10
                                     },
                                     label: {
+//                                        lnManager.isGranted = true
 //                                        Button(""){
 //
 //                                        }
@@ -131,6 +188,7 @@ struct SettingsView: View {
 //                                                height: 40
 //                                            )
                                     }// End of Label
+                                    
                                 )// End of Button
 //                                .background(Color.blue)
 //                                .cornerRadius(8)
@@ -140,20 +198,6 @@ struct SettingsView: View {
                     }// End of List
                     .preferredColorScheme(.dark)
                     .foregroundColor(.white)
-//
-//                    Text("Settings") //XL Bold
-//                        .foregroundColor(.white)
-//                        .font(.system(size: 40, design: .serif))
-//                        .bold()
-//
-//                        .toolbar {
-//                            ToolbarItem(placement: .navigationBarLeading) {
-//                                Text("Settings")
-//                                    .font(.largeTitle)
-//                                    .foregroundColor(.white)
-//                            }
-//
-//                        }// End of Toolbar
                     }//End of VStack
                 }// End of ZStack
             }// End of Nav. Stack
