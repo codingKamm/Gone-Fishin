@@ -53,6 +53,6 @@ struct EntryRow: View {
 
 struct EntryRow_Previews: PreviewProvider {
     static var previews: some View {
-        EntryRow(item: EntrySection.example)
+        EntryRow(item: EntrySection(prompt: "", title: "", date: Date(), stanza: ""))
     }
 }

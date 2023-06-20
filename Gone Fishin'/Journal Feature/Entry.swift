@@ -31,7 +31,7 @@ struct EntrySection: Codable, Identifiable, Equatable {
         return dateString
     }
     
-#if DEBUG
-    static let example = EntrySection(prompt: "What's your favorite breakfast meal?", title: "Maple French Toast", date: Date(), stanza: "Sweet, fluffy, and served piping hot, our French toast is flown in fresh every day from Maple City, Canada, which is where all maple syrup in the world comes from. And if you believe that, we have some land to sell you…")
-#endif
+//#if DEBUG
+//    static var example = EntrySection(prompt: "What's your favorite breakfast meal?", title: "Maple French Toast", date: Date(), stanza: "Sweet, fluffy, and served piping hot, our French toast is flown in fresh every day from Maple City, Canada, which is where all maple syrup in the world comes from. And if you believe that, we have some land to sell you…")
+//#endif
 }

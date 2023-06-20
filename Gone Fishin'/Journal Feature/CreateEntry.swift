@@ -38,6 +38,7 @@ struct CreateEntry: View {
             VStack {
                 Text("Journal")
                     .multilineTextAlignment(.center)
+                    .foregroundColor(.white)
                 Form {
                     Section {
                             TextField("Title", text: $createPoemTitle)

@@ -34,6 +34,6 @@ struct EntryDetail: View {
 
 struct EntryDetail_Previews: PreviewProvider {
     static var previews: some View {
-        EntryDetail(entry: EntrySection.example)
+        EntryDetail(entry: EntrySection(prompt: "", title: "", date: Date(), stanza: ""))
     }
 }
