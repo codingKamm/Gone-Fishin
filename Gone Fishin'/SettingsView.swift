@@ -54,7 +54,7 @@ struct SettingsView: View {
                                             )
                                             localNotification.subtitle = "Stay Inspired"
                                             //                                            localNotification.bundleImageName = "Stewart.png"
-                                            localNotification.categoryIdentifier = "snooze"
+//                                            localNotification.categoryIdentifier = "snooze"
                                             await lnManager.schedule(localNotification: localNotification)
                                         }//End of Task 1
                                         
@@ -68,7 +68,7 @@ struct SettingsView: View {
                                             )
                                             localNotification.subtitle = "Never Stop Trying!"
                                             //                                            localNotification.bundleImageName = "Stewart.png"
-                                            localNotification.categoryIdentifier = "snooze"
+//                                            localNotification.categoryIdentifier = "snooze"
                                             await lnManager.schedule(localNotification: localNotification)
                                         }//End of Task 2
                                         
@@ -82,7 +82,7 @@ struct SettingsView: View {
                                             )
                                             localNotification.subtitle = "You Are More Than Enough"
                                             //                                            localNotification.bundleImageName = "Stewart.png"
-                                            localNotification.categoryIdentifier = "snooze"
+//                                            localNotification.categoryIdentifier = "snooze"
                                             await lnManager.schedule(localNotification: localNotification)
                                         }//End of Task 3
                                         
@@ -96,7 +96,7 @@ struct SettingsView: View {
                                             )
                                             localNotification.subtitle = "Failure = Quitting"
                                             //                                            localNotification.bundleImageName = "Stewart.png"
-                                            localNotification.categoryIdentifier = "snooze"
+//                                            localNotification.categoryIdentifier = "snooze"
                                             await lnManager.schedule(localNotification: localNotification)
                                         }//End of Task 4
                                         
@@ -110,7 +110,7 @@ struct SettingsView: View {
                                             )
                                             localNotification.subtitle = "Keep Hope"
                                             //                                            localNotification.bundleImageName = "Stewart.png"
-                                            localNotification.categoryIdentifier = "snooze"
+//                                            localNotification.categoryIdentifier = "snooze"
                                             await lnManager.schedule(localNotification: localNotification)
                                         }//End of Task 5
                                         
@@ -124,7 +124,7 @@ struct SettingsView: View {
                                             )
                                             localNotification.subtitle = "Be willing to ask the help you need"
                                             //                                            localNotification.bundleImageName = "Stewart.png"
-                                            localNotification.categoryIdentifier = "snooze"
+//                                            localNotification.categoryIdentifier = "snooze"
                                             await lnManager.schedule(localNotification: localNotification)
                                         }//End of Task 6
                                         
@@ -138,7 +138,7 @@ struct SettingsView: View {
                                             )
                                             localNotification.subtitle = "You are more than the mistakes you make"
                                             //                                            localNotification.bundleImageName = "Stewart.png"
-                                            localNotification.categoryIdentifier = "snooze"
+//                                            localNotification.categoryIdentifier = "snooze"
                                             await lnManager.schedule(localNotification: localNotification)
                                         }//End of Task 7
                                         
@@ -152,7 +152,7 @@ struct SettingsView: View {
                                             )
                                             localNotification.subtitle = "Today is the day"
                                             //                                            localNotification.bundleImageName = "Stewart.png"
-                                            localNotification.categoryIdentifier = "snooze"
+//                                            localNotification.categoryIdentifier = "snooze"
                                             await lnManager.schedule(localNotification: localNotification)
                                         }//End of Task 8
                                         
@@ -166,7 +166,7 @@ struct SettingsView: View {
                                             )
                                             localNotification.subtitle = "I notice your progress"
                                             //                                            localNotification.bundleImageName = "Stewart.png"
-                                            localNotification.categoryIdentifier = "snooze"
+//                                            localNotification.categoryIdentifier = "snooze"
                                             await lnManager.schedule(localNotification: localNotification)
                                         }//End of Task 9
                                         
@@ -180,7 +180,7 @@ struct SettingsView: View {
                                             )
                                             localNotification.subtitle = "Did you journal today?"
                                             //                                            localNotification.bundleImageName = "Stewart.png"
-                                            localNotification.categoryIdentifier = "snooze"
+//                                            localNotification.categoryIdentifier = "snooze"
                                             await lnManager.schedule(localNotification: localNotification)
                                         }//End of Task 10
                                     },

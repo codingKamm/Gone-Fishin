@@ -39,6 +39,7 @@ struct ShufflePrompts: View {
                 VStack {
                     Text("Today's Prompt:")
                         .multilineTextAlignment(.center)
+                        .foregroundColor(.white)
                     
                     Form {
                         Section{
@@ -106,6 +107,7 @@ struct ShufflePrompts: View {
                 .padding()
                 .listRowBackground(Color.black)
                 .colorScheme(.dark)
+                .foregroundColor(.white)
             }//ZStack
         }//End of Nav Stack
         
