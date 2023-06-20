@@ -18,7 +18,7 @@ struct FlyFishingView: View {
                     HStack{
                         Text("""
                  im shallow in my stance
-                 white waters raging at my feet
+                 white waters rage at my feet
                  with each captivating experience
                  victory lies in defeat
                  """)
