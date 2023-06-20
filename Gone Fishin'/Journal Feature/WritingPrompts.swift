@@ -106,7 +106,7 @@ enum WritingPromptsToShuffle: String, CaseIterable, Localizable {
     case prompt97 = "What is your favorite room in your house and why?"
     case prompt98 = "What is a food you find really disgusting? Explain why it’s so bad."
     case prompt99 = "One thing I am really good at is…"
-    case prompt100 = "Every year a new person is sent to the moon, and now t’s your turn. What happens when you step out of the rocket?"
+    case prompt100 = "Every year a new person is sent to the moon, and now it’s your turn. What happens when you step out of the rocket?"
     case prompt101 = "You get to create a new holiday that will be celebrated every year. What is it called and what will people do to celebrate on this day?"
     case prompt102 = "Write about the last thing/person that made you smile."
     case prompt103 = "Write about your first job."
