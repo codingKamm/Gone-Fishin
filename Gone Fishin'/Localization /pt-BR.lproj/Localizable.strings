@@ -1,0 +1,205 @@
+/* 
+  Localizable.strings
+  Gone Fishin'
+
+  Created by Cameron Warner on 5/16/23.
+  
+ */
+
+// New Chapters Coming Soon View
+"Thanks for reading! \nNew Poems Coming Soon!" = "Obrigado por ler! \nNovos poemas em breve! \n🇧🇷";
+// Ending Tanks View
+"We're thrilled to announce more poetry\nvolumes and merchandise coming soon.\nStay tuned for updates. Your presence\n means the world to us.\n
+With gratitude,"= "Temos o prazer de anunciar mais volumes\nde poesia e mercadorias em breve.\nFique atento às atualizações. Sua presença\n significa o mundo para nós.\n\n🇧🇷
+Com gratidão,";
+//Journal feature
+"Journal" = "Diário";
+"Hi" = "Olá";
+"Friend" = "Amigo";
+"Hi, !" = "Olá, !";
+"Hi, Friend!" = "Olá, amigo!";
+"How about creating a new post today?" = "Que tal criar uma nova postagem hoje?";
+"Create new Entry" = "Criar nova entrada";
+"Random Prompts" = "Prompts Aleatórios";
+"Title" = "Título";
+"Submit" = "Enviar";
+"Today's Prompt" = "Prompt de hoje";
+//Table of Contents 
+"Table of Contents" = "Índice";
+"PART I" = "PARTE I";
+"PART II" = "PARTE II";
+"How to Fish" = "Como Pescar";
+"Baiting" = "Iscagem";
+"Wading" = "Vadeando";
+"Gone Fishin’" = "Pescando";
+"Big Fish, Small Pond" = "Peixe Grande, Lago Pequeno";
+"Hooked" = "Fisgado";
+"First Catch" = "Primeira Captura";
+"Crabs in a Bucket" = "Caranguejos em um Balde";
+"Catch & Release" = "Captura e Liberação";
+"Fly Fishing" = "Pesca com Mosca";
+"Trophies" = "Troféus";
+"Beyond The Horizon" = "Além do Horizonte";
+
+//Miscellaneous Words
+"Scroll" = "Rolar";
+"Gone \nFishin'" = "Fui \npescar";
+
+//Alert Feature
+"Press to recieve notifications" = "Pressione para receber notificações";
+"Expect Notifications Soon" = "Espere notificações em breve";
+"OK" = "OK";
+
+//Settings View
+"Settings" = "Configurações";
+"Enable Notifications" = "Ativar Notificações";
+
+//Notifications
+"Gone Fishin' 🎣" = "Partiu pescar 🎣";
+"snooze" = "soneca";
+"Stay Inspired" = "Mantenha-se inspirado";
+"Never Stop Trying!" = "Nunca pare de tentar!";
+"You Are More Than Enough" = "Você é mais do que suficiente";
+"Failure = Quitting" = "Falhar = Desistir";
+"Imposters Syndrome is a fraudulent fear of failure." = "A Síndrome do Impostor é um medo fraudulento de fracasso.";
+"Self-reliance is recycled hope" = "A autoconfiança é uma esperança reciclada";
+"Keep Hope" = "Mantenha a esperança";
+"Be willing to ask the help you need" = "Esteja disposto a pedir a ajuda que você precisa";
+"Pulling yourself up means reaching for help" = "Se reerguer significa buscar ajuda";
+"You are more than the mistakes you make" = "Você é mais do que os erros que comete";
+"Enjoy each mistake as you work towards becoming great" = "Aproveite cada erro enquanto você trabalha para se tornar grandioso";
+"Luck is when opportunity meets preparation at the intersection of determination" = "Sorte é quando a oportunidade encontra a preparação no cruzamento da determinação";
+"Today is the day" = "Hoje é o dia";
+"Remember where you started and realize how far you’ve came" = "Lembre-se de onde você começou e perceba o quão longe você chegou";
+"I notice your progress" = "Eu noto o seu progresso";
+"Like a cast of the reel, I’m hooked on each line." = "Como o lançamento da linha de pesca, estou fisgado em cada linha.";
+"Did you journal today?" = "Você escreveu no diário hoje?";
+"Embrace the power of words and let inspiration find its way into your heart. Here's a brief moment of wisedom to uplift your spirit and ignite your inner fire." = "Abrace o poder das palavras e deixe a inspiração encontrar o caminho para o seu coração. Aqui está um breve momento de sabedoria para elevar seu espírito e acender o seu fogo interior.";
+"Just because your best is not good enough, doesn’t mean it can’t be." = "Só porque o seu melhor não é suficiente, não significa que não possa ser.";
+"Overcoming self-doubt means finding your self-worth" = "Superar a auto-dúvida significa encontrar o seu valor próprio";
+"Imposters Syndrome is a fraudulent fear of failure." = "A Síndrome do Impostor é um medo fraudulento de fracasso.";
+//Collection Explaination View
+"E.M. Douglass Presents \n Gone Fishin': A Poetry Book" = "E.M. Douglass Apresenta \n Gone Fishin': Um Livro de Poesia";
+"Submerged in the depths of creativity, Gone Fishin' explores the affects of imposter syndrome. \n\n Gone Fishin's mighty wave idiomatically details the progression of someone who is not very aware of what is happening around them. \n\nThe growing pains we expereince during our learning curve is necessary. This preperation needed to prepare for the manaifestion of our opportunities." = "Submerso nas profundezas da criatividade, Gone Fishin' explora os efeitos do síndrome do impostor. \n\n A poderosa onda do Gone Fishin' detalha de forma idiomática a progressão de alguém que não está muito consciente do que está acontecendo ao seu redor. \n\n As dores do crescimento que experimentamos durante nossa curva de aprendizado são necessárias. Essa preparação necessária para se preparar para a manifestação de nossas oportunidades.";
+"This collection of poems is exclusive to iOS." = "Esta coleção de poemas é exclusiva para iOS.";
+//Shuffled Prompts
+"What would make life easier?" = "O que tornaria a vida mais fácil?";
+"Why is communication important?" = "Por que a comunicação é importante?";
+"What can you do today to reach your goals?" = "O que você pode fazer hoje para alcançar seus objetivos?";
+"What is important to you?" = "O que é importante para você?";
+"What makes us human?" = "O que nos torna humanos?";
+"If you could change one thing about yourself, what would it be? Why?" = "Se você pudesse mudar uma coisa em si mesmo, o que seria? Por quê?";
+"Who is important to you?" = "Quem é importante para você?";
+"What is your earliest memory?" = "Qual é a sua primeira lembrança?";
+"What date has the most impact on your life?" = "Qual data teve o maior impacto em sua vida?";
+"Write the words you wish you would have said?" = "Escreva as palavras que você gostaria de ter dito?";
+"What do you believe in?" = "No que você acredita?";
+"Who do you think believes in you?" = "Quem você acha que acredita em você?";
+"What has had a significant impact on your life?" = "O que teve um impacto significativo em sua vida?";
+"What is your talent?" = "Qual é o seu talento?";
+"What are you most proud of?" = "Do que você tem mais orgulho?";
+"What are your hobbies?" = "Quais são seus hobbies?";
+"What does it mean to be happy?" = "O que significa ser feliz?";
+"What is success?" = "O que é o sucesso?";
+"How can you overcome doubt?" = "Como você pode superar a dúvida?";
+"What does family mean to you?" = "O que família significa para você?";
+"If you could learn anything in one day, what would it be? Why?" = "Se você pudesse aprender qualquer coisa em um dia, o que seria? Por quê?";
+"When would it be appropriate to lie?" = "Quando seria apropriado mentir?";
+"Why is your love language important?" = "Por que sua linguagem do amor é importante?";
+"What do you do to refocus after you have been distracted?" = "O que você faz para se refocar depois de ter sido distraído?";
+"Why are friends important?" = "Por que os amigos são importantes?";
+"What does your self-care entail?" = "O que envolve o seu autocuidado?";
+"Have you ever experienced 'Impostor Syndrome'?" = "Você já experimentou o 'Síndrome do Impostor'?";
+"What are you thankful for?" = "Pelo que você é grato?";
+"What bad habits are you trying to break?" = "Quais maus hábitos você está tentando quebrar?";
+"How do you express yourself?" = "Como você se expressa?";
+"What is your most embarrassing moment?" = "Qual é o seu momento mais embaraçoso?";
+"What do you do in your free time?" = "O que você faz no seu tempo livre?";
+"What is your favorite meal to cook for others?" = "Qual é a sua refeição favorita para cozinhar para os outros?";
+"What is your favorite day of the week?" = "Qual é o seu dia favorito da semana?";
+"What is your favorite game to play? Why?" = "Qual é o seu jogo favorito para jogar? Por quê?";
+"How are you being kind to yourself?" = "Como você está sendo gentil consigo mesmo?";
+"Which teacher had the most impact on your life?" = "Qual professor teve o maior impacto em sua vida?";
+"How do you celebrate after reaching a goal?" = "Como você comemora depois de alcançar um objetivo?";
+"How are you right now?" = "Como você está agora?";
+"Who was the last person you said 'no' to? Why?" = "Quem foi a última pessoa para quem você disse 'não'? Por quê?";
+"How often do you agree with others?" = "Com que frequência você concorda com os outros?";
+"How often do you disagree with others?" = "Com que frequência você discorda dos outros?";
+"Where is your favorite place to visit?" = "Qual é o seu lugar favorito para visitar?";
+"Write a story." = "Escreva uma história.";
+"Write a love letter to your future self." = "Escreva uma carta de amor para o seu eu do futuro.";
+"Who do you trust the most?" = "Em quem você confia mais?";
+"Why would someone have difficulty trusting others?" = "Por que alguém teria dificuldade em confiar nos outros?";
+"Who was the last person you called?" = "Quem foi a última pessoa que você ligou?";
+"What is your favorite song? Why?" = "Qual é a sua música favorita? Por quê?";
+"What is your fantasy?" = "Qual é a sua fantasia?";
+"Being romantic means..." = "Ser romântico significa...";
+"What scares you?" = "O que te assusta?";
+"How do you surprise others?" = "Como você surpreende os outros?";
+"What is your favorite animal? Why?" = "Qual é o seu animal favorito? Por quê?";
+"How do you overcome challenges?" = "Como você supera os desafios?";
+"What was your wildest dream?" = "Qual foi o seu sonho mais louco?";
+"What does financial freedom look like to you?" = "Como é a liberdade financeira para você?";
+"Rewrite the ending to your favorite movie." = "Reescreva o final do seu filme favorito.";
+"Rewrite the beginning of your favorite book." = "Reescreva o início do seu livro favorito.";
+"Where is your dream vacation destination?" = "Qual é o seu destino de férias dos sonhos?";
+"What is your secret?" = "Qual é o seu segredo?";
+"What don't people get about what it's like to be you?" = "O que as pessoas não entendem sobre como é ser você?";
+"Growing up, we never had..." = "Ao crescer, nunca tivemos...";
+"What does it mean to be a role model?" = "O que significa ser um modelo a ser seguido?";
+"What are things a good mentor does/ should do?" = "Quais são as coisas que um bom mentor faz/ deve fazer?";
+"What is the voice in your head saying?" = "O que a voz em sua cabeça está dizendo?";
+"What does it mean to be a good ancestor?" = "O que significa ser um bom ancestral?";
+"What is your daily routine?" = "Qual é a sua rotina diária?";
+"What does it mean to be evil?" = "O que significa ser mau?";
+"What makes magic real?" = "O que torna a magia real?";
+"What's more important, love or money?" = "O que é mais importante, amor ou dinheiro?";
+"Having more love would..." = "Ter mais amor significaria...";
+"If the world was ending in an hour, what would you do?" = "Se o mundo estivesse acabando em uma hora, o que você faria?";
+"If you wrote a book, what would it be about?" = "Se você escrevesse um livro, sobre o que seria?";
+"What does it mean to be lucky?" = "O que significa ser sortudo?";
+"Out of the five senses, which one do you enjoy the most? Why?" = "Dos cinco sentidos, qual você mais gosta? Por quê?";
+"What could you have done better yesterday?" = "O que você poderia ter feito melhor ontem?";
+"What are you planning for tomorrow?" = "O que você está planejando para amanhã?";
+"What is your most treasured possession?" = "Qual é a sua posse mais valiosa?";
+"Describe what a monster looks like." = "Descreva como é um monstro.";
+"What is a useless invention that interest you?" = "Qual é uma invenção inútil que te interessa?";
+"What was the last thing you won?" = "Qual foi a última coisa que você ganhou?";
+"Who is proud of you?" = "Quem se orgulha de você?";
+"Describe a day in your life if you were famous." = "Descreva um dia em sua vida se você fosse famoso.";
+"Write a story that includes the sentence, 'I should have seen this coming.'" = "Escreva uma história que inclua a frase 'Eu deveria ter previsto isso'.";
+"Describe a mistake you made and what you learned from it." = "Descreva um erro que você cometeu e o que aprendeu com ele.";
+"Create a new sport." = "Crie um novo esporte.";
+"Write about a famous person and why you admire them." = "Escreva sobre uma pessoa famosa e por que você a admira.";
+"If you could visit another planet, what would it be? Why?" = "Se você pudesse visitar outro planeta, qual seria? Por quê?";
+"The most interesting thing I’ve learned this year is…" = "A coisa mais interessante que aprendi este ano é...";
+"Write a story where a boring, everyday experience gets turned into a big adventure." = "Escreva uma história em que uma experiência entediante e cotidiana se transforma em uma grande aventura.";
+"Describe what you look for in a friend." = "Descreva o que você procura em um amigo.";
+"Who lives in the clouds and what do they do up there?" = "Quem mora nas nuvens e o que eles fazem lá em cima?";
+"This year my goal is to…" = "Este ano, meu objetivo é...";
+"Write about a time when you felt a strong emotion (e.g. happy, sad, angry, scared). What made you feel this way?" = "Escreva sobre um momento em que você sentiu uma forte emoção (por exemplo, felicidade, tristeza, raiva, medo). O que te fez sentir dessa maneira?";
+"Describe the oldest person you know." = "Descreva a pessoa mais velha que você conhece.";
+"What is your favorite room in your house and why?" = "Qual é o seu cômodo favorito da casa e por quê?";
+"What is a food you find really disgusting? Explain why it’s so bad." = "Qual é um alimento que você acha realmente nojento? Explique por que é tão ruim.";
+"One thing I am really good at is…" = "Uma coisa em que sou realmente bom é...";
+"Every year a new person is sent to the moon, and now it’s your turn. What happens when you step out of the rocket?" = "Todos os anos, uma nova pessoa é enviada para a lua, e agora é a sua vez. O que acontece quando você sai do foguete?";
+"You get to create a new holiday that will be celebrated every year. What is it called and what will people do to celebrate on this day?" = "Você pode criar um novo feriado que será comemorado todos os anos. Como ele se chama e o que as pessoas farão para comemorar neste dia?";
+"Write about the last thing/person that made you smile." = "Escreva sobre a última coisa/pessoa que te fez sorrir.";
+"Write about your first job." = "Escreva sobre o seu primeiro emprego.";
+"Why do you write?" = "Por que você escreve?";
+"Five years from now, I will be..." = "Daqui a cinco anos, eu estarei...";
+"Do you like to be alone or with company? Why?" = "Você gosta de ficar sozinho ou acompanhado? Por quê?";
+"If you could do anything for work, what would you do?" = "Se você pudesse fazer qualquer coisa como trabalho, o que você faria?";
+"Write about a time you failed." = "Escreva sobre uma vez em que você falhou.";
+"How will cars look in 50 years?" = "Como os carros serão daqui a 50 anos?";
+"Can honesty honestly be bad? Why?" = "A honestidade pode ser realmente ruim? Por quê?";
+"If you could be invisible for a day, what would you do?" = "Se você pudesse ficar invisível por um dia, o que você faria?";
+"If you could travel through time, would you go to the past or the future? What would you be doing in that past or future?" = "Se você pudesse viajar no tempo, você iria para o passado ou para o futuro? O que você estaria fazendo nesse passado ou futuro?";
+"Would you rather wake up to find you are five years older or five years younger?" = "Você preferiria acordar descobrindo que está cinco anos mais velho ou cinco anos mais jovem?";
+"What if you could change one rule? What rule would it be and how would you change it?" = "E se você pudesse mudar uma regra? Qual regra seria e como você a mudaria?";
+"What if you were locked inside your favorite store overnight? What kind of night would you have?" = "E se você fosse trancado dentro da sua loja favorita durante a noite? Que tipo de noite você teria?";
+"Write down a phrase you hear (or read) then create a story out of it." = "Anote uma frase que você ouviu (ou leu) e crie uma história com base nela.";
+"Write a story that keeps contradicting itself." = "Escreva uma história que se contradiz constantemente.";
+"What do ghosts do when they're not scaring people?" = "O que os fantasmas fazem quando não estão assustando as pessoas?";
+"Write a story about a secret room." = "Escreva uma história sobre um quarto secreto.";
+"What makes you think?" = "O que te faz pensar?";
