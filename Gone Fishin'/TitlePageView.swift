@@ -33,7 +33,7 @@ struct TitlePageView: View {
 struct TitlePage_Previews: PreviewProvider {
     static var previews: some View {
         TitlePageView()
-            .environmentObject(LocalNotificationManager())
+//            .environmentObject(LocalNotificationManager())
 
     }
 }

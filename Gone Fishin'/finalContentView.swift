@@ -38,7 +38,7 @@ struct finalContentView: View {
 struct testPageCurlFeature_Previews: PreviewProvider {
     static var previews: some View {
         finalContentView()
-            .environmentObject(LocalNotificationManager())
+//            .environmentObject(LocalNotificationManager())
             .environmentObject(EntryController())
             .environmentObject(User(name: "Friend"))
 

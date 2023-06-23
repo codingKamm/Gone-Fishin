@@ -34,7 +34,7 @@ struct Vol2Poems: View {
 struct TableOfContentsPagesTwoView_Previews: PreviewProvider {
     static var previews: some View {
         Vol2Poems()
-            .environmentObject(LocalNotificationManager())
+//            .environmentObject(LocalNotificationManager())
 
     }
 }

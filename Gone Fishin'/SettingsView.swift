@@ -20,6 +20,8 @@ struct SettingsView: View {
     @EnvironmentObject var lnManager: LocalNotificationManager
     @Environment(\.scenePhase) var scenePhase
     @State var presentSheet = false
+    @StateObject var localNotificationManager = LocalNotificationManager()
+
     
 //Alert after clicking Notifications
     @State private var showingAlert = false
@@ -219,15 +221,31 @@ struct SettingsView: View {
         .task {
             try? await lnManager.requestAuthorization()
         }
-        .onChange(of: scenePhase) { newValue in
-            if newValue == .active {
-                Task {
-                    await lnManager.getCurrentSettings()
-                    await lnManager.getPendingRequests()
-                }
+//        .onChange(of: scenePhase) { newValue in
+//            if newValue == .active {
+//                Task {
+//                    await lnManager.getCurrentSettings()
+//                    await lnManager.getPendingRequests()
+//                }
+//            }
+//        }
+      
+    .onChange(of: scenePhase) { newPhase in
+        switch newPhase {
+        case .active:
+            print("✅ App became active")
+            Task {
+               await localNotificationManager.getCurrentSettings()
+               await localNotificationManager.getPendingRequests()
             }
+        case .inactive:
+            print("✅ App became inactive")
+        case .background:
+            print("✅ App is running in the background")
+        @unknown default:
+            print("🛑 Fallback for future cases")
         }
-        
+    }
         
         
         }
@@ -238,5 +256,6 @@ struct SettingsView_Previews: PreviewProvider {
         SettingsView()
             .environmentObject(User(name: "Username"))
             .environmentObject(LocalNotificationManager())
+           
     }
 }

@@ -31,7 +31,7 @@ struct TransitionPage: View {
 struct TransitionPage_Previews: PreviewProvider {
     static var previews: some View {
         TransitionPage()
-            .environmentObject(LocalNotificationManager())
+//            .environmentObject(LocalNotificationManager())
 
     }
 }
