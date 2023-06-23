@@ -122,6 +122,8 @@
 		A1CBD1802A1F98CC00DB76C6 /* CreateEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CBD17F2A1F98CC00DB76C6 /* CreateEntry.swift */; };
 		A1CBD1822A1F993D00DB76C6 /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CBD1812A1F993D00DB76C6 /* EntryController.swift */; };
 		A1CBD1842A1F995200DB76C6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CBD1832A1F995200DB76C6 /* User.swift */; };
+		A1DF84522A4642230052182E /* HapticService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DF84512A4642230052182E /* HapticService.swift */; };
+		A1DF84552A4643C70052182E /* Haptics in Frameworks */ = {isa = PBXBuildFile; productRef = A1DF84542A4643C70052182E /* Haptics */; };
 		A1E3D79F2A2A8B5E003C9D03 /* BaitingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E3D79E2A2A8B5E003C9D03 /* BaitingView.swift */; };
 		A1E3D7A12A2AAE86003C9D03 /* anotherTestVTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E3D7A02A2AAE86003C9D03 /* anotherTestVTextView.swift */; };
 		A1E3D7A32A2AB7D2003C9D03 /* Vol2Poems.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E3D7A22A2AB7D2003C9D03 /* Vol2Poems.swift */; };
@@ -256,6 +258,7 @@
 		A1CBD1812A1F993D00DB76C6 /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
 		A1CBD1832A1F995200DB76C6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A1DF84502A4604B50052182E /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		A1DF84512A4642230052182E /* HapticService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HapticService.swift; path = "../../../../../Challenge 6ix/Gone Fishin' Feature Repo/HapticsSampleProject-main/HapticsSampleProject/HapticService.swift"; sourceTree = "<group>"; };
 		A1E3D79E2A2A8B5E003C9D03 /* BaitingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaitingView.swift; sourceTree = "<group>"; };
 		A1E3D7A02A2AAE86003C9D03 /* anotherTestVTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = anotherTestVTextView.swift; sourceTree = "<group>"; };
 		A1E3D7A22A2AB7D2003C9D03 /* Vol2Poems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vol2Poems.swift; sourceTree = "<group>"; };
@@ -275,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1AC10A329F372E8006513EB /* Pages in Frameworks */,
+				A1DF84552A4643C70052182E /* Haptics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +314,7 @@
 		A14042192A407A1400D9F6AE /* HapticFeedback */ = {
 			isa = PBXGroup;
 			children = (
+				A1DF84512A4642230052182E /* HapticService.swift */,
 				A140421A2A407A7D00D9F6AE /* Haptics.swift */,
 			);
 			path = HapticFeedback;
@@ -608,6 +613,7 @@
 			name = "Gone Fishin'";
 			packageProductDependencies = (
 				A1AC10A229F372E8006513EB /* Pages */,
+				A1DF84542A4643C70052182E /* Haptics */,
 			);
 			productName = "Gone Fishin'";
 			productReference = A15E63AC29B964BA00391A88 /* Gone Fishin'.app */;
@@ -643,6 +649,7 @@
 			mainGroup = A15E63A329B964BA00391A88;
 			packageReferences = (
 				A1AC10A129F372E8006513EB /* XCRemoteSwiftPackageReference "Pages" */,
+				A1DF84532A4643C70052182E /* XCRemoteSwiftPackageReference "SwiftUI-Haptics" */,
 			);
 			productRefGroup = A15E63AD29B964BA00391A88 /* Products */;
 			projectDirPath = "";
@@ -726,6 +733,7 @@
 				A15E63FF29B9654500391A88 /* TextFieldBottomSheetView.swift in Sources */,
 				A167D5A42A055136001D997A /* CatchNReleaseVTextTitleView.swift in Sources */,
 				A167D6222A06FBC4001D997A /* finalContentView.swift in Sources */,
+				A1DF84522A4642230052182E /* HapticService.swift in Sources */,
 				A1C9B4022A2A1D9C004AD210 /* WadingBackgroundView.swift in Sources */,
 				A15E63FB29B9654500391A88 /* CatchNReleaseView.swift in Sources */,
 				A167D54A2A045854001D997A /* AboutView.swift in Sources */,
@@ -1034,6 +1042,14 @@
 				minimumVersion = 0.1.5;
 			};
 		};
+		A1DF84532A4643C70052182E /* XCRemoteSwiftPackageReference "SwiftUI-Haptics" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/LiYanan2004/SwiftUI-Haptics.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1041,6 +1057,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A1AC10A129F372E8006513EB /* XCRemoteSwiftPackageReference "Pages" */;
 			productName = Pages;
+		};
+		A1DF84542A4643C70052182E /* Haptics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1DF84532A4643C70052182E /* XCRemoteSwiftPackageReference "SwiftUI-Haptics" */;
+			productName = Haptics;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
