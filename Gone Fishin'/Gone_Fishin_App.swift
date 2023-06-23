@@ -23,6 +23,7 @@ struct Gone_Fishin_App: App {
             finalContentView()
 //NotificationButtonTest()
 //            SettingsView()
+            
             //used for Journal feature
                 .environmentObject(entryController)
                 .environmentObject(entryUser)

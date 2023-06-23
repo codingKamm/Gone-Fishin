@@ -21,14 +21,14 @@ struct AboutView: View {
                                 .presentationDetents([.large])
                                 .presentationDragIndicator(.visible)
                 }
-                       
+                
             }
         }
 
 struct AboutView_Previews: PreviewProvider {
     static var previews: some View {
         AboutView()
-            .environmentObject(LocalNotificationManager())
+//            .environmentObject(LocalNotificationManager())
 
     }
 }

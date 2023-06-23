@@ -214,22 +214,12 @@ struct SettingsView: View {
 
                 }// End of ZStack
             }// End of Nav. Stack
-//        .navigationTitle("Settings")
         .edgesIgnoringSafeArea(.all)
         .preferredColorScheme(.dark)
 
         .task {
             try? await lnManager.requestAuthorization()
         }
-//        .onChange(of: scenePhase) { newValue in
-//            if newValue == .active {
-//                Task {
-//                    await lnManager.getCurrentSettings()
-//                    await lnManager.getPendingRequests()
-//                }
-//            }
-//        }
-      
     .onChange(of: scenePhase) { newPhase in
         switch newPhase {
         case .active:

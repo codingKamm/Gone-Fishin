@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Pages
+import Haptics
 
 struct Vol2Poems: View {
     @State var poemIndex2: Int = 0
@@ -16,11 +17,23 @@ struct Vol2Poems: View {
         ZStack{
             Pages(currentPage: $poemIndex2, navigationOrientation: .vertical, transitionStyle: .scroll, wrap: false){
                 FirstCatchView()
+                    .triggersHapticFeedbackWhenAppear()
+
                 CrabsInABucketView()
+                    .triggersHapticFeedbackWhenAppear()
+
                 CatchNReleaseView()
+                    .triggersHapticFeedbackWhenAppear()
+
                 FlyFishingView()
+                    .triggersHapticFeedbackWhenAppear()
+
                 TrophiesView()
+                    .triggersHapticFeedbackWhenAppear()
+
                 BeyondTheHorizonView()
+                    .triggersHapticFeedbackWhenAppear()
+
             }//End of Pages Section Two
             .edgesIgnoringSafeArea(.all)
             ScrollBlinkingArrowsUpDownView()
@@ -28,6 +41,8 @@ struct Vol2Poems: View {
                 .padding(.bottom, 750)
                 .padding(.trailing, 290)
         }//End of ZStack
+        .triggersHapticFeedbackWhenAppear()
+
     }
 }
 

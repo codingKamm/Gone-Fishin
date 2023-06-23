@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Pages
+import Haptics
 
 
 struct finalContentView: View {
@@ -19,17 +20,32 @@ struct finalContentView: View {
         NavigationStack{
             Pages(currentPage: $index, transitionStyle: .scroll, bounce: true, wrap: true) {
                 TitlePageView()
+                    .triggersHapticFeedbackWhenAppear()
+
                 Vol1Poems()
+                    .triggersHapticFeedbackWhenAppear()
+
                 PartTwoCollectionView()
+                    .triggersHapticFeedbackWhenAppear()
+
                 Vol2Poems()
+                    .triggersHapticFeedbackWhenAppear()
+
                 EndingThanksView()
+                    .triggersHapticFeedbackWhenAppear()
+
                   
-            }
+            }// End of Pages 
+            
             .edgesIgnoringSafeArea(.all)
+            .triggersHapticFeedbackWhenAppear()
+
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     CapsuleIconsView()
+
                 }
+                
                 
             }// End of Toolbar
         }

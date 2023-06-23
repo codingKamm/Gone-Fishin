@@ -7,6 +7,8 @@
 
 import Foundation
 import SwiftUI
+import CoreHaptics
+
 
 struct HapticFeedback: ViewModifier {
     private let generator: UIImpactFeedbackGenerator
