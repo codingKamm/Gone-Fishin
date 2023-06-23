@@ -255,6 +255,7 @@
 		A1CBD17F2A1F98CC00DB76C6 /* CreateEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEntry.swift; sourceTree = "<group>"; };
 		A1CBD1812A1F993D00DB76C6 /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
 		A1CBD1832A1F995200DB76C6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A1DF84502A4604B50052182E /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		A1E3D79E2A2A8B5E003C9D03 /* BaitingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaitingView.swift; sourceTree = "<group>"; };
 		A1E3D7A02A2AAE86003C9D03 /* anotherTestVTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = anotherTestVTextView.swift; sourceTree = "<group>"; };
 		A1E3D7A22A2AB7D2003C9D03 /* Vol2Poems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vol2Poems.swift; sourceTree = "<group>"; };
@@ -637,6 +638,7 @@
 				ja,
 				ar,
 				ms,
+				"pt-BR",
 			);
 			mainGroup = A15E63A329B964BA00391A88;
 			packageReferences = (
@@ -804,6 +806,7 @@
 				A19640BB2A13B9F5005008B8 /* ar */,
 				A19640BC2A13B9F6005008B8 /* en */,
 				A1CBD1262A17A04E00DB76C6 /* ms */,
+				A1DF84502A4604B50052182E /* pt-BR */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -931,7 +934,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Gone Fishin'/Preview Content\"";
 				DEVELOPMENT_TEAM = WXWQYNX7C7;
 				ENABLE_PREVIEWS = YES;
@@ -968,7 +971,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Gone Fishin'/Preview Content\"";
 				DEVELOPMENT_TEAM = WXWQYNX7C7;
 				ENABLE_PREVIEWS = YES;

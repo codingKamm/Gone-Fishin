@@ -62,6 +62,7 @@ struct CreateEntry: View {
                                         }
                                     }
                                 }
+                                .foregroundColor(.white)
                                 .lineSpacing(7)
                     }// End of Section
                     
