@@ -1,0 +1,147 @@
+/* 
+  Localizable.strings
+  Gone Fishin'
+
+  Created by Cameron Warner on 5/16/23.
+  
+ */
+
+//Use Chat GPT Prompt to localize: translate the  prompts below from English into Portuguese.  Separate each translation by an equal sign, each prompt should have quotation marks around them. The left side is in English and the right in Portuguese. Lastly, place a semi colon at the end of each translation before beginning the next translation on a new line, within code block.
+
+// New Chapters Coming Soon View
+"Thanks for reading! \nNew Poems Coming Soon!" = "Danke fürs Lesen! \nNeue Gedichte folgen bald! \n🇩🇪";
+// Ending Tanks View
+"We're thrilled to announce more poetry\nvolumes and merchandise coming soon.\nStay tuned for updates. Your presence\n means the world to us.\n
+With gratitude,"= "Wir freuen uns, bald weitere Gedichtbände und Merchandise-Artikel anzukündigen.\nBleiben Sie gespannt auf Updates. Ihre Anwesenheit\n bedeutet uns die Welt.\n\n 🇩🇪
+Mit bestem Dank,";
+//Journal feature
+"Journal" = "Tagebuch";
+"Hi" = "Hallo";
+"Friend" = "Freund";
+"Hi, !" = "Hallo, !";
+"Hi, Friend!" = "Hallo, Freund!";
+"How about creating a new post today?" = "Wie wäre es heute mit einem neuen Beitrag?";
+"Create new Entry" = "Neuen Eintrag erstellen";
+"Random Prompts" = "Zufällige Anregungen";
+"Title" = "Titel";
+"Submit" = "Absenden";
+"Today's Prompt:" = "Heutige Anregung";
+//Table of Contents
+"Table of Contents" = "Inhaltsverzeichnis";
+"PART I" = "TEIL I";
+"PART II" = "TEIL II";
+"How to Fish" = "Angeln lernen";
+"Baiting" = "Ködern";
+"Wading" = "Waten";
+"Gone Fishin’" = "Angeln gegangen";
+"Big Fish, Small Pond" = "Großer Fisch, kleiner Teich";
+"Hooked" = "Angelhaken";
+"First Catch" = "Erster Fang";
+"Crabs in a Bucket" = "Krebse im Eimer";
+"Catch & Release" = "Fangen und freilassen";
+"Fly Fishing" = "Fliegenfischen";
+"Trophies" = "Trophäen";
+"Beyond The Horizon" = "Jenseits des Horizonts";
+
+//Miscellaneous Words
+"Scroll" = "Bildlauf";
+"Gone \nFishin'" = "Ab zum Angeln";
+
+//Alert Feature
+"Press to receive notifications" = "Drücken Sie, um Benachrichtigungen zu erhalten";
+"Expect Notifications Soon" = "In Kürze Benachrichtigungen erwarten";
+"OK" = "OK";
+
+//Settings View
+"Settings" = "Einstellungen";
+"Enable Notifications" = "Benachrichtigungen aktivieren";
+
+//Notifications
+"Gone Fishin' 🎣" = "Ab zum Angeln 🎣";
+"snooze" = "Snooze";
+"Stay Inspired" = "Bleib inspiriert";
+"Never Stop Trying!" = "Gib niemals auf!";
+"You Are More Than Enough" = "Du bist mehr als genug";
+"Failure = Quitting" = "Versagen = Aufgeben";
+"Imposters Syndrome is a fraudulent fear of failure." = "Das Impostor-Syndrom ist eine betrügerische Angst vor dem Versagen.";
+"Self-reliance is recycled hope" = "Selbstständigkeit ist wiederverwertete Hoffnung";
+"Keep Hope" = "Hoffnung bewahren";
+"Be willing to ask the help you need" = "Sei bereit, um Hilfe zu bitten, wenn du sie brauchst";
+"Pulling yourself up means reaching for help" = "Sich selbst hochzuziehen bedeutet, nach Hilfe zu greifen";
+"You are more than the mistakes you make" = "Du bist mehr als die Fehler, die du machst";
+"Enjoy each mistake as you work towards becoming great" = "Freue dich über jeden Fehler, während du dich auf dem Weg zur Größe befindest";
+"Luck is when opportunity meets preparation at the intersection of determination" = "Glück entsteht, wenn Gelegenheit und Vorbereitung an der Kreuzung der Entschlossenheit zusammentreffen";
+"Today is the day" = "Heute ist der Tag";
+"Remember where you started and realize how far you’ve come" = "Erinnere dich daran, wo du angefangen hast und erkenne, wie weit du gekommen bist";
+"I notice your progress" = "Ich bemerke deinen Fortschritt";
+"Like a cast of the reel, I’m hooked on each line." = "Wie ein Wurf der Angelrolle bin ich von jeder Zeile gefesselt.";
+"Did you journal today?" = "Hast du heute Tagebuch geschrieben?";
+"Embrace the power of words and let inspiration find its way into your heart. Here's a brief moment of wisedom to uplift your spirit and ignite your inner fire." = "Umarme die Kraft der Worte und lass die Inspiration ihren Weg in dein Herz finden. Hier ist ein kurzer Moment der Weisheit, um deinen Geist zu erheben und dein inneres Feuer zu entfachen.";
+"Just because your best is not good enough, doesn’t mean it can’t be." = "Nur weil dein Bestes nicht gut genug ist, heißt das nicht, dass es nicht gut sein kann.";
+"Overcoming self-doubt means finding your self-worth" = "Selbstzweifel zu überwinden bedeutet, seinen eigenen Wert zu finden";
+"Imposters Syndrome is a fraudulent fear of failure." = "Das Impostor-Syndrom ist eine betrügerische Angst vor dem Versagen.";
+"Collection Explanation View" = "Sammlungserklärungsansicht";
+"E.M. Douglass Presents \n Gone Fishin': A Poetry Book" = "E.M. Douglass präsentiert \n Ab zum Angeln: Ein Gedichtband";
+"Submerged in the depths of creativity, Gone Fishin' explores the effects of Imposter Syndrome. \n\n Gone Fishin's mighty wave idiomatically details the progression of someone who is not very aware of what is happening around them. \n\nThe growing pains we experience during our learning curve is necessary. This preparation needed to prepare for the manifestation of our opportunities." = "Gone Fishin' taucht in die Tiefen der Kreativität ein und erforscht die Auswirkungen des Impostor-Syndroms. \n\n Die mächtige Welle von Gone Fishin' beschreibt idiomatisch den Fortschritt einer Person, die sich nicht sehr bewusst ist, was um sie herum passiert. \n\n Die wachsenden Schmerzen, die wir während unserer Lernkurve erfahren, sind notwendig. Diese Vorbereitung ist nötig, um die Manifestation unserer Chancen vorzubereiten.";
+"This collection of poems is exclusive to iOS." = "Diese Gedichtsammlung ist exklusiv für iOS.";
+
+// Prompts in Numbers 
+"What would make life easier?" = "Was würde das Leben einfacher machen?";
+"Why is communication important?" = "Warum ist Kommunikation wichtig?";
+"What can you do today to reach your goals?" = "Was kannst du heute tun, um deine Ziele zu erreichen?";
+"What is important to you?" = "Was ist dir wichtig?";
+"What makes us human?" = "Was macht uns menschlich?";
+"If you could change one thing about yourself, what would it be? Why?" = "Wenn du eine Sache an dir ändern könntest, was wäre es? Warum?";
+"Who is important to you?" = "Wer ist dir wichtig?";
+"What is your earliest memory?" = "Was ist deine früheste Erinnerung?";
+"What date has the most impact on your life?" = "Welches Datum hat den größten Einfluss auf dein Leben?";
+"Write the words you wish you would have said?" = "Schreibe die Worte, die du gerne gesagt hättest?";
+"What do you believe in?" = "Woran glaubst du?";
+"Who do you think believes in you?" = "Wer glaubt deiner Meinung nach an dich?";
+"What has had a significant impact on your life?" = "Was hat einen bedeutenden Einfluss auf dein Leben gehabt?";
+"What is your talent?" = "Was ist dein Talent?";
+"What are you most proud of?" = "Worauf bist du am stolzesten?";
+"What are your hobbies?" = "Was sind deine Hobbys?";
+"What does it mean to be happy?" = "Was bedeutet es, glücklich zu sein?";
+"What is success?" = "Was ist Erfolg?";
+"How can you overcome doubt?" = "Wie kannst du Zweifel überwinden?";
+"What does family mean to you?" = "Was bedeutet Familie für dich?";
+"If you could learn anything in one day, what would it be? Why?" = "Wenn du an einem Tag alles lernen könntest, was würdest du wählen? Warum?";
+"When would it be appropriate to lie?" = "Wann wäre es angemessen zu lügen?";
+"Why is your love language important?" = "Warum ist deine Liebessprache wichtig?";
+"What do you do to refocus after you have been distracted?" = "Was tust du, um dich wieder zu konzentrieren, nachdem du abgelenkt wurdest?";
+"Why are friends important?" = "Warum sind Freunde wichtig?";
+"What does your self-care entail?" = "Was beinhaltet deine Selbstfürsorge?";
+"Have you ever experienced 'Impostor Syndrome'?" = "Hast du jemals das 'Impostor-Syndrom' erlebt?";
+"What are you thankful for?" = "Wofür bist du dankbar?";
+"What bad habits are you trying to break?" = "An welchen schlechten Gewohnheiten arbeitest du?";
+"How do your express yourself?" = "Wie drückst du dich aus?";
+"What is your most embarrassing moment?" = "Was ist dein peinlichster Moment?";
+"What do you do in your free time?" = "Was machst du in deiner Freizeit?";
+"What is your favorite meal to cook for others?" = "Was ist deine Lieblingsmahlzeit, die du für andere kochst?";
+"What is your favorite day of the week?" = "Was ist dein Lieblingstag der Woche?";
+"What is your favorite game to play? Why?" = "Was ist dein Lieblingsspiel? Warum?";
+"How are you being kind to yourself?" = "Wie bist du zu dir selbst nett?";
+"Which teacher had the most impact on your life?" = "Welcher Lehrer hatte den größten Einfluss auf dein Leben?";
+"How do you celebrate after reaching a goal?" = "Wie feierst du, nachdem du ein Ziel erreicht hast?";
+"How are you right now?" = "Wie geht es dir gerade?";
+"Who was the last person you said 'no' to? Why?" = "Wer war die letzte Person, der du 'Nein' gesagt hast? Warum?";
+"How often do you agree with others?" = "Wie oft stimmst du anderen zu?";
+"How often do you disagree with others?" = "Wie oft bist du anderer Meinung als andere?";
+"Where is your favorite place to visit?" = "Wo ist dein Lieblingsort zum Besuchen?";
+"Write a story." = "Schreibe eine Geschichte.";
+"Write a love letter to your future self." = "Schreibe einen Liebesbrief an dein zukünftiges Ich.";
+"Who do you trust the most?" = "Wem vertraust du am meisten?";
+"Why would someone have difficulty trusting others?" = "Warum hätte jemand Schwierigkeiten, anderen zu vertrauen?";
+"Who was the last person you called?" = "Wer war die letzte Person, die du angerufen hast?";
+"What is your favorite song? Why?" = "Was ist dein Lieblingslied? Warum?";
+"What is your fantasy?" = "Was ist deine Fantasie?";
+"Being romantic means..." = "Romantisch sein bedeutet...";
+"What scares you?" = "Was macht dir Angst?";
+"How do you surprise others?" = "Wie überraschst du andere?";
+"What is your favorite animal? Why?" = "Was ist dein Lieblingstier? Warum?";
+"How do you overcome challenges?" = "Wie überwindest du Herausforderungen?";
+"What was your wildest dream?" = "Was war dein wildester Traum?";
+"What does financial freedom look like to you?" = "Wie sieht finanzielle Freiheit für dich aus?";
+"Rewrite the ending to your favorite movie." = "Schreibe das Ende zu deinem Lieblingsfilm um.";
+"Rewrite the beginning of your favorite book." = "Schreibe den Anfang deines Lieblingsbuches um.";
