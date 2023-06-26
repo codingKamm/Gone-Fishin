@@ -263,6 +263,7 @@
 		A1E3D7A02A2AAE86003C9D03 /* anotherTestVTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = anotherTestVTextView.swift; sourceTree = "<group>"; };
 		A1E3D7A22A2AB7D2003C9D03 /* Vol2Poems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vol2Poems.swift; sourceTree = "<group>"; };
 		A1E3D7A42A2AB883003C9D03 /* CombinedTableOfContentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinedTableOfContentsView.swift; sourceTree = "<group>"; };
+		A1E829792A49B9EA00DFD493 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A1EF290C2A20E71B00FFF9B2 /* ShufflePrompts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShufflePrompts.swift; sourceTree = "<group>"; };
 		A1F0384329B966E00091FD30 /* Assests.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assests.xcassets; sourceTree = "<group>"; };
 		A1FB04B82A2A783B003456F3 /* HowToFishBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToFishBackgroundView.swift; sourceTree = "<group>"; };
@@ -645,6 +646,7 @@
 				ar,
 				ms,
 				"pt-BR",
+				de,
 			);
 			mainGroup = A15E63A329B964BA00391A88;
 			packageReferences = (
@@ -815,6 +817,7 @@
 				A19640BC2A13B9F6005008B8 /* en */,
 				A1CBD1262A17A04E00DB76C6 /* ms */,
 				A1DF84502A4604B50052182E /* pt-BR */,
+				A1E829792A49B9EA00DFD493 /* de */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
