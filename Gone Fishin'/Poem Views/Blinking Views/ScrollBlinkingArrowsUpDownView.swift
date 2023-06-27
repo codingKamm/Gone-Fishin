@@ -14,6 +14,7 @@ struct ScrollBlinkingArrowsUpDownView: View {
     var body: some View {
         VStack{
             Image(systemName: "arrow.up.arrow.down")
+                .accessibility(hidden: true)
                 .font(.headline)
                 .bold()
                 .scaleEffect(isAnimating ? 1.2 : 1.0)
@@ -24,7 +25,8 @@ struct ScrollBlinkingArrowsUpDownView: View {
                     }
                 }
             Text("Scroll")
-            
+                .accessibilityLabel("Scroll Up Or Down")
+
             
         }// End of VStack
       

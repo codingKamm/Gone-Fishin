@@ -11,6 +11,7 @@ struct SettingsIconView: View {
     var body: some View {
         Image(systemName: "gear.circle.fill")
             .font(.headline)
+            .accessibilityLabel("Settings")
 
     }
 }

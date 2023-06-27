@@ -14,7 +14,7 @@ struct HowToFishBackgroundView: View {
             Image("howToFish")
                 .resizable()
                 .ignoresSafeArea()
-            
+                .accessibility(hidden: true)
         }
             
 }

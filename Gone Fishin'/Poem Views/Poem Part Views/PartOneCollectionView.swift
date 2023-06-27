@@ -10,15 +10,19 @@ import SwiftUI
 struct PartOneCollectionView: View {
     var body: some View {
         ZStack{
-            Image("partOne")
+            Image("partOne", label: Text("Part One Of Collection's Table Of Contents"))
                 .resizable()
                 .edgesIgnoringSafeArea(.all)
+                .accessibility(hidden: true)
+
             Text("PART I")
                 .font(.system(size: 60, design: .serif))
                 .bold()
                 .foregroundColor(.black)
                 .padding(.top, 220)
                 .padding(.leading, 90)
+                .accessibilityLabel("Table of Contents Part One")
+
             VStack{
                 Section{
                     Text("How to Fish")

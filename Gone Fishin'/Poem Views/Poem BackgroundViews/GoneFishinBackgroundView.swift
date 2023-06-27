@@ -13,6 +13,7 @@ struct GoneFishinBackgroundView: View {
             Image("goneFishin")
                 .resizable()
                 .edgesIgnoringSafeArea(.all)
+                .accessibility(hidden: true)
         }
 }
 

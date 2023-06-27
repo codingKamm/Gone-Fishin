@@ -11,6 +11,7 @@ struct AboutMeButtonView: View {
     var body: some View {
        Image(systemName: "info")
             .font(.headline)
+            .accessibilityLabel("Collection Info")
     }
 }
 

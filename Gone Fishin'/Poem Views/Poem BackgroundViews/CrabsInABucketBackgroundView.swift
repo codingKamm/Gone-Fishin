@@ -15,6 +15,8 @@ struct CrabsInABucketBackgroundView: View {
             .resizable()
             .edgesIgnoringSafeArea(.all)
             .onAppear(perform: crabsInABucketTimer)
+            .accessibility(hidden: true)
+
     }
     func crabsInABucketTimer(){
         var index = 1

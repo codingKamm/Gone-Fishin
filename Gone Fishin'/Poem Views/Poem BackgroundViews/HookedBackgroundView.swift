@@ -12,6 +12,7 @@ struct HookedBackgroundView: View {
             Image("hooked")
             .resizable()
             .edgesIgnoringSafeArea(.all)
+            .accessibility(hidden: true)
         
     }
 }

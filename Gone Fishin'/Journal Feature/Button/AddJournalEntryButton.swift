@@ -13,6 +13,8 @@ struct AddJournalEntryButton: View {
             Image(systemName: "plus.rectangle")
                 .font(.title)
                 .foregroundColor(.white)
+                .accessibilityLabel("Create New Entry")
+
         }
 
     }

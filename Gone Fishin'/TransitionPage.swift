@@ -10,7 +10,7 @@ import SwiftUI
 struct TransitionPage: View {
     var body: some View {
         ZStack{
-            Image("titlePageTree")
+            Image("titlePageTree", label: Text("Title Page"))
                 .resizable()
                 .padding()
                 .edgesIgnoringSafeArea(.all)

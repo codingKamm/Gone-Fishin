@@ -12,6 +12,8 @@ struct FlyFishingBackgroundView: View {
         Image("flyFishing")
             .resizable()
             .edgesIgnoringSafeArea(.all)
+            .accessibility(hidden: true)
+
     }
 }
 

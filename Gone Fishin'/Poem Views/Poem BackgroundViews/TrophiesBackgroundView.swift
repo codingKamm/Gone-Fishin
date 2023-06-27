@@ -15,6 +15,8 @@ struct TrophiesBackgroundView: View {
             .resizable()
             .edgesIgnoringSafeArea(.all)
             .onAppear(perform: trophiesTimer)
+            .accessibility(hidden: true)
+
     }
     
     func trophiesTimer(){

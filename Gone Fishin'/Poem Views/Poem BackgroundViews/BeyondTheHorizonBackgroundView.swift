@@ -15,7 +15,8 @@ struct BeyondTheHorizonBackgroundView: View {
                 .resizable()
                 .ignoresSafeArea()
                 .onAppear(perform: beyondTheHorizonTimer)
-            
+                .accessibility(hidden: true)
+
         }
         
         

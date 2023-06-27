@@ -60,6 +60,7 @@ struct ShufflePrompts: View {
                                         Button("") {
                                             focusedField = nil
                                         }
+                                        .accessibilityLabel("Done")
                                     }
                                 }
                             TextEditor(text: $createJournalShuffleBody)

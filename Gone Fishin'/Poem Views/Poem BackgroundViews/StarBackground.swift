@@ -12,6 +12,7 @@ struct StarBackground: View {
         Image("starBackground")
             .resizable()
             .edgesIgnoringSafeArea(.all)
+            .accessibility(hidden: true)
     }
 }
 
