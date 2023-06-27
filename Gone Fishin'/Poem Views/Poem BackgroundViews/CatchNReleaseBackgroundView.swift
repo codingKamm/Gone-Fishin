@@ -12,6 +12,7 @@ struct CatchNReleaseBackgroundView: View {
         Image("catchNRelease")
             .resizable()
             .edgesIgnoringSafeArea(.all)
+            .accessibility(hidden: true)
     }
 }
 

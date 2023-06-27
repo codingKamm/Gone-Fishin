@@ -36,6 +36,8 @@ struct BaitingVTextTitleView: View {
             }
         }// End of VStack
         .font(.system(size: 60, design: .serif))
+        .accessibility(hidden: true)
+
 
     }
 }

@@ -15,7 +15,7 @@ struct BaitingBackgroundView: View {
                 .resizable()
                 .ignoresSafeArea()
                 .onAppear(perform: baitingTimer)
-            
+                .accessibility(hidden: true)            
         }
         
         

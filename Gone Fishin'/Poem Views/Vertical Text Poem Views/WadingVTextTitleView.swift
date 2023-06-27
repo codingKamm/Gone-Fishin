@@ -33,6 +33,8 @@ struct WadingVTextTitleView: View {
             }
         }// End of VStack
         .font(.system(size: 37, design: .serif))
+        .accessibility(hidden: true)
+
     }
 }
 

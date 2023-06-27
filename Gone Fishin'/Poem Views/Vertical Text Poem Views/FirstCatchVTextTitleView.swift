@@ -51,7 +51,8 @@ struct FirstCatchVTextTitleView: View {
             }
         }// End of VStack
         .font(.system(size: 40, weight: .semibold, design: .serif))
-        
+        .accessibility(hidden: true)
+
 
     }
 }

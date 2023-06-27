@@ -10,7 +10,7 @@ import SwiftUI
 struct EndingThanksView: View {
     var body: some View {
         ZStack{
-            Image("endingThanks")
+            Image("endingThanks", label: Text("Ending Page"))
                 .resizable()
                 .edgesIgnoringSafeArea(.all)
             Text("""

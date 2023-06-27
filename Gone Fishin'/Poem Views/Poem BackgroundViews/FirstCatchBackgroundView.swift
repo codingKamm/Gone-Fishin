@@ -12,6 +12,8 @@ struct FirstCatchBackgroundView: View {
         Image("firstCatch")
             .resizable()
             .edgesIgnoringSafeArea(.all)
+            .accessibility(hidden: true)
+
     }
 }
 

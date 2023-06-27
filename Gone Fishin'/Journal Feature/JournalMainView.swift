@@ -57,7 +57,7 @@ struct JournalMainView: View {
                                 HStack{
                                     Spacer()
                                     NavigationLink(destination: CreateEntry()) {
-                                        Text("Create new Entry")
+                                        Text("Create New Entry")
                                             .frame(width: 135, height: 25)
                                     }
                                     .buttonStyle(MainButton())

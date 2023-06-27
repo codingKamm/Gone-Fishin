@@ -86,6 +86,8 @@ struct CrabsInABucketVTextTitleView: View {
             }
         }// End of VStack
         .font(.system(size: 30, weight: .bold, design: .serif))
+        .accessibility(hidden: true)
+
     }
 }
 

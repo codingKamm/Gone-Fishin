@@ -78,6 +78,8 @@ struct BeyondTheHorizonVTextTitleView: View {
             }
         }// End of VStack
         .font(.system(size: 33, design: .serif))
+        .accessibility(hidden: true)
+
     }
 }
 

@@ -14,6 +14,7 @@ struct ScrollBlinkingArrowRightView: View {
     var body: some View {
         VStack{
             Image(systemName: "arrow.right")
+                .accessibility(hidden: true)
                 .font(.headline)
                 .scaleEffect(isAnimating ? 1.2 : 1.0)
                 .opacity(isAnimating ? 0.2 : 1.0)
@@ -23,6 +24,7 @@ struct ScrollBlinkingArrowRightView: View {
                     }
                 }
             Text("Scroll")
+                .accessibilityLabel("Scroll Right")
         }// End of VStack
        
         }

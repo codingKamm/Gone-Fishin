@@ -11,6 +11,8 @@ struct JournalIconButton: View {
     var body: some View {
         Image(systemName: "note.text.badge.plus")
             .font(.headline)
+            .accessibilityLabel("Journal Feature")
+
     }
 }
 

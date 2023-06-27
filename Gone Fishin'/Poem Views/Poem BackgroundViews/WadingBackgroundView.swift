@@ -19,7 +19,8 @@ struct WadingBackgroundView: View {
             .resizable()
             .edgesIgnoringSafeArea(.all)
             .onAppear(perform: wadingTimer)
-        
+            .accessibility(hidden: true)
+
     }
     
     

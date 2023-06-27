@@ -12,15 +12,18 @@ struct PartTwoCollectionView: View {
 
     var body: some View {
         ZStack{
-            Image("partTwo")
+            Image("partTwo", label: Text("Part Two Of Collection's Table Of Contents"))
                 .resizable()
                 .edgesIgnoringSafeArea(.all)
+                .accessibility(hidden: true)
             Text("PART II")
                 .font(.system(size: 30, design: .serif))
                 .bold()
                 .padding(.leading, 230)
                 .padding(.bottom, 670)
                 .foregroundColor(myCustomColor.partIICollectionTextColor)
+                .accessibilityLabel("Table of Contents Part Two")
+
             VStack(alignment: .leading){
                     Text("First Catch")
                     Text("Crabs in a Bucket")

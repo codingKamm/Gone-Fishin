@@ -60,6 +60,8 @@ struct HowToFishVTextTitleView: View {
         }// End of VStack
         .font(.system(size: 50, design: .serif))
         .bold()
+        .accessibility(hidden: true)
+
     }
      
   

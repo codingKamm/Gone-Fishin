@@ -12,6 +12,7 @@ struct BigFishSmallPondBackgroundView: View {
         Image("bigFishSmallPond")
             .resizable()
             .edgesIgnoringSafeArea(.all)
+            .accessibility(hidden: true)
     }
 }
 

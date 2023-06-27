@@ -86,6 +86,8 @@ struct BigFishSmallPondVTextTitleView: View {
             }
         }// End of VStack
         .font(.system(size: 30, design: .serif))
+        .accessibility(hidden: true)
+
     }
 }
 

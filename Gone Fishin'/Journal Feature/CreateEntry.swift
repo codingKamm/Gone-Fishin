@@ -50,6 +50,7 @@ struct CreateEntry: View {
                                         Button("") {
                                             focusedField = nil
                                         }
+                                        .accessibilityLabel("Done")
                                     }
                                 }
                             TextEditor(text: $createPoemStanza)
@@ -102,6 +103,8 @@ struct ButtonView: View {
             .background(myCC.blackKris)
             .foregroundColor(myCC.whiteFontKris)
             .cornerRadius(12)
+            .accessibilityLabel("Submit Entry")
+
     }
         
 }
